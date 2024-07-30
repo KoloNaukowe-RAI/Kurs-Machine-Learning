@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "12898fe75fb69b56",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec106d1f94d14fc2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55b032d126e15a10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tematy/Wstęp do języka Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "685f01e083f1372e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7976a6afbef8535a",
+    "type": "split",
+    "children": [
+      {
+        "id": "98d511774a8856d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7f629f1a8314d88",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "002d30f8da7b21f5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f1cef27e3ff9de74",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "53fa0376af7fe725",
+    "type": "split",
+    "children": [
+      {
+        "id": "39ad529f0f0b9730",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfb1a142d8e3cd26",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8b19213c799530f7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4aeacd9e3aa7e4b3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4a9fd04058622173",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "webpage-html-export:Export Vault to HTML": false
+    }
+  },
+  "active": "685f01e083f1372e",
+  "lastOpenFiles": [
+    "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
+    "Tematy/Files Wstęp do języka Python/Listy, krotki i zbiory.md",
+    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
+    "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
+    "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
+    "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
+    "Tematy/Wstęp do języka Python.md",
+    "Index.md",
+    "Tematy/Images/PythonFruitClass.png",
+    "Tematy/Images/PythonWhere.png",
+    "Tematy/Images/NoIndent.png",
+    "Tematy/Images/PythonDataTypes.png",
+    "Tematy/Images/WhoWantsToBeDataScientist.png",
+    "Tematy/Images/MachingeLearningvsParrot.png",
+    "github.com.md",
+    "().md",
+    "Tematy/Images/Jupyter-logo.svg",
+    "Tematy/Files Wstęp do języka Python",
+    "Tematy/Images/Niepotwierdzony 961399.crdownload",
+    "Tematy/Images",
+    "Tematy"
+  ]
+}
