@@ -1,53 +1,20 @@
 {
   "main": {
-    "id": "12898fe75fb69b56",
+    "id": "cfe487ecfbcd20c3",
     "type": "split",
     "children": [
       {
-        "id": "ec106d1f94d14fc2",
+        "id": "03a8fe4b801ab5d5",
         "type": "tabs",
-        "dimension": 56.79530201342282,
         "children": [
           {
-            "id": "55b032d126e15a10",
+            "id": "005ff23bda9ec557",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "ML-Course/Index.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "685f01e083f1372e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "aa9355f2e02ff488",
-        "type": "tabs",
-        "dimension": 43.20469798657718,
-        "children": [
-          {
-            "id": "705d4da29f3af7e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Index.md",
-                "mode": "preview",
                 "source": false
               }
             }
@@ -58,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7976a6afbef8535a",
+    "id": "ae6e3e9e15a19250",
     "type": "split",
     "children": [
       {
-        "id": "98d511774a8856d9",
+        "id": "fd69e64334cdc0ae",
         "type": "tabs",
         "children": [
           {
-            "id": "b7f629f1a8314d88",
+            "id": "bfbe7e992f36168d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -76,7 +43,7 @@
             }
           },
           {
-            "id": "002d30f8da7b21f5",
+            "id": "ab435a1abdc0cc11",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -91,7 +58,7 @@
             }
           },
           {
-            "id": "f1cef27e3ff9de74",
+            "id": "badcf9ef0469205d",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -105,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "53fa0376af7fe725",
+    "id": "68b0409d23856ce5",
     "type": "split",
     "children": [
       {
-        "id": "39ad529f0f0b9730",
+        "id": "932a4be8881fe7ed",
         "type": "tabs",
         "children": [
           {
-            "id": "bfb1a142d8e3cd26",
+            "id": "7a628b9ef03bfd74",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "ML-Course/Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,19 +97,19 @@
             }
           },
           {
-            "id": "8b19213c799530f7",
+            "id": "7d5a4fefa07b3739",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "ML-Course/Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "4aeacd9e3aa7e4b3",
+            "id": "155e9c81c4825dc7",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -153,17 +120,16 @@
             }
           },
           {
-            "id": "4a9fd04058622173",
+            "id": "443ea2051c30ce13",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md"
+                "file": "ML-Course/Index.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -177,34 +143,9 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "685f01e083f1372e",
-  "lastOpenFiles": [
-    "Index.md",
-    "Tematy/Wstęp do języka Python.md",
-    "Tematy/Files Analiza danych przy pomocy Pandas i numpy",
-    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
-    "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
-    "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
-    "Tematy/Files Wstęp do języka Python/Listy, krotki i zbiory.md",
-    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
-    "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-    "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
-    "Tematy/Images/PythonFruitClass.png",
-    "Tematy/Images/PythonWhere.png",
-    "Tematy/Images/NoIndent.png",
-    "Tematy/Images/PythonDataTypes.png",
-    "Tematy/Images/WhoWantsToBeDataScientist.png",
-    "Tematy/Images/MachingeLearningvsParrot.png",
-    "github.com.md",
-    "().md",
-    "Tematy/Images/Jupyter-logo.svg",
-    "Tematy/Files Wstęp do języka Python",
-    "Tematy/Images/Niepotwierdzony 961399.crdownload",
-    "Tematy/Images",
-    "Tematy"
-  ]
+  "active": "005ff23bda9ec557",
+  "lastOpenFiles": []
 }
