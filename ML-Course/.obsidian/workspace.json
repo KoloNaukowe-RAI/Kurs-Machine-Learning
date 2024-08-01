@@ -6,7 +6,7 @@
       {
         "id": "ec106d1f94d14fc2",
         "type": "tabs",
-        "dimension": 72.21362229102168,
+        "dimension": 70.12383900928792,
         "children": [
           {
             "id": "55b032d126e15a10",
@@ -50,7 +50,7 @@
       {
         "id": "aa9355f2e02ff488",
         "type": "tabs",
-        "dimension": 27.78637770897833,
+        "dimension": 29.876160990712076,
         "children": [
           {
             "id": "705d4da29f3af7e1",
@@ -204,8 +204,8 @@
   },
   "active": "0525f9a7458c7de4",
   "lastOpenFiles": [
-    "Pasted image 20240731233915.png",
     "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
+    "Pasted image 20240731233915.png",
     "Tematy/Wstęp do języka Python.md",
     "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
     "Untitled.md",
