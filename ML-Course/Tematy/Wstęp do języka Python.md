@@ -4,7 +4,7 @@ Python jest szeroko wykorzystywany w uczeniu maszynowym, analizie danych, przy o
 ![[WhoWantsToBeDataScientist.png]]
 Źródło: [^dsm]
 
-W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebooks, które możecie wstawić w celu uruchomienia np. na [Google Colab](https://colab.research.google.com/) lub [Kaggle](https://www.kaggle.com/). Jak chodzi o programowanie w Pythonie (bez Notebooków) to mogę polecić korzystanie z [PyCharm'a](https://www.jetbrains.com/pycharm/).
+W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebooks, które możecie wstawić w celu uruchomienia np. na [Google Colab](https://colab.research.google.com/) lub [Kaggle](https://www.kaggle.com/) lub uruchomić lokalnie np. przy wykorzystaniu [Visual Studio Code](https://code.visualstudio.com/). Jak chodzi o programowanie w Pythonie (bez Notebooków) to mogę polecić korzystanie z [PyCharm'a](https://www.jetbrains.com/pycharm/).
 ![[Jupyter-logo.svg|350]]
 Źródło: [^jpt]
 
@@ -15,12 +15,17 @@ W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebook
 - [[Pętle i instrukcje warunkowe]]
 - [[Listy, krotki i zbiory]]
 - [[Funkcje i klasy]]
+- [[Używanie bibliotek]]
 
 Oczywiście nie są to wszystkie zagadnienia związane z Pythonem. Dostępnych jest wiele kursów, poradników i stron z informacjami i ćwiczeniami na ten temat. Przykładami mogą być [w3schools](https://www.w3schools.com/python/default.asp) i [kaggle](https://www.kaggle.com/learn/python).
 
 # Link do Jupyter Notebook (DODAĆ)
 
 Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/).
+
+# Co dalej?
+
+Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.
 # Źródła:
 [^w3s]: https://www.w3schools.com/python/python_intro.asp
 [^dsm]: https://programmerhumor.io/python-memes/python-10/
