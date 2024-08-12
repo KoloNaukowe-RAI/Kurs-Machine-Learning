@@ -6,74 +6,65 @@
       {
         "id": "ec106d1f94d14fc2",
         "type": "tabs",
-        "dimension": 70.12383900928792,
+        "dimension": 70.91836734693877,
         "children": [
-          {
-            "id": "55b032d126e15a10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "685f01e083f1372e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "0525f9a7458c7de4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
+                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "3634b8df2b66f94b"
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
-        "id": "aa9355f2e02ff488",
+        "id": "92ed5ea96384a9fd",
         "type": "tabs",
-        "dimension": 29.876160990712076,
+        "dimension": 29.081632653061227,
         "children": [
           {
-            "id": "705d4da29f3af7e1",
+            "id": "cbb705132f893e8f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "localgraph",
               "state": {
-                "file": "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
-                "mode": "preview",
-                "source": false
+                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.7132754626224436,
+                  "close": true
+                }
               }
-            }
-          },
-          {
-            "id": "ece19d11433775aa",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
+            },
+            "group": "3634b8df2b66f94b"
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -139,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
+                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
+                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,12 +170,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tematy/Analiza danych przy pomocy Pandas i numpy.md"
+                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -204,18 +194,20 @@
   },
   "active": "0525f9a7458c7de4",
   "lastOpenFiles": [
-    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
-    "Pasted image 20240731233915.png",
-    "Tematy/Wstęp do języka Python.md",
-    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
-    "Untitled.md",
     "Index.md",
-    "Tematy/Files Analiza danych przy pomocy Pandas i numpy",
+    "Tematy/Wstęp do języka Python.md",
+    "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
+    "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md",
     "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
     "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
     "Tematy/Files Wstęp do języka Python/Listy, krotki i zbiory.md",
     "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-    "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
+    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
+    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
+    "Tematy/Images/Libraries_in_python.png",
+    "Untitled.md",
+    "Pasted image 20240731233915.png",
+    "Tematy/Files Analiza danych przy pomocy Pandas i numpy",
     "Tematy/Images/PythonFruitClass.png",
     "Tematy/Images/PythonWhere.png",
     "Tematy/Images/NoIndent.png",
