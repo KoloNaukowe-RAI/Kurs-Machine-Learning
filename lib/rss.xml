@@ -1,12 +1,390 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ML-Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>ML-Course</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 12 Aug 2024 23:45:23 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 12 Aug 2024 23:45:22 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Co dalej]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ML-Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>ML-Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 05 Oct 2024 23:12:26 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 05 Oct 2024 23:12:25 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Co dalej]]></title><description><![CDATA[ 
  <br><img alt="PythonFruitClass.png" src="lib\media\pythonfruitclass.png"><br>
-Źródło: <a data-footref="meme1" href="about:blank#fn-1-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener">Używanie bibliotek</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
+Źródło: <a data-footref="meme1" href="about:blank#fn-1-7cfedce01b7ec733" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener">Używanie bibliotek</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
 <br>
-<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/python-is-easy-they-say/" target="_blank">https://programmerhumor.io/python-memes/python-is-easy-they-say/</a><a href="about:blank#fnref-1-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Funkcje i klasy.md</guid><pubDate>Mon, 12 Aug 2024 22:58:00 GMT</pubDate><enclosure url="lib\media\pythonfruitclass.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\pythonfruitclass.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Jak korzystać z Jupyter Notebooks]]></title><description><![CDATA[ 
- ]]></description><link>tematy\files-wstęp-do-języka-python\jak-korzystać-z-jupyter-notebooks.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md</guid><pubDate>Mon, 12 Aug 2024 21:25:58 GMT</pubDate></item><item><title><![CDATA[Listy, krotki i zbiory]]></title><description><![CDATA[ 
- ]]></description><link>tematy\files-wstęp-do-języka-python\listy,-krotki-i-zbiory.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Listy, krotki i zbiory.md</guid><pubDate>Mon, 12 Aug 2024 21:25:58 GMT</pubDate></item><item><title><![CDATA[Pętle i instrukcje warunkowe]]></title><description><![CDATA[ 
- ]]></description><link>tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md</guid><pubDate>Mon, 12 Aug 2024 21:25:58 GMT</pubDate></item><item><title><![CDATA[Język interpretowany]]></title><description><![CDATA[ 
+<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/python-is-easy-they-say/" target="_blank">https://programmerhumor.io/python-memes/python-is-easy-they-say/</a><a href="about:blank#fnref-1-7cfedce01b7ec733" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Funkcje i klasy.md</guid><pubDate>Sat, 05 Oct 2024 22:12:18 GMT</pubDate><enclosure url="lib\media\pythonfruitclass.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythonfruitclass.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Struktury danych w Python]]></title><description><![CDATA[ 
+ <br><br>W Pythonie możemy wyróżnić następujące struktury danych: listy, krotki, zbiory i słowniki.<br>
+<br>
+Listy są najbardziej uniwersalnymi strukturami danych w Pythonie. Są to uporządkowane, mutowalne kolekcje, które mogą zawierać dowolne elementy. Możesz dodawać, usuwać i modyfikować elementy listy.
+
+<br>
+Tuple (krotki) są podobne do list, ale są niemutowalne, czyli po utworzeniu nie można zmieniać ich elementów. Są często używane do przechowywania danych, które nie powinny być modyfikowane.
+
+<br>
+Sety (zbiory) są nieuporządkowanymi zbiorami unikalnych elementów. Nie mogą zawierać duplikatów. Sety są używane do sprawdzania przynależności elementów, wykonywania operacji zbiorów (np. przecięcia, sumy) oraz usuwania duplikatów z sekwencji.
+
+<br>
+Słowniki to struktury danych, które przechowują pary klucz-wartość. Każdy klucz musi być unikalny. Słowniki są używane do szybkiego wyszukiwania wartości na podstawie klucza.
+
+<br><br># List
+numbers_list = [1, 2, 3, 4, 2]
+mixed_list = [1, "hello", 3.14, True]
+
+# Tuple
+numbers_tuple = (1, 2, 3, 4, 2)
+mixed_tuple = (1, "hello", 3.14, True)
+
+# Set
+numbers_set = {1, 2, 3, 4, 2}   # Przechowa jedynie unikalne wartosci {1,2,3,4} 
+mixed_set = {1, "hello", 3.14, True}
+
+# Dictionary
+num_as_key = {25: "John", 30: "Jane"}
+str_as_key = {"name": "Alice", "age": 28, "city": "London"}
+Copy<br><br><br># Tworzenie listy
+fruits = ["apple", "banana", "cherry"]
+
+# Dodawanie elementu na koniec
+fruits.append("orange")
+print(fruits)  # Wynik: ['apple', 'banana', 'cherry', 'orange']
+
+# Wstawianie elementu na określone miejsce
+fruits.insert(1, "grape")
+print(fruits)  # Wynik: ['apple', 'grape', 'banana', 'cherry', 'orange']
+
+# Usuwanie elementu po wartości
+fruits.remove("banana")
+print(fruits)  # Wynik: ['apple', 'grape', 'cherry', 'orange']
+
+# Usuwanie elementu po indeksie
+del fruits[2]
+print(fruits)  # Wynik: ['apple', 'grape', 'orange']
+
+# Dostęp do elementu
+print(fruits[0])  # Wynik: apple
+
+# Długość listy
+print(len(fruits))  # Wynik: 3
+
+# Sortowanie listy
+fruits.sort()
+print(fruits)  # Wynik: ['apple', 'grape', 'orange'] (sortowanie alfabetyczne)
+Copy<br><br>Krotki są niemutowalne, więc nie można dodawać ani usuwać elementów po ich utworzeniu!!! Aby zrobić zmiany można skopiować wartości z już istniejącej tupli do nowej.<br># Tworzenie tuple
+numbers = (1, 2, 3)
+
+# Dostęp do elementu
+print(numbers[1])  # Wynik: 2
+
+# Długość tuple
+print(len(numbers))  # Wynik: 3
+Copy<br><br># Tworzenie setu
+my_set = {1, 2, 3, 2}  # Duplikaty są usuwane
+
+# Dodawanie elementu
+my_set.add(4)
+print(my_set)  # Wynik: {1, 2, 3, 4}
+
+# Usuwanie elementu
+my_set.remove(2)
+print(my_set)  # Wynik: {1, 3, 4}
+
+# Długość setu
+print(len(my_set))  # Wynik: 3
+
+# Operacje na zbiorach (przecięcie, suma, różnica)
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+print(set1.union(set2))  # Suma zbiorów: {1, 2, 3, 4}
+print(set1.intersection(set2))  # Przecięcie zbiorów: {2, 3}
+Copy<br><br># Tworzenie słownika
+person = {"name": "John", "age": 30, "city": "New York"}
+
+# Dodawanie pary klucz-wartość
+person["country"] = "USA"
+print(person)
+
+# Usuwanie pary klucz-wartość
+del person["age"]
+print(person)
+
+# Dostęp do wartości
+print(person["name"])  # Wynik: John
+
+# Długość słownika (liczba par klucz-wartość)
+print(len(person))  # Wynik: 2
+
+# Sprawdzenie, czy klucz istnieje
+if "city" in person:
+    print("Klucz 'city' istnieje")
+Copy<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Pętle i instrukcje warunkowe" href="tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html" class="internal-link" target="_self" rel="noopener">Pętle i instrukcje warunkowe</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md</guid><pubDate>Sat, 05 Oct 2024 22:55:15 GMT</pubDate></item><item><title><![CDATA[Pętle w języku Python]]></title><description><![CDATA[ 
+ <br><br>Pętle w Pythonie służą do wielokrotnego wykonywania bloku kodu, tak długo jak dany warunek jest spełniony. Są wykorzystywane przy powtarzalnych zadaniach. Python oferuje dwa główne typy pętli: for i while.<br>W obu pętlach możliwe jest wykorzystanie dodatkowych funkcji:<br>
+<br>break - przerwanie wykonania pętli,
+<br>continue - przejście do następnej iteracji pętli (dalsza część obecnej iteracji się nie wykona).
+<br><br>Pętla while wykonuje się tak długo, jak długo określony warunek jest prawdziwy.<br>count = 0
+while count &lt; 5:
+    print(count)
+    count += 1
+Copy<br><br>Pętla for służy do iterowania po sekwencjach:<br># Iterowanie po zakresie liczb
+for i in range(5):
+    print(i)
+
+# Iterowanie po liście
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+Copy<br>Możliwe jest również wykorzystanie funkcji enumerate(zmienna), aby podczas iterowania po sekwencji mieć również informację o indeksie elementu:<br>fruits = ["apple", "banana", "cherry"]
+
+for index, fruit in enumerate(fruits):
+    print(f"Owoc na pozycji {index}: {fruit}")
+
+
+# enumerate można też wykorzystać do utworzenia słownika
+my_dict = dict(enumerate(fruits)) 
+print(my_dict) # Wynik: {0: 'apple', 1: 'banana', 2: 'cherry'}
+Copy<br><br>Za pomocą pętli w Pythonie można w bardzo zwięzły i czytelny sposób tworzyć lub modyfikować listy:<br># Przykład 1
+numbers = [1, 2, 3, 4, 5] 
+squares = [x**2 for x in numbers] 
+print(squares) # Wynik: [1, 4, 9, 16, 25]
+
+# Przykład 2
+words = ["apple", "banana", "cherry", "eagle"]
+vowels = "aeiou" 
+filtered_words = [word for word in words if word[0] in vowels] print(filtered_words) # Wynik: ['apple', 'eagle']
+
+# `for word in words`: Iteruje po każdym słowie w liście `words`.
+# `if word[0] in vowels`: Sprawdza, czy pierwsza litera słowa jest samogłoską.
+# Jeśli warunek jest spełniony, słowo jest dodawane do nowej listy `filtered_words`
+Copy<br><br>Instrukcje warunkowe pozwalają na wykonanie określonych fragmentów kodu w zależności od spełnienia określonych warunków/kryteriów. Wyróżnić można następujące instrukcje:<br>
+<br>if - podstawowy (pierwszy) warunek do sprawdzenia,
+<br>elif - sprawdzenie kolejnego warunku, jeżeli poprzednie nie były spełnione,
+<br>else - wykonanie w przypadku, gdy żaden wcześniejszy warunek nie został spełniony.
+<br>Dostępne są następujące operatory porównania<br>
+<br>== - równe,
+<br>!= - różne,
+<br>&lt; - mniejsze niż,
+<br>&lt;= - mniejsze lub równe,
+<br>&gt; - większe niż,
+<br>&gt;= - większe lub równe;<br>
+oraz następujące operatory logiczne
+<br>and - oba warunki muszą być spełnione,
+<br>or - przynajmniej jeden warunek musi być spełniony,
+<br>not - negacja warunku.
+<br>Przykłady:<br># Przykład 1
+liczba = 10
+
+if liczba &gt; 0:
+    print("Liczba jest dodatnia.")
+elif liczba &lt; 0:
+    print("Liczba jest ujemna.")
+else:
+    print("Liczba jest równa zero.")
+
+
+# Przykład 2
+x = 10
+y = 5
+
+if x &gt; 5 and y &lt; 10:
+	print("Oba warunki są spełnione.")
+elif x &gt; 5 and not y &lt; 10:
+	print("X jest wiekszy niz 5, a y nie jest wiekszy niz 10.")
+Copy<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Funkcje i klasy" href="tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html" class="internal-link" target="_self" rel="noopener">Funkcje i klasy</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md</guid><pubDate>Sat, 05 Oct 2024 23:11:02 GMT</pubDate></item><item><title><![CDATA[Podstawowe typy danych w języku Python]]></title><description><![CDATA[ 
+ <br><br>Typ danych określa rodzaj informacji, którą możemy przechowywać w zmiennej. Python jest językiem dynamicznie typowanym, co oznacza, że nie musimy jawnie deklarować typu zmiennej przed jej użyciem. Interpreter automatycznie rozpoznaje typ na podstawie przypisanej wartości.<br><br>Przykłady tworzenia zmiennych poszczególnych typów (do przypisania służy =):<br>i = 37       # int
+f = 92.13    # float
+s = "Hello!" # string
+b = True     # bool
+Copy<br>Do sprawdzania typu zmiennej służy funkcja type(zmienna):<br>a = 13.23
+print(type(a)) # &lt;class 'float'&gt;
+Copy<br>Ze względu na dynamiczne typowanie, w Pythonie możliwe jest nadpisywanie typu danych, np:<br>x = 5.93
+x = "Hello"
+Copy<br>Możliwa jest również konwersja typów przy pomocy funkcji int(zmienna), float(zmienna) lub str(zmienna):<br>num = 927.27
+num_as_str = str(num)
+print(num_as_str)      # "927.27"
+Copy<br><img alt="PythonDataTypes.png" src="lib\media\pythondatatypes.png"><br>
+Źródło: <a data-footref="meme1" href="about:blank#fn-1-7cfedce01b7ec733" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br><br>W języku Python dostępne są następujące operatory arytmetyczne do zmiennych liczbowych.<br><br>Możliwe jest również wykorzystanie skróconych przypisań, co jest przydatne przy zmianie wartości, a służą do tego +=, -=, *=, /=, %=, **=.<br><br>Dla ciągów znaków nie można bezpośrednio zastosować tych samych operatorów arytmetycznych. Konieczna jest wpierw konwersja stringa na liczbę przy użyciu int(zmienna) lub float(zmienna). Stringi są niemutowalne, więc nie można zmienić pojedynczych znaków, a trzeba utworzyć nowy string.<br>Funkcje/operatory dostępne do wykorzystania ze stringami:<br><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Listy, krotki, zbiory i słowniki" href="tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html" class="internal-link" target="_self" rel="noopener">Listy, krotki, zbiory i słowniki</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
+<br>
+<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/im-a-python-programmer-2/" target="_blank">https://programmerhumor.io/python-memes/im-a-python-programmer-2/</a><a href="about:blank#fnref-1-7cfedce01b7ec733" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md</guid><pubDate>Sat, 05 Oct 2024 22:44:54 GMT</pubDate><enclosure url="lib\media\pythondatatypes.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythondatatypes.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie]]></title><description><![CDATA[ 
+ <br><img alt="datavis.png" src="tematy\images\datavis.png"><br>Omówienie najpopularniejszych bibliotek do wizualizacji danych:<br><br>Szczegółowe dokumentacje:<br>
+<br><a data-tooltip-position="top" aria-label="https://matplotlib.org/stable/contents.html" rel="noopener" class="external-link" href="https://matplotlib.org/stable/contents.html" target="_blank">Matplotlib Documentation</a>
+<br><a data-tooltip-position="top" aria-label="https://seaborn.pydata.org/" rel="noopener" class="external-link" href="https://seaborn.pydata.org/" target="_blank">Seaborn Documentation</a>
+<br><a data-tooltip-position="top" aria-label="https://plotly.com/python/" rel="noopener" class="external-link" href="https://plotly.com/python/" target="_blank">Plotly Documentation</a>
+<br>Przykładowy wykres przy pomocy biblioteki matplotlib:<br>import matplotlib.pyplot as plt
+import pandas as pd
+
+
+data = {
+    'Miesiąc': ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'],
+    'Przychody (tys. USD)': [9500, 9800, 10200, 10300, 11000, 11500, 12000, 12500, 11500, 11000, 10500, 9900]
+}
+
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(12, 6))
+plt.plot(df['Miesiąc'], df['Przychody (tys. USD)'], marker='o', linestyle='-', color='teal')
+plt.title('Miesięczne przychody spółki w 2023 roku')
+plt.xlabel('Miesiąc')
+plt.ylabel('Przychody (tys. USD)')
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+
+Copy<br><br>
+Przykładowy wykres słupkowy przy pomocy biblioteki seaborn:<br>import seaborn as sns 
+import pandas as pd
+
+data = { 
+		'Miasto': ['Warszawa', 'Kraków', 'Gdańsk', 'Wrocław', 'Poznań', 'Szczecin', 'Olsztyn'], 
+	    'Cena': [800, 750, 700, 680, 650, 620, 570, 490] 
+	    }
+	    
+df = pd.DataFrame(data)
+
+sns.barplot(x='Miasto', y='Cena', data=df, palette='viridis') 
+plt.title('Cena mieszkań w różnych miastach') 
+plt.xlabel('Miasto')
+plt.ylabel('Cena mieszkania (w tys. PLN)') 
+plt.show()
+
+
+Copy<br>Przykładowy wykres kołowy przy pomocy biblioteki seaborn:<br>import seaborn as sns  
+import pandas as pd  
+import matplotlib.pyplot as plt  
+  
+  
+data = {  
+    'Kategoria': ['Narzędzia', 'Oświetlenie', 'Farby i lakiery', 'Ogrodnictwo', 'Meble'],  
+    'Udział': [30, 20, 25, 15, 10]  
+}  
+  
+df = pd.DataFrame(data)  
+  
+plt.figure(figsize=(8, 8))  
+plt.pie(df['Udział'], labels=df['Kategoria'], autopct='%1.1f%%', colors=sns.color_palette('Set1'))  
+plt.title('Udział kategorii produktów w sprzedaży w sklepie OBI')  
+plt.show()
+
+
+
+Copy<br>Przykładowe wykresy przy pomocy biblioteki Plotly:<br># wykres kołowy 
+
+import plotly.express as px  
+import pandas as pd  
+
+data = {  
+    'Producent': ['Apple', 'Samsung', 'Huawei', 'Xiaomi', 'Oppo'],  
+    'Udział': [40, 30, 15, 10, 5]  
+}  
+  
+df = pd.DataFrame(data)  
+  
+fig = px.pie(df, values='Udział', names='Producent', title='Udział rynkowy producentów telefonów')  
+fig.update_traces(textinfo='percent+label')  
+fig.show()
+
+Copy<br># wykres słupkowy  
+import plotly.graph_objects as go  
+import pandas as pd  
+  
+
+data = {  
+    'Kraj': ['USA', 'Chiny', 'Japonia', 'Wielka Brytania', 'Australia'],  
+    'Złote': [15, 12, 10, 8, 7],  
+    'Srebrne': [10, 11, 9, 8, 6],  
+    'Brązowe': [10, 7, 8, 6, 6]  
+}  
+  
+df = pd.DataFrame(data)  
+fig = go.Figure()  
+  
+
+fig.add_trace(go.Bar(  
+    x=df['Kraj'],  
+    y=df['Złote'],  
+    name='Złote',  
+    marker_color='gold'  
+))  
+  
+fig.add_trace(go.Bar(  
+    x=df['Kraj'],  
+    y=df['Srebrne'],  
+    name='Srebrne',  
+    marker_color='silver'  
+))  
+  
+fig.add_trace(go.Bar(  
+    x=df['Kraj'],  
+    y=df['Brązowe'],  
+    name='Brązowe',  
+    marker_color='#cd7f32'  
+))  
+   
+fig.update_layout(  
+    title='Liczba medali dla Top 5 Krajów na Igrzyskach Olimpijskich w Paryżu 2024',  
+    xaxis_title='Kraj',  
+    yaxis_title='Liczba Medali',  
+    barmode='group',    
+template='plotly_white'  
+)  
+  
+fig.show()
+Copy<br>
+import plotly.graph_objects as go  
+import pandas as pd  
+  
+
+data = {  
+    'Data': ['2024-07-01', '2024-07-15', '2024-08-01', '2024-08-15', '2024-09-01'],  
+    'Manchester City': [10, 12, 15, 18, 20],  
+    'Real Madryt': [8, 10, 12, 14, 17],  
+    'Bayern Monachium': [9, 11, 14, 16, 19],  
+    'Paris Saint-Germain': [7, 9, 13, 15, 18],  
+    'Liverpool': [6, 8, 11, 13, 16]  
+}  
+  
+df = pd.DataFrame(data)  
+df['Data'] = pd.to_datetime(df['Data'])  
+  
+  
+fig = go.Figure()  
+  
+for team in df.columns[1:]:  
+    fig.add_trace(go.Scatter(  
+        x=df['Data'],  
+        y=df[team],  
+        mode='lines+markers',  
+        name=team,  
+        text=df[team],  
+        textposition='top center'  
+    ))  
+
+fig.update_layout(  
+    title='Zmiana punktacji Drużyn UEFA w ciągu kilku tygodni',  
+    xaxis_title='Data',  
+    yaxis_title='Punkty',  
+    legend_title='Drużyna',  
+    template='plotly_dark',  
+    xaxis=dict(  
+        tickformat='%Y-%m-%d',  
+        tickvals=df['Data'],  
+        ticktext=[date.strftime('%b %d') for date in df['Data']]  
+    )  
+)  
+  
+fig.show()
+Copy]]></description><link>tematy\wizualizacja-danych-za-pomocą-bibliotek-matplotlib,-seaborn-i-plotly-w-pytonie.html</link><guid isPermaLink="false">Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md</guid><pubDate>Sat, 05 Oct 2024 17:28:54 GMT</pubDate><enclosure url="tematy\images\datavis.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\datavis.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Wstęp do języka Python]]></title><description><![CDATA[ 
+ <br>Pierwszym tematem kursu będzie krótki wstęp do programowania w Pythonie, bo będzie to język, który będziemy wykorzystywać w zadaniach i projekcie końcowym. Konkretnie powiemy tu o wersji Python 3.<br>Python jest szeroko wykorzystywany w uczeniu maszynowym, analizie danych, przy obliczeniach matematycznych, aplikacjach webowych po stronie serwera oraz do szybkiego prototypowania. Można go wykorzystać na różnych systemach, nie wymaga kompilatora, a jego składnia jest stosunkowo prosta i przypomina język angielski <a data-footref="w3s" href="about:blank#fn-1-7cfedce01b7ec733" class="footnote-link" target="_self" rel="noopener">[1]</a>.<br>
+<img alt="WhoWantsToBeDataScientist.png" src="tematy\images\whowantstobedatascientist.png"><br>
+Źródło: <a data-footref="dsm" href="about:blank#fn-2-7cfedce01b7ec733" class="footnote-link" target="_self" rel="noopener">[2]</a><br>W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebooks, które możecie wstawić w celu uruchomienia np. na <a data-tooltip-position="top" aria-label="https://colab.research.google.com/" rel="noopener" class="external-link" href="https://colab.research.google.com/" target="_blank">Google Colab</a> lub <a data-tooltip-position="top" aria-label="https://www.kaggle.com/" rel="noopener" class="external-link" href="https://www.kaggle.com/" target="_blank">Kaggle</a> lub uruchomić lokalnie np. przy wykorzystaniu <a data-tooltip-position="top" aria-label="https://code.visualstudio.com/" rel="noopener" class="external-link" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. Jak chodzi o programowanie w Pythonie (bez Notebooków) to mogę polecić korzystanie z <a data-tooltip-position="top" aria-label="https://www.jetbrains.com/pycharm/" rel="noopener" class="external-link" href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm'a</a>.<br>
+<img alt="Jupyter-logo.svg" src="tematy\images\jupyter-logo.svg" style="width: 350px; max-width: 100%;"><br>
+Źródło: <a data-footref="jpt" href="about:blank#fn-3-7cfedce01b7ec733" class="footnote-link" target="_self" rel="noopener">[3]</a><br><br>
+<br><a data-href="Jak korzystać z Jupyter Notebooks" href="tematy\files-wstęp-do-języka-python\jak-korzystać-z-jupyter-notebooks.html" class="internal-link" target="_self" rel="noopener">Jak korzystać z Jupyter Notebooks</a>
+<br><a data-href="Składnia w języku Python" href="tematy\files-wstęp-do-języka-python\składnia-w-języku-python.html" class="internal-link" target="_self" rel="noopener">Składnia w języku Python</a>
+<br><a data-href="Zmienne i podstawowe typy danych" href="tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html" class="internal-link" target="_self" rel="noopener">Zmienne i podstawowe typy danych</a>
+<br><a data-href="Listy, krotki, zbiory i słowniki" href="tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html" class="internal-link" target="_self" rel="noopener">Listy, krotki, zbiory i słowniki</a>
+<br><a data-href="Pętle i instrukcje warunkowe" href="tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html" class="internal-link" target="_self" rel="noopener">Pętle i instrukcje warunkowe</a>
+<br><a data-href="Funkcje i klasy" href="tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html" class="internal-link" target="_self" rel="noopener">Funkcje i klasy</a>
+<br><a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener">Używanie bibliotek</a>
+<br>Oczywiście nie są to wszystkie zagadnienia związane z Pythonem. Dostępnych jest wiele kursów, poradników i stron z informacjami i ćwiczeniami na ten temat. Przykładami mogą być <a data-tooltip-position="top" aria-label="https://www.w3schools.com/python/default.asp" rel="noopener" class="external-link" href="https://www.w3schools.com/python/default.asp" target="_blank">w3schools</a> i <a data-tooltip-position="top" aria-label="https://www.kaggle.com/learn/python" rel="noopener" class="external-link" href="https://www.kaggle.com/learn/python" target="_blank">kaggle</a>.<br><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej kursu.<br><br><br><br><br>
+<br>
+<br><a rel="noopener" class="external-link" href="https://www.w3schools.com/python/python_intro.asp" target="_blank">https://www.w3schools.com/python/python_intro.asp</a><a href="about:blank#fnref-1-7cfedce01b7ec733" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/python-10/" target="_blank">https://programmerhumor.io/python-memes/python-10/</a><a href="about:blank#fnref-2-7cfedce01b7ec733" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a rel="noopener" class="external-link" href="https://www.jetbrains.com/pycharm/" target="_blank">https://www.jetbrains.com/pycharm/</a><a href="about:blank#fnref-3-7cfedce01b7ec733" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>tematy\wstęp-do-języka-python.html</link><guid isPermaLink="false">Tematy/Wstęp do języka Python.md</guid><pubDate>Sat, 05 Oct 2024 22:44:54 GMT</pubDate><enclosure url="tematy\images\whowantstobedatascientist.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\whowantstobedatascientist.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Jak korzystać z Jupyter Notebooks]]></title><description><![CDATA[ 
+ ]]></description><link>tematy\files-wstęp-do-języka-python\jak-korzystać-z-jupyter-notebooks.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md</guid><pubDate>Mon, 12 Aug 2024 21:25:58 GMT</pubDate></item><item><title><![CDATA[Język interpretowany]]></title><description><![CDATA[ 
  <br><br>Python jest językiem interpretowanym, więc do korzystania z niego nie jest wymagany kompilator (wykorzystywany jest interpreter). Innymi przykładami tego typu języków są Bash, PHP lub JavaScript. Oznacza to, że skrypt jest przechowywany w formie kodu i interpretowany przy każdym uruchomieniu, a nie konwertowany na kod maszynowy jednorazowo <a data-footref="interp" href="about:blank#fn-1-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[1]</a>.<br><br><img alt="PythonWhere.png" src="lib\media\pythonwhere.png"><br>
 Źródło: <a data-footref="meme2" href="about:blank#fn-2-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[2]</a><br>Tak jak na obrazku powyżej, programując w Pythonie na końcu linii nie stawia się średnika. Dla tych, którym w C++ się o tym zapomina, może być to ułatwienie, ale dla osób, które pisały "kilka linijek w jednej linijce" i oddzielały je średnikami to będzie wymagało przestawienia.<br>Na obrazku powyżej wspomniane były też klamry, bo ich też nie ma (więcej o tym jak wyglądają pętle i instrukcje warunkowe będzie dalej). Ale jeśli nie ma klamr, to skąd interpreter ma wiedzieć, które linie kodu są wewnątrz if'a, a które już poza? I tutaj przechodzimy do kolejnego obrazka...<br><img alt="NoIndent.png" src="lib\media\noindent.png"><br>
 Źródło: <a data-footref="meme1" href="about:blank#fn-3-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[3]</a><br><br>Programując w C++ wcięcia zwiększają jedynie czytelność kodu dla programisty i można je pomijać. W przypadku Pythona wcięcia muszą być identyczne, żeby interpreter dobrze przetworzył kod. Wydaje mi się, że najlepiej jest to pokazać na przykładzie, więc taki znajduje się poniżej.<br>for i in range(3): 
@@ -35,7 +413,7 @@ Copy<br>Możliwe są również komentarze wieloliniowe poprzez umieszczenie ich 
 <br><a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Interpreter_(computing)" target="_blank">https://en.wikipedia.org/wiki/Interpreter_(computing)</a><a href="about:blank#fnref-1-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 <br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/after-using-only-c-and-c-for-years-python-felt-kinda-strange/" target="_blank">https://programmerhumor.io/python-memes/after-using-only-c-and-c-for-years-python-felt-kinda-strange/</a><a href="about:blank#fnref-2-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 <br><a rel="noopener" class="external-link" href="https://programmerhumor.io/programming-memes/no-offence-python-from-one-python-lover-to-others/" target="_blank">https://programmerhumor.io/programming-memes/no-offence-python-from-one-python-lover-to-others/</a><a href="about:blank#fnref-3-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\składnia-w-języku-python.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Składnia w języku Python.md</guid><pubDate>Mon, 12 Aug 2024 22:21:18 GMT</pubDate><enclosure url="lib\media\pythonwhere.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\pythonwhere.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Po co używać biblioteki?]]></title><description><![CDATA[ 
+]]></description><link>tematy\files-wstęp-do-języka-python\składnia-w-języku-python.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Składnia w języku Python.md</guid><pubDate>Mon, 12 Aug 2024 22:21:18 GMT</pubDate><enclosure url="lib\media\pythonwhere.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythonwhere.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Po co używać biblioteki?]]></title><description><![CDATA[ 
  <br><br>Jeżeli będziemy pracowali nad jakimś projektem związanym z ... w sumie praktycznie z czymkolwiek to jest duże prawdopodobieństwo, że ktoś już coś podobnego robił i potrzebował do tego przygotować sobie narzędzia (funkcje, klasy) i stworzył z ich wykorzystaniem bibliotekę, więc możemy ją pobrać i korzystać z tego co ktoś przygotował i zaoszczędzić przy tym czas. Wg <a data-footref="mgl" href="about:blank#fn-1-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[1]</a> istnieje ponad 137.000 bibliotek, ale spokojnie, my będziemy korzystać z kilkunastu (być może kilkudziesięciu, ale to pojedyncze funkcje będą). To jak dużo jest bibliotek dobrze jest widoczne na zrzucie ekranu poniżej.<br><img alt="Libraries_in_python.png" src="lib\media\libraries_in_python.png"><br><br>Instalowanie bibliotek odbywa się z wykorzystaniem pip. Najlepiej odszukać w internecie nazwę interesującej nas biblioteki (bo nie zawsze nazwa przy importowaniu jest jednakowa jak przy instalacji), a następnie w konsoli użyć komendy:<br>pip install nazwa_biblioteki
 Copy<br>W przypadku instalowania wielu bibliotek można to zrobić następująco:<br>pip install nazwa_biblioteki1 nazwa_biblioteki2
 Copy<br>Czasami może być konieczność zainstalowania konkretnej wersji biblioteki (np. aby była kompatybilna z inną biblioteką). Należy wówczas użyć:<br>pip install nazwa_biblioteki==wersja
@@ -62,12 +440,7 @@ array_sum = np.sum(array)
 Copy<br><br>Kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.<br><br><br>
 <br>
 <br><a rel="noopener" class="external-link" href="https://www.mygreatlearning.com/blog/open-source-python-libraries/" target="_blank">https://www.mygreatlearning.com/blog/open-source-python-libraries/</a><a href="about:blank#fnref-1-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\używanie-bibliotek.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Używanie bibliotek.md</guid><pubDate>Mon, 12 Aug 2024 23:20:23 GMT</pubDate><enclosure url="lib\media\libraries_in_python.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\libraries_in_python.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Co dalej]]></title><description><![CDATA[ 
- <br><img alt="PythonDataTypes.png" src="lib\media\pythondatatypes.png"><br>
-Źródło: <a data-footref="meme1" href="about:blank#fn-1-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Pętle i instrukcje warunkowe" href="tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html" class="internal-link" target="_self" rel="noopener">Pętle i instrukcje warunkowe</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
-<br>
-<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/im-a-python-programmer-2/" target="_blank">https://programmerhumor.io/python-memes/im-a-python-programmer-2/</a><a href="about:blank#fnref-1-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md</guid><pubDate>Mon, 12 Aug 2024 22:17:57 GMT</pubDate><enclosure url="lib\media\pythondatatypes.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib\media\pythondatatypes.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Analiza danych przy pomocy Pandas i numpy]]></title><description><![CDATA[ 
+]]></description><link>tematy\files-wstęp-do-języka-python\używanie-bibliotek.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Używanie bibliotek.md</guid><pubDate>Mon, 12 Aug 2024 23:20:23 GMT</pubDate><enclosure url="lib\media\libraries_in_python.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\libraries_in_python.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Analiza danych przy pomocy Pandas i numpy]]></title><description><![CDATA[ 
  <br>Pandas to biblioteka w języku Python, stworzona z myślą o łatwiej i efektywnej analizie danych.<br>Pandas pozwala na szybkie, elastyczne i intuicyjne operacje na danych, zarówno jednowymiarowych (Series), jak i wielowymiarowych (DataFrame).<br> [Eksploracja Danych]<br>Możliwości biblioteki Pandas:<br>
 <br>Wczytywanie i zapisywanie danych w różnych formatach:  CSV, Excel, JSON i SQL
 <br>Przekształcanie i czyszczenie danych: 
@@ -155,24 +528,6 @@ Copy<br><br>
 Obliczanie średniej:<br>a = np.array([1, 2, 3, 4, 5])
 mean = np.mean(a)
 print(mean)
-Copy]]></description><link>tematy\analiza-danych-przy-pomocy-pandas-i-numpy.html</link><guid isPermaLink="false">Tematy/Analiza danych przy pomocy Pandas i numpy.md</guid><pubDate>Mon, 12 Aug 2024 21:26:26 GMT</pubDate></item><item><title><![CDATA[Wstęp do języka Python]]></title><description><![CDATA[ 
- <br>Pierwszym tematem kursu będzie krótki wstęp do programowania w Pythonie, bo będzie to język, który będziemy wykorzystywać w zadaniach i projekcie końcowym. Konkretnie powiemy tu o wersji Python 3.<br>Python jest szeroko wykorzystywany w uczeniu maszynowym, analizie danych, przy obliczeniach matematycznych, aplikacjach webowych po stronie serwera oraz do szybkiego prototypowania. Można go wykorzystać na różnych systemach, nie wymaga kompilatora, a jego składnia jest stosunkowo prosta i przypomina język angielski <a data-footref="w3s" href="about:blank#fn-1-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[1]</a>.<br>
-<img alt="WhoWantsToBeDataScientist.png" src="tematy\images\whowantstobedatascientist.png"><br>
-Źródło: <a data-footref="dsm" href="about:blank#fn-2-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[2]</a><br>W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebooks, które możecie wstawić w celu uruchomienia np. na <a data-tooltip-position="top" aria-label="https://colab.research.google.com/" rel="noopener" class="external-link" href="https://colab.research.google.com/" target="_blank">Google Colab</a> lub <a data-tooltip-position="top" aria-label="https://www.kaggle.com/" rel="noopener" class="external-link" href="https://www.kaggle.com/" target="_blank">Kaggle</a> lub uruchomić lokalnie np. przy wykorzystaniu <a data-tooltip-position="top" aria-label="https://code.visualstudio.com/" rel="noopener" class="external-link" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. Jak chodzi o programowanie w Pythonie (bez Notebooków) to mogę polecić korzystanie z <a data-tooltip-position="top" aria-label="https://www.jetbrains.com/pycharm/" rel="noopener" class="external-link" href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm'a</a>.<br>
-<img alt="Jupyter-logo.svg" src="tematy\images\jupyter-logo.svg" style="width: 350px; max-width: 100%;"><br>
-Źródło: <a data-footref="jpt" href="about:blank#fn-3-e7278561d5bd0047" class="footnote-link" target="_self" rel="noopener">[3]</a><br><br>
-<br><a data-href="Jak korzystać z Jupyter Notebooks" href="tematy\files-wstęp-do-języka-python\jak-korzystać-z-jupyter-notebooks.html" class="internal-link" target="_self" rel="noopener">Jak korzystać z Jupyter Notebooks</a>
-<br><a data-href="Składnia w języku Python" href="tematy\files-wstęp-do-języka-python\składnia-w-języku-python.html" class="internal-link" target="_self" rel="noopener">Składnia w języku Python</a>
-<br><a data-href="Zmienne i podstawowe typy danych" href="tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html" class="internal-link" target="_self" rel="noopener">Zmienne i podstawowe typy danych</a>
-<br><a data-href="Pętle i instrukcje warunkowe" href="tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html" class="internal-link" target="_self" rel="noopener">Pętle i instrukcje warunkowe</a>
-<br><a data-href="Listy, krotki i zbiory" href="tematy\files-wstęp-do-języka-python\listy,-krotki-i-zbiory.html" class="internal-link" target="_self" rel="noopener">Listy, krotki i zbiory</a>
-<br><a data-href="Funkcje i klasy" href="tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html" class="internal-link" target="_self" rel="noopener">Funkcje i klasy</a>
-<br><a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener">Używanie bibliotek</a>
-<br>Oczywiście nie są to wszystkie zagadnienia związane z Pythonem. Dostępnych jest wiele kursów, poradników i stron z informacjami i ćwiczeniami na ten temat. Przykładami mogą być <a data-tooltip-position="top" aria-label="https://www.w3schools.com/python/default.asp" rel="noopener" class="external-link" href="https://www.w3schools.com/python/default.asp" target="_blank">w3schools</a> i <a data-tooltip-position="top" aria-label="https://www.kaggle.com/learn/python" rel="noopener" class="external-link" href="https://www.kaggle.com/learn/python" target="_blank">kaggle</a>.<br><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej kursu.<br><br><br><br><br>
-<br>
-<br><a rel="noopener" class="external-link" href="https://www.w3schools.com/python/python_intro.asp" target="_blank">https://www.w3schools.com/python/python_intro.asp</a><a href="about:blank#fnref-1-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/python-10/" target="_blank">https://programmerhumor.io/python-memes/python-10/</a><a href="about:blank#fnref-2-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br><a rel="noopener" class="external-link" href="https://www.jetbrains.com/pycharm/" target="_blank">https://www.jetbrains.com/pycharm/</a><a href="about:blank#fnref-3-e7278561d5bd0047" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>tematy\wstęp-do-języka-python.html</link><guid isPermaLink="false">Tematy/Wstęp do języka Python.md</guid><pubDate>Mon, 12 Aug 2024 23:22:23 GMT</pubDate><enclosure url="tematy\images\whowantstobedatascientist.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;tematy\images\whowantstobedatascientist.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Cześć!]]></title><description><![CDATA[ 
+Copy]]></description><link>tematy\analiza-danych-przy-pomocy-pandas-i-numpy.html</link><guid isPermaLink="false">Tematy/Analiza danych przy pomocy Pandas i numpy.md</guid><pubDate>Mon, 12 Aug 2024 21:26:26 GMT</pubDate></item><item><title><![CDATA[Cześć!]]></title><description><![CDATA[ 
  <br><br>Witaj na kursie wprowadzającym do uczenia maszynowego. Wybierz interesujący Cię temat z listy poniżej:<br><br><br><a data-tooltip-position="top" aria-label="https://github.com/dariak153" rel="noopener" class="external-link" href="https://github.com/dariak153" target="_blank">@dariak153</a><br>
 <a data-tooltip-position="top" aria-label="https://github.com/mmcza" rel="noopener" class="external-link" href="https://github.com/mmcza" target="_blank">@mmcza</a>]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Mon, 12 Aug 2024 23:35:06 GMT</pubDate></item></channel></rss>

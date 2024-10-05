@@ -12,8 +12,8 @@ W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebook
 - [[Jak korzystać z Jupyter Notebooks]]
 - [[Składnia w języku Python]]
 - [[Zmienne i podstawowe typy danych]]
+- [[Listy, krotki, zbiory i słowniki]]
 - [[Pętle i instrukcje warunkowe]]
-- [[Listy, krotki i zbiory]]
 - [[Funkcje i klasy]]
 - [[Używanie bibliotek]]
 
