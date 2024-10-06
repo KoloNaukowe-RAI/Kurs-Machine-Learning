@@ -64,7 +64,7 @@ array = data_frame.to_numpy()
 # Obliczenie sumy wszystkich elementów wektora
 array_sum = np.sum(array)
 ```
-# Co dalej
+# Co dalej?
 
 Kliknij [[Wstęp do języka Python|tutaj]], aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.
 

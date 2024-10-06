@@ -122,7 +122,7 @@ class Osoba:
 
 ![[PythonFruitClass.png]]
 Źródło: [^meme1]
-# Co dalej
+# Co dalej?
 
 Przejdź do kolejnego zagadnienia ([[Używanie bibliotek]]) lub kliknij [[Wstęp do języka Python|tutaj]], aby wrócić do strony głównej tematu.
 # Źródła:

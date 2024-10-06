@@ -106,5 +106,5 @@ if x > 5 and y < 10:
 elif x > 5 and not y < 10:
 	print("X jest wiekszy niz 5, a y nie jest wiekszy niz 10.")
 ```
-# Co dalej
+# Co dalej?
 Przejdź do kolejnego zagadnienia ([[Funkcje i klasy]]) lub kliknij [[Wstęp do języka Python|tutaj]], aby wrócić do strony głównej tematu.

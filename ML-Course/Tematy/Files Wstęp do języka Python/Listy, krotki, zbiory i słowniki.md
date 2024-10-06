@@ -128,5 +128,5 @@ if "city" in person:
     print("Klucz 'city' istnieje")
 ```
 
-# Co dalej
+# Co dalej?
 Przejdź do kolejnego zagadnienia ([[Pętle i instrukcje warunkowe]]) lub kliknij [[Wstęp do języka Python|tutaj]], aby wrócić do strony głównej tematu.
