@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "ec106d1f94d14fc2",
+        "id": "6bec3820d0b34825",
         "type": "tabs",
         "children": [
           {
-            "id": "0525f9a7458c7de4",
+            "id": "37a17ba8fa096b14",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "06c59ee2716ea82f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -160,19 +139,20 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "06c59ee2716ea82f",
+  "active": "37a17ba8fa096b14",
   "lastOpenFiles": [
+    "Tematy/Regresja liniowa (i nie tylko).md",
     "Index.md",
-    "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
+    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
     "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-    "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
+    "Tematy/Wstęp do języka Python.md",
+    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
     "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
     "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md",
+    "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
+    "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
     "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
     "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
-    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
-    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
-    "Tematy/Wstęp do języka Python.md",
     "Tematy/Images/WhoWantsToBeDataScientist.png",
     "Tematy/Images/PythonWhere.png",
     "Tematy/Images/PythonDataTypes.png",

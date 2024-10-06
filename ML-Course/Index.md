@@ -7,7 +7,7 @@ Witaj na kursie wprowadzającym do uczenia maszynowego. Wybierz interesujący Ci
 | 1.  | [[Wstęp do języka Python]]                                                                                |
 | 2.  | [[Analiza danych przy pomocy Pandas i numpy]]                                                             |
 | 3.  | [[Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie \| Wizualizacja danych]] |
-| 4.  | Regresja liniowa (i nie tylko)                                                                            |
+| 4.  | [[Regresja liniowa (i nie tylko)]]                                                                        |
 | 5.  | Klasyfikacja                                                                                              |
 | 6.  | Przygotowanie danych i inżynieria cech                                                                    |
 | 7.  | Wzmocnienie gradientowe (Wzmocnienie gradientowe)                                                         |

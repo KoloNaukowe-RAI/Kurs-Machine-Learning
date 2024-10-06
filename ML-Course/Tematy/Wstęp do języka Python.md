@@ -30,3 +30,5 @@ Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.
 [^w3s]: https://www.w3schools.com/python/python_intro.asp
 [^dsm]: https://programmerhumor.io/python-memes/python-10/
 [^jpt]: https://www.jetbrains.com/pycharm/
+
+Podczas przygotowania opisów dla tego tematu, przy części zagadnień wykorzystane zostały narzędzia generatywnej sztucznej inteligencji.
