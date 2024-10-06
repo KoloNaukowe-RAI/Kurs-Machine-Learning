@@ -45,6 +45,8 @@
   "defaultMediaIcon": "lucide//file-image",
   "exportPath": "G:\\\\GitHub_Projects\\Kurs-Machine-Learning",
   "filesToExport": [
-    []
+    [
+      "all"
+    ]
   ]
 }

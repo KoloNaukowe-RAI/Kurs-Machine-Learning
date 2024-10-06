@@ -1,4 +1,3 @@
-
 # Podstawowe typy danych w języku Python
 
 **Typ danych** określa rodzaj informacji, którą możemy przechowywać w zmiennej. Python jest językiem dynamicznie typowanym, co oznacza, że nie musimy jawnie deklarować typu zmiennej przed jej użyciem. Interpreter automatycznie rozpoznaje typ na podstawie przypisanej wartości.

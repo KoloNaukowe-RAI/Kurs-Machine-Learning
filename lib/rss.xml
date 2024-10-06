@@ -1,9 +1,112 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ML-Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>ML-Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 05 Oct 2024 23:12:26 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 05 Oct 2024 23:12:25 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Co dalej]]></title><description><![CDATA[ 
- <br><img alt="PythonFruitClass.png" src="lib\media\pythonfruitclass.png"><br>
-Źródło: <a data-footref="meme1" href="about:blank#fn-1-7cfedce01b7ec733" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener">Używanie bibliotek</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ML-Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>ML-Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 06 Oct 2024 12:33:05 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 06 Oct 2024 12:33:05 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Funkcje w języku Python]]></title><description><![CDATA[ 
+ <br><br>Funkcje w Pythonie umożliwiają podzielenie kodu na moduły, które można ponownie wykorzystywać. Tworzy się je za pomocą instrukcji def i ciała funkcji jak w poniższym przykładzie:<br>def nazwa_funkcji(argumenty):
+	# tutaj co w funkcji się dzieje
+	return wynik
+Copy<br>gdzie:<br>
+<br>def - słowo kluczowe inicjujące definicję funkcji,
+<br>nazwa_funkcji - unikalna nazwa funkcji,
+<br>argumenty - opcjonalna lista argumentów, które funkcja przyjmuje (można opcjonalnie zdefiniować typ i wartość domyślną elementów),
+<br>return - opcjonalne słowo kluczowe, zwracające wartość z funkcji;<br>
+a wywołanie funkcji wygląda następująco:
+<br># W przypadku funkcji zwracającej wartość
+zmienna = nazwa_funkcji(argumenty)
+
+# W przypadku funkcji, która nic nie zwraca (np. ma wyświetlić w konsoli odpowiedź, ale nie zwrócić wyniku)
+nazwa_funkcji(argumenty)
+Copy<br>Przykłady tworzenia funkcji:<br>def oblicz_sume_kwadratow(x, y):
+	result = x**2+y**2
+	return result
+
+# Przykład funkcji ze zdefiniowanymi typami danych dla argumentów i zwracanej wartości
+def oblicz_kwadrat_sumy(x: float, y: float) -&gt;float:
+	return (x+y)**2
+
+# Przykład funkcji z wartością domyślną elementu
+def oblicz_roznice_kwadratow(x, y=0.0):
+	return x**2 - y**2
+
+# Przykład funkcji z docstrings ("dokumentacją" funkcji)
+def oblicz_kwadrat_roznicy(x, y):
+  """Oblicza kwadrat różnicy dwóch liczb.
+
+  Args:
+    x: Pierwsza liczba.
+    y: Druga liczba.
+
+  Returns:
+    Kwadrat różnicy liczb x i y.
+  """
+  return (x-y)**2
+Copy<br>Możliwe jest też zwracanie więcej niż 1 wartości, np:<br>import datetime
+
+def pobierz_aktualna_date():
+  """Zwraca aktualną datę w postaci roku, miesiąca i dnia."""
+  dzisiaj = datetime.date.today()
+  return dzisiaj.year, dzisiaj.month, dzisiaj.day
+
+# Wywołanie funkcji i przypisanie zwróconych wartości do zmiennych
+rok, miesiac, dzien = pobierz_aktualna_date()
+
+print(f"Dzisiaj jest {dzien} {miesiac} {rok}.")
+Copy<br><br>Klasy są podstawowym elementem programowania obiektowego w Pythonie. Służą one do reprezentacji obiektów/pojęć w świecie rzeczywistym. Definicja klasy wygląda następująco:<br>class NazwaKlasy:
+    def __init__(self, argumenty_init):
+	    self.atrybuty_do_inicjalizacji = argumenty_init
+	def metoda(self, argument_metody):
+		self.atrybuty_do_modyfikacji = argumenty_metody
+Copy<br>gdzie:<br>
+<br>class - słowo kluczowe inicjujące definicję klasy,
+<br>NazwaKlasy - unikalna nazwa klasy,
+<br>atrybuty - zmienne związane z obiektami tej klasy (np. kolor, rozmiar),
+<br>metody - funkcje związane z obiektami tej klasy (np. poruszanie się, rysowanie).<br>
+a utworzenie obiektu danej funkcji wygląda następująco:
+<br>zmienna = NazwaKlasy(argumenty)
+Copy<br>Przykład tworzenia klasy:<br>class Pies:
+    def __init__(self, imie, rasa):  
+    # wewnątrz init inicjalizujemy wszystkie atrybuty klasy
+        self.imie = imie
+        self.rasa = rasa
+        self.szczek = "Chał chał!"
+
+	def zmien_imie(self, dzwiek):
+		self.szczek = dzwiek
+
+    def szczekaj(self):
+        print(self.szczek)
+
+moj_pies = Pies("Reksio", "Jamnik")
+moj_pies.szczekaj()
+# Dostęp do imienia psa
+print(moj_pies.imie)
+Copy<br>Python nie ma mechanizmu ścisłej prywatności artybutów tak jak np. C++, ale wykorzystanie __ na początku nazwy pozwala na oznaczenie artybutu jako prywatny, do którego należy odwoływać się przez metodę danej klasy:<br>class Osoba:
+    def __init__(self, imie, pesel):
+        self.imie = imie
+        self.__pesel = pesel  # Prywatny atrybut
+
+    def pobierz_pesel(self):
+        return self.__pesel
+Copy<br><img alt="PythonFruitClass.png" src="lib\media\pythonfruitclass.png"><br>
+Źródło: <a data-footref="meme1" href="about:blank#fn-1-ca07d1b96410c6aa" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener">Używanie bibliotek</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
 <br>
-<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/python-is-easy-they-say/" target="_blank">https://programmerhumor.io/python-memes/python-is-easy-they-say/</a><a href="about:blank#fnref-1-7cfedce01b7ec733" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Funkcje i klasy.md</guid><pubDate>Sat, 05 Oct 2024 22:12:18 GMT</pubDate><enclosure url="lib\media\pythonfruitclass.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythonfruitclass.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Struktury danych w Python]]></title><description><![CDATA[ 
+<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/python-is-easy-they-say/" target="_blank">https://programmerhumor.io/python-memes/python-is-easy-they-say/</a><a href="about:blank#fnref-1-ca07d1b96410c6aa" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Funkcje i klasy.md</guid><pubDate>Sun, 06 Oct 2024 12:28:26 GMT</pubDate><enclosure url="lib\media\pythonfruitclass.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythonfruitclass.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Podstawowe typy danych w języku Python]]></title><description><![CDATA[ 
+ <br><br>Typ danych określa rodzaj informacji, którą możemy przechowywać w zmiennej. Python jest językiem dynamicznie typowanym, co oznacza, że nie musimy jawnie deklarować typu zmiennej przed jej użyciem. Interpreter automatycznie rozpoznaje typ na podstawie przypisanej wartości.<br><br>Przykłady tworzenia zmiennych poszczególnych typów (do przypisania służy =):<br>i = 37       # int
+f = 92.13    # float
+s = "Hello!" # string
+b = True     # bool
+Copy<br>Do sprawdzania typu zmiennej służy funkcja type(zmienna):<br>a = 13.23
+print(type(a)) # &lt;class 'float'&gt;
+Copy<br>Ze względu na dynamiczne typowanie, w Pythonie możliwe jest nadpisywanie typu danych, np:<br>x = 5.93
+x = "Hello"
+Copy<br>Możliwa jest również konwersja typów przy pomocy funkcji int(zmienna), float(zmienna) lub str(zmienna):<br>num = 927.27
+num_as_str = str(num)
+print(num_as_str)      # "927.27"
+Copy<br><img alt="PythonDataTypes.png" src="lib\media\pythondatatypes.png"><br>
+Źródło: <a data-footref="meme1" href="about:blank#fn-1-ca07d1b96410c6aa" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br><br>W języku Python dostępne są następujące operatory arytmetyczne do zmiennych liczbowych.<br><br>Możliwe jest również wykorzystanie skróconych przypisań, co jest przydatne przy zmianie wartości, a służą do tego +=, -=, *=, /=, %=, **=.<br><br>Dla ciągów znaków nie można bezpośrednio zastosować tych samych operatorów arytmetycznych. Konieczna jest wpierw konwersja stringa na liczbę przy użyciu int(zmienna) lub float(zmienna). Stringi są niemutowalne, więc nie można zmienić pojedynczych znaków, a trzeba utworzyć nowy string.<br>Funkcje/operatory dostępne do wykorzystania ze stringami:<br><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Listy, krotki, zbiory i słowniki" href="tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html" class="internal-link" target="_self" rel="noopener">Listy, krotki, zbiory i słowniki</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
+<br>
+<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/im-a-python-programmer-2/" target="_blank">https://programmerhumor.io/python-memes/im-a-python-programmer-2/</a><a href="about:blank#fnref-1-ca07d1b96410c6aa" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md</guid><pubDate>Sun, 06 Oct 2024 10:37:33 GMT</pubDate><enclosure url="lib\media\pythondatatypes.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythondatatypes.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Cześć!]]></title><description><![CDATA[ 
+ <br><br>Witaj na kursie wprowadzającym do uczenia maszynowego. Wybierz interesujący Cię temat z listy poniżej:<br><br><br><a data-tooltip-position="top" aria-label="https://github.com/dariak153" rel="noopener" class="external-link" href="https://github.com/dariak153" target="_blank">@dariak153</a><br>
+<a data-tooltip-position="top" aria-label="https://github.com/mmcza" rel="noopener" class="external-link" href="https://github.com/mmcza" target="_blank">@mmcza</a>]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Sun, 06 Oct 2024 10:39:44 GMT</pubDate></item><item><title><![CDATA[Struktury danych w Python]]></title><description><![CDATA[ 
  <br><br>W Pythonie możemy wyróżnić następujące struktury danych: listy, krotki, zbiory i słowniki.<br>
 <br>
 Listy są najbardziej uniwersalnymi strukturami danych w Pythonie. Są to uporządkowane, mutowalne kolekcje, które mogą zawierać dowolne elementy. Możesz dodawać, usuwać i modyfikować elementy listy.
@@ -179,23 +282,7 @@ if x &gt; 5 and y &lt; 10:
 	print("Oba warunki są spełnione.")
 elif x &gt; 5 and not y &lt; 10:
 	print("X jest wiekszy niz 5, a y nie jest wiekszy niz 10.")
-Copy<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Funkcje i klasy" href="tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html" class="internal-link" target="_self" rel="noopener">Funkcje i klasy</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md</guid><pubDate>Sat, 05 Oct 2024 23:11:02 GMT</pubDate></item><item><title><![CDATA[Podstawowe typy danych w języku Python]]></title><description><![CDATA[ 
- <br><br>Typ danych określa rodzaj informacji, którą możemy przechowywać w zmiennej. Python jest językiem dynamicznie typowanym, co oznacza, że nie musimy jawnie deklarować typu zmiennej przed jej użyciem. Interpreter automatycznie rozpoznaje typ na podstawie przypisanej wartości.<br><br>Przykłady tworzenia zmiennych poszczególnych typów (do przypisania służy =):<br>i = 37       # int
-f = 92.13    # float
-s = "Hello!" # string
-b = True     # bool
-Copy<br>Do sprawdzania typu zmiennej służy funkcja type(zmienna):<br>a = 13.23
-print(type(a)) # &lt;class 'float'&gt;
-Copy<br>Ze względu na dynamiczne typowanie, w Pythonie możliwe jest nadpisywanie typu danych, np:<br>x = 5.93
-x = "Hello"
-Copy<br>Możliwa jest również konwersja typów przy pomocy funkcji int(zmienna), float(zmienna) lub str(zmienna):<br>num = 927.27
-num_as_str = str(num)
-print(num_as_str)      # "927.27"
-Copy<br><img alt="PythonDataTypes.png" src="lib\media\pythondatatypes.png"><br>
-Źródło: <a data-footref="meme1" href="about:blank#fn-1-7cfedce01b7ec733" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br><br>W języku Python dostępne są następujące operatory arytmetyczne do zmiennych liczbowych.<br><br>Możliwe jest również wykorzystanie skróconych przypisań, co jest przydatne przy zmianie wartości, a służą do tego +=, -=, *=, /=, %=, **=.<br><br>Dla ciągów znaków nie można bezpośrednio zastosować tych samych operatorów arytmetycznych. Konieczna jest wpierw konwersja stringa na liczbę przy użyciu int(zmienna) lub float(zmienna). Stringi są niemutowalne, więc nie można zmienić pojedynczych znaków, a trzeba utworzyć nowy string.<br>Funkcje/operatory dostępne do wykorzystania ze stringami:<br><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Listy, krotki, zbiory i słowniki" href="tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html" class="internal-link" target="_self" rel="noopener">Listy, krotki, zbiory i słowniki</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
-<br>
-<br><a rel="noopener" class="external-link" href="https://programmerhumor.io/python-memes/im-a-python-programmer-2/" target="_blank">https://programmerhumor.io/python-memes/im-a-python-programmer-2/</a><a href="about:blank#fnref-1-7cfedce01b7ec733" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md</guid><pubDate>Sat, 05 Oct 2024 22:44:54 GMT</pubDate><enclosure url="lib\media\pythondatatypes.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythondatatypes.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie]]></title><description><![CDATA[ 
+Copy<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Funkcje i klasy" href="tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html" class="internal-link" target="_self" rel="noopener">Funkcje i klasy</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md</guid><pubDate>Sat, 05 Oct 2024 23:11:02 GMT</pubDate></item><item><title><![CDATA[Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie]]></title><description><![CDATA[ 
  <br><img alt="datavis.png" src="tematy\images\datavis.png"><br>Omówienie najpopularniejszych bibliotek do wizualizacji danych:<br><br>Szczegółowe dokumentacje:<br>
 <br><a data-tooltip-position="top" aria-label="https://matplotlib.org/stable/contents.html" rel="noopener" class="external-link" href="https://matplotlib.org/stable/contents.html" target="_blank">Matplotlib Documentation</a>
 <br><a data-tooltip-position="top" aria-label="https://seaborn.pydata.org/" rel="noopener" class="external-link" href="https://seaborn.pydata.org/" target="_blank">Seaborn Documentation</a>
@@ -528,6 +615,4 @@ Copy<br><br>
 Obliczanie średniej:<br>a = np.array([1, 2, 3, 4, 5])
 mean = np.mean(a)
 print(mean)
-Copy]]></description><link>tematy\analiza-danych-przy-pomocy-pandas-i-numpy.html</link><guid isPermaLink="false">Tematy/Analiza danych przy pomocy Pandas i numpy.md</guid><pubDate>Mon, 12 Aug 2024 21:26:26 GMT</pubDate></item><item><title><![CDATA[Cześć!]]></title><description><![CDATA[ 
- <br><br>Witaj na kursie wprowadzającym do uczenia maszynowego. Wybierz interesujący Cię temat z listy poniżej:<br><br><br><a data-tooltip-position="top" aria-label="https://github.com/dariak153" rel="noopener" class="external-link" href="https://github.com/dariak153" target="_blank">@dariak153</a><br>
-<a data-tooltip-position="top" aria-label="https://github.com/mmcza" rel="noopener" class="external-link" href="https://github.com/mmcza" target="_blank">@mmcza</a>]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Mon, 12 Aug 2024 23:35:06 GMT</pubDate></item></channel></rss>
+Copy]]></description><link>tematy\analiza-danych-przy-pomocy-pandas-i-numpy.html</link><guid isPermaLink="false">Tematy/Analiza danych przy pomocy Pandas i numpy.md</guid><pubDate>Mon, 12 Aug 2024 21:26:26 GMT</pubDate></item></channel></rss>
