@@ -11,8 +11,24 @@
             "id": "37a17ba8fa096b14",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Tematy/Regresja liniowa (i nie tylko).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "86f9b2d0c91256d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tematy/Wstęp do języka Python.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tematy/Regresja liniowa (i nie tylko).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Tematy/Regresja liniowa (i nie tylko).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Tematy/Regresja liniowa (i nie tylko).md"
+              }
             }
           }
         ]
@@ -141,14 +161,18 @@
   },
   "active": "37a17ba8fa096b14",
   "lastOpenFiles": [
-    "Tematy/Regresja liniowa (i nie tylko).md",
-    "Index.md",
-    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
-    "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
     "Tematy/Wstęp do języka Python.md",
+    "Tematy/Regresja liniowa (i nie tylko).md",
+    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
+    "Tematy/Images/linear_regression_meme.png",
     "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
-    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
     "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)",
+    "Index.md",
+    "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
+    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
     "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
     "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
     "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
@@ -165,7 +189,6 @@
     "Pasted image 20240731233915.png",
     "Tematy/Files Analiza danych przy pomocy Pandas i numpy",
     "Tematy/Images/PythonFruitClass.png",
-    "Tematy/Images/MachingeLearningvsParrot.png",
     "github.com.md",
     "().md",
     "Tematy/Files Wstęp do języka Python",
