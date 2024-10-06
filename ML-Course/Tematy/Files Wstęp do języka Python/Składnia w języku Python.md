@@ -59,7 +59,7 @@ print("Hello world!") # A tu komentarz w linii z kodem
 
 Możliwe są również komentarze wieloliniowe poprzez umieszczenie ich wewnątrz ` ``` ``` `. Ten drugi jest przydatny np. do przygotowania opisu funkcji, gdzie można w ten sposób opisać czym jest każda zmienna.
 
-# Co dalej
+# Co dalej?
 
 Przejdź do kolejnego zagadnienia ([[Zmienne i podstawowe typy danych]]) lub kliknij [[Wstęp do języka Python|tutaj]], aby wrócić do strony głównej tematu.
 # Źródła:

@@ -63,7 +63,6 @@ Dla ciągów znaków nie można bezpośrednio zastosować tych samych operatoró
 
 Funkcje/operatory dostępne do wykorzystania ze stringami:
 
-
 | Funkcja/Operator                 | Opis działania                                     | Przykład                                                | Wynik przykładu                |
 | -------------------------------- | -------------------------------------------------- | ------------------------------------------------------- | ------------------------------ |
 | `+`                              | Łączy stringi w jeden dłuższy                      | `a = "AB"+"CD"`                                         | `"ABCD"`                       |
@@ -77,7 +76,8 @@ Funkcje/operatory dostępne do wykorzystania ze stringami:
 | `zmienna.find(substring)`        | Zwraca indeks pierwszego wystąpienia podciągu      | `l = "Mam 2 psy"   l.find("Mam")`                       | `0`                            |
 | `zmienna.replace(old, new)`      | Zastępuje wszystkie wystąpienia `old` na `new`     | `m = "Mam 2 psy. Mam 1 kota"   m.replace("Mam","Masz")` | `"Masz 2 psy. Masz 1 kota"`    |
 | `zmienna.split(separator)`       | Dzieli string na listę podciągów według separatora | `n = "Mam 2 psy. Mam 1 kota"   n.split(".")`            | `['Mam 2 psy', ' Mam 1 kota']` |
-# Co dalej
+
+# Co dalej?
 Przejdź do kolejnego zagadnienia ([[Listy, krotki, zbiory i słowniki]]) lub kliknij [[Wstęp do języka Python|tutaj]], aby wrócić do strony głównej tematu.
 # Źródła:
 [^meme1]: https://programmerhumor.io/python-memes/im-a-python-programmer-2/
