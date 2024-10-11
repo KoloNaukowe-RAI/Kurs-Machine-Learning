@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
+                "file": "Tematy/Wstęp do języka Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b69c86170e05283",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tematy/Regresja liniowa (i nie tylko).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cf7978fd2f1c8544",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tematy/Przygotowanie danych i inżynieria cech.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -81,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 210.5
   },
   "right": {
     "id": "53fa0376af7fe725",
@@ -97,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
+                "file": "Tematy/Przygotowanie danych i inżynieria cech.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
+                "file": "Tematy/Przygotowanie danych i inżynieria cech.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md"
+                "file": "Tematy/Przygotowanie danych i inżynieria cech.md"
               }
             }
           }
@@ -159,23 +184,26 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "37a17ba8fa096b14",
+  "active": "cf7978fd2f1c8544",
   "lastOpenFiles": [
-    "Index.md",
     "Tematy/Wstęp do języka Python.md",
+    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
     "Tematy/Regresja liniowa (i nie tylko).md",
+    "Index.md",
+    "Tematy/Przygotowanie danych i inżynieria cech.md",
+    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
+    "Untitled",
     "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
     "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md",
     "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
     "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
     "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-    "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
-    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
     "Tematy/Images/extrapolating_meme.png",
-    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
     "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
     "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
-    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
     "Tematy/Images/decission_tree_regression_plot.png",
     "Tematy/Images/regression_types.png",
     "Tematy/Images/linear_regression_meme.png",

@@ -16,6 +16,7 @@ Z regresją można się też spotkać (często nieświadomie) podczas laboratori
 
 # Spis treści
 - [[Rodzaje regresji]]
+- [[Czym jest Scikit-learn|Czym jest Scikit-learn?]]
 - [[Implementacja regresji przy pomocy Scikit-learn]]
 
 # Link do Jupyter Notebook (DODAĆ)
