@@ -45,6 +45,5 @@ df_standardized = pd.DataFrame(df_standardized, columns=df.columns)
 ```
 
 > [!error] > Należy pamiętać, że po podzieleniu datasetu na zbiór treningowy, walidacyjny i testowy należy wykorzystywać ten sam `imputer` i `skalery` dla wszystkich zbiorów. Oznacza to, że należy wykorzystać `fit` lub `fit_transform` przy zbiorze treningowym, a dla pozostałych wykorzystywać samo `transform`.
-
 # Co dalej?
 Przejdź do kolejnego zagadnienia ([[Inżynieria cech]]) lub kliknij [[Przygotowanie danych i inżynieria cech|tutaj]], aby wrócić do strony głównej tematu.
