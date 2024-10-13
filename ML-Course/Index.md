@@ -10,7 +10,7 @@ Witaj na kursie wprowadzającym do uczenia maszynowego. Wybierz interesujący Ci
 | 4.  | [[Regresja liniowa (i nie tylko)]]                                                                        |
 | 5.  | Klasyfikacja                                                                                              |
 | 6.  | [[Przygotowanie danych i inżynieria cech]]                                                                |
-| 7.  | Wzmocnienie gradientowe (Gradient boosting)                                                               |
+| 7.  | [[Wzmocnienie gradientowe (Gradient boosting)]]                                                           |
 | 8.  | Analiza błędów i metryki oceny modelu                                                                     |
 | 9.  | Projekt końcowy                                                                                           |
 
