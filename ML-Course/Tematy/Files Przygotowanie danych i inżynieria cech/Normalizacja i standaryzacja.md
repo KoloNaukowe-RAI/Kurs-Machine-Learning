@@ -11,7 +11,7 @@ gdzie:
 - $x_{min}$​ to minimalna wartość w danym zbiorze,
 - $x_{max}$ to maksymalna wartość w danym zbiorze.
 
-Przeprowadzenie standaryzacji w języku Python możliwe jest przy pomocy biblioteki Scikit-Learn
+Przeprowadzenie normalizacji w języku Python możliwe jest przy pomocy biblioteki Scikit-Learn
 
 ```Python
 from sklearn.preprocessing import MinMaxScaler
