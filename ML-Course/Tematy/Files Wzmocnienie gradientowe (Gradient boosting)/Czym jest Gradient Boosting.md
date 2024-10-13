@@ -2,6 +2,10 @@
 
 Gradient Boosting iteracyjnie tworzy silny model predykcyjny, poprzez łączenie wyników wielu słabszych modeli (zazwyczaj drzew decyzyjnych), które poprawiają błędy poprzednich modeli. Każdy kolejny model jest trenowany na resztkowych błędach (residuals) poprzedniego modelu. Kluczowa jest optymalizacja funkcji straty za pomocą algorytmu gradientowego, który ma na celu minimalizację błędu między predykcją modelu a rzeczywistymi wartościami.
 
+![[3D_Surface_with_Minima.png]]
+Rysunek: Przykład funkcji z globalnym minimum.
+
+Na obrazku powyżej, minimalizacja funkcji będzie polegała na znalezieniu takich wartości `x` i `y`, dla których wartość funkcji na osi `z` będzie najmniejsza (w tym kierunku zmniejsza się gradient).
 # Zastosowania
 
 Wzmocnienie gradientowe można stosować w szerokim zakresie problemów związanych z uczeniem maszynowym:

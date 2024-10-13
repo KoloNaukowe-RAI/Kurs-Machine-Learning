@@ -1,4 +1,265 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ML-Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>ML-Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 13 Oct 2024 12:29:18 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 13 Oct 2024 12:29:17 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Normalizacja]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ML-Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>ML-Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 13 Oct 2024 16:25:11 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 13 Oct 2024 16:25:11 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Definicja i zasada działania]]></title><description><![CDATA[ 
+ <br><br>Gradient Boosting iteracyjnie tworzy silny model predykcyjny, poprzez łączenie wyników wielu słabszych modeli (zazwyczaj drzew decyzyjnych), które poprawiają błędy poprzednich modeli. Każdy kolejny model jest trenowany na resztkowych błędach (residuals) poprzedniego modelu. Kluczowa jest optymalizacja funkcji straty za pomocą algorytmu gradientowego, który ma na celu minimalizację błędu między predykcją modelu a rzeczywistymi wartościami.<br><img alt="3D_Surface_with_Minima.png" src="lib\media\3d_surface_with_minima.png"><br>
+Rysunek: Przykład funkcji z globalnym minimum.<br>Na obrazku powyżej, minimalizacja funkcji będzie polegała na znalezieniu takich wartości x i y, dla których wartość funkcji na osi z będzie najmniejsza (w tym kierunku zmniejsza się gradient).<br><br>Wzmocnienie gradientowe można stosować w szerokim zakresie problemów związanych z uczeniem maszynowym:<br>
+<br>klasyfikacja: Gradient Boosting jest stosowany tam, gdzie liczy się precyzyjne klasyfikowanie (np. w analizach medycznych lub wykrywaniu oszustw),
+<br>regresja: wzmocnienie gradientowe radzi sobie świetnie z problemami przewidywania wartości nawet w bardzo złożonych i nieliniowych modelach (np. przewidywanie cen nieruchomości czy wartości portfeli inwestycyjnych),
+<br>systemy rekomendacyjne i rankingi (np. w systemach rekomendacji filmów lub innych produktów),
+<br>zawody w uczeniu maszynowym: ze względu na wysoką skuteczność i precyzyjne wyniki, Gradient Boosting jest jedną z najczęściej używanych metod w zawodach Kaggle oraz w zadaniach wymagających maksymalnej dokładności.
+<br><br>W porównaniu do regresji liniowej, Gradient Boosting umożliwia modelowanie bardzo złożonych danych, których zależności mogą być nieliniowe, dzięki czemu jest bardziej elastyczny. Pojedyncze drzewa decyzyjne mają skłonności do przeuczania i mogą być niedokładne, a wzmocnienie gradientowe trenuje drzewa w sekwencji, w której każde drzewo poprawia błędy poprzednika. Jest to też różnica z lasem losowym, w którym agregowane jest wiele losowo wygenerowanych drzew, ale te drzewa nie uwzględniają błędów poprzedników, więc Gradient Boosting umożliwia lepszą optymalizację.<br><br>
+<br>Zalety:
+
+<br>wysoka dokładność:  szczególnie gdy dane są złożone to Gradient Boosting często przewyższa inne metody w wielu zadaniach predykcji,
+<br>elastyczność: umożliwia użycie różnych typów danych (ciągłych i kategorycznych) oraz modelowanie złożonych zależności nieliniowych,
+<br>dzięki iteracyjnemu procesowi uczy się z błędów poprzednich modeli, co prowadzi do bardziej precyzyjnych predykcji.
+
+
+<br>Wady:
+
+<br>Gradient Boosting może być wolniejszy w porównaniu z innymi metodami (np. lasami losowymi), ponieważ proces jest iteracyjny i każdy model musi zostać wytrenowany jeden po drugim,
+<br>jeśli model jest źle skonfigurowany (np. zbyt wiele drzew lub zbyt wysoki learning rate), może łatwo dojść do overfittingu, co skutkuje słabą generalizacją,
+<br>przy uczeniu modelu ze wzmocnieniem gradientowym należy dostroić wiele parametrów (np. learning rate, liczba drzew), co może być czasochłonne i wymaga doświadczenia.
+
+
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Kluczowe pojęcia w Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html" class="internal-link" target="_self" rel="noopener">Kluczowe pojęcia w Gradient Boosting</a>]) lub kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\czym-jest-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Czym jest Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 15:48:50 GMT</pubDate><enclosure url="lib\media\3d_surface_with_minima.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\3d_surface_with_minima.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Jakie biblioteki do wzmocnienia gradientowego?]]></title><description><![CDATA[ 
+ <br><br>Gradient Boosting został zaimplementowany w 3 popularnych bibliotekach:<br>
+<br>Scikit-Learn,
+<br>xgboost,
+<br>LightGBM.
+<br>Wszystkie 3 implementacje mają podobny interfejs i umożliwiają zastosowanie do regresji i klasyfikacji, co ułatwia pracę. Występują między nimi następujące różnice:<br>
+<br>Scikit-Learn udostępnia prosty w użyciu algorytm,
+<br>xgboost udostępnia więcej zaawansowanych hiperparametrów i możliwości tuningu, co może prowadzić do lepszej dokładności, a także dzięki lepszej optymalizacji i rownoległości jest bardziej wydajny do dużych zbiorów danych,
+<br>LightGBM jest wydajny dla dużych zestawów danych o wielu wymiarach dzięki budowania drzewa na poziomie liści (zamiast poziomu drzewa) i dzielenia danych na histogramy zamiast dzielenia danych na każdą możliwą wartość.
+<br>Ze względu na lepszą optymalizację korzystniej jest korzystać z xgboost lub LightGBM, a wybór jednej z tych bibliotek zależy od preferencji oraz konkretnego przypadku datasetu.<br><br>Poniżej znajduje się kod, w którym na wygenerowanym zbiorze danych zastosowano modele Gradient Boostingu z bibliotek Scikit-Learn, xgboost i LightGBM:<br>from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import make_regression
+import xgboost as xgb 
+import lightgbm as lgb
+
+# Generowanie przykładowego zbioru danych
+X, y = make_regression(n_samples=1000, n_features=10, noise=0.1)
+
+# Podział na zbiory treningowe i testowe
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Utworzenie i trenowanie modelu oraz predykacja przy pomocy Sklearn
+model_sklearn = GradientBoostingRegressor(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42)
+
+model_sklearn.fit(X_train, y_train)
+
+y_pred_sklearn = model_sklearn.predict(X_test)
+
+# Utworzenie i trenowanie modelu oraz predykacja przy pomocy xgboost
+model_xgb = xgb.XGBRegressor(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42)
+
+model_xgb.fit(X_train, y_train)
+
+y_pred_xgb = model_xgb.predict(X_test)
+
+# Utworzenie i trenowanie modelu oraz predykacja przy pomocy LightGBM
+model_lgb = lgb.LGBMRegressor(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42)
+
+model_lgb.fit(X_train, y_train)
+
+y_pred_lgb = model_lgb.predict(X_test)
+Copy<br><br>Poniżej znajduje się kod, w którym na wygenerowanym zbiorze danych zastosowano modele Gradient Boostingu z bibliotek Scikit-Learn, xgboost i LightGBM:<br>from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import make_classification
+import xgboost as xgb
+import lightgbm as lgb
+
+# Generowanie przykładowego zbioru danych
+X, y = make_classification(n_samples=1000, n_features=10, n_classes=2, random_state=42)
+
+# Podział na zbiory treningowe i testowe
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Utworzenie i trenowanie modelu oraz predykacja przy pomocy Sklearn
+model_sklearn = GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42)
+
+model_sklearn.fit(X_train, y_train)
+
+y_pred_sklearn = model_sklearn.predict(X_test)
+
+# Utworzenie i trenowanie modelu oraz predykacja przy pomocy xgboost
+model_xgb = xgb.XGBClassifier(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42)
+
+model_xgb.fit(X_train, y_train)
+
+y_pred_xgb = model_xgb.predict(X_test)
+
+# Utworzenie i trenowanie modelu oraz predykacja przy pomocy LightGBM
+model_lgb = lgb.LGBMClassifier(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42) 
+
+model_lgb.fit(X_train, y_train)
+
+y_pred_lgb = model_lgb.predict(X_test)
+
+Copy<br><br>Kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\implementacja-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 16:23:47 GMT</pubDate></item><item><title><![CDATA[Loss Function (Funkcja straty)]]></title><description><![CDATA[ 
+ <br><br>Kluczowym elementem w przypadku wykorzystania wzmocnienia gradientowego jest funkcja straty. Gradient Boosting iteracyjnie minimalizuje funkcję straty poprzez poprawianie błędów poprzednich drzew i optymalizację predykcji. Przykładowymi funkcjami straty są:<br>
+<br>dla regresji: Mean Squared Error (MSE) - błąd średnio-kwadratowy, który mierzy różnicę między rzeczywistymi wartościami a przewidywaniami,
+<br>dla klasyfikacji: Log Loss – błąd logarytmiczny, który mierzy prawdopodobieństwo przypisania do złej klasy.
+<br>Model na każdym etapie wylicza gradient funkcji straty (stąd nazwa „Gradient Boosting”), który wskazuje, jak zmienić parametry, aby zmniejszyć błąd. W skrócie, Gradient Boosting stara się znaleźć kierunek największej redukcji błędu i podąża nim, poprawiając model.<br><br>Learning rate to hiperparametr, który wpływa na to, jak duży krok model wykonuje przy aktualizacji przewidywań przy budowaniu nowego drzewa. Jest to liczba między 0 a 1 (zazwyczaj blisko 0.001), która skaluje wpływ każdego drzewa na ostateczne przewidywania. Niska wartość stałej uczenia powoduje, że model będzie uczył się wolniej, ale bardziej precyzyjnie i nie "przeoczy" minimum, co może wystąpić przy za dużej stałej uczenia. Zagrożeniem jest jednak możliwość utknięcia w lokalnym minimum, dlatego dobór stałej uczenia wymaga wyczucia i doświadczenia.<br><img alt="different_learning_rates.png" src="lib\media\different_learning_rates.png"><br>
+Rysunek: Porównanie jak wygląda szukanie minimum w zależności od stałej uczenia, źródło: <a data-footref="lr" href="about:blank#fn-1-f2398b00c2bdfa25" class="footnote-link" target="_self" rel="noopener">[1]</a><br>Zatem learning rate to balans między dokładnością modelu a czasem obliczeń – zbyt wysoki może prowadzić do szybkiego przeuczenia, a zbyt niski sprawia, że model wymaga więcej iteracji, aby osiągnąć dobre wyniki.<br><br>Liczba drzew (n_estimators) w Gradient Boosting to liczba iteracji, które model wykonuje, aby poprawić swoje przewidywania. Każde drzewo, na podstawie błędów resztowych swoich poprzedników, dodaje swoje poprawki do modelu. Liczba drzew wpływa następująco na model:<br>
+<br>zbyt mała liczba drzew: model może być niedouczony (underfitting), ponieważ nie ma wystarczająco dużo iteracji, aby dokładnie nauczyć się zależności w danych.
+<br>zbyt duża liczba drzew: może prowadzić do przeuczenia (overfitting) i mieć małą umiejętność do generalizacji.
+<br>Liczba drzew musi być dostrojona w połączeniu z learning rate - jeżeli stała uczenia jest niska to potrzebne jest więcej drzew, aby osiągnąć wysoką dokładność i uniknąć przeuczenia.<br><br>Overfitting to zjawisko, w którym model staje się zbyt dopasowany do danych treningowych, co prowadzi do gorszej wydajności na nowych, niewidzianych wcześniej danych. Gradient Boosting, choć bardzo efektywny, może być podatny na przeuczenie, zwłaszcza gdy model zawiera zbyt wiele drzew, zbyt duży learning rate lub zbyt głębokie drzewa. Aby temu zapobiec, można zastosować następujące techniki:<br>
+<br>max depth (maksymalna głębokość drzewa): płytsze drzewa są mniej podatne na przeuczenie, ale wymagają większej liczby iteracji, aby uzyskać dobre wyniki.
+<br>subsampling (podpróbkowanie): technika polega na używaniu tylko części danych do trenowania każdego drzewa, co w rezultacie powoduje, że model jest bardziej odporny na szumy i przeuczenie.
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Implementacja Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\implementacja-gradient-boosting.html" class="internal-link" target="_self" rel="noopener">Implementacja Gradient Boosting</a>]) lub kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
+<br>
+<br><a rel="noopener" class="external-link" href="https://www.jeremyjordan.me/nn-learning-rate/" target="_blank">https://www.jeremyjordan.me/nn-learning-rate/</a><a href="about:blank#fnref-1-f2398b00c2bdfa25" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Kluczowe pojęcia w Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 15:37:55 GMT</pubDate><enclosure url="lib\media\different_learning_rates.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\different_learning_rates.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Klasyfikacja]]></title><description><![CDATA[ 
+ <br>W zbiorze danych występuje 70 tys. obrazów, a każdy z nich opisany jest 784 cechami. Wynika to faktu, że każdy obraz ma 28x28 pikseli, a każda cecha opisuje natężenie szarości danego piksela<br>
+(przyjmuje wartość od 0 do 255)<br>import tensorflow as tf  
+import matplotlib.pyplot as plt  
+  
+mnist = tf.keras.datasets.mnist  
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()  
+  
+X = train_images.reshape(60000, 28*28)   
+y = train_labels  
+  
+print("Rozmiar danych X (zbiór uczący):", X.shape)  
+print("Rozmiar danych y (etykiety):", y.shape)  
+  
+def plot_digit(image):  
+    image = image.reshape(28, 28) 
+    plt.imshow(image, cmap='binary')  
+    plt.axis('off')  
+    plt.show()  
+  
+# Wyświetlenie przykładów  
+for i in range(5):  
+    print(f"Przykład {i + 1}: Cyfra {y[i]}")  
+    plot_digit(X[i])  
+  
+# Podział na zbiory: uczący (60 tys.) i testowy (10 tys.)  
+X_train = X[:60000]  
+y_train = y[:60000]  
+  
+X_test = test_images.reshape(10000, 28*28)  
+y_test = test_labels  
+  
+print("Rozmiar danych uczących X_train:", X_train.shape)  
+print("Rozmiar danych testowych X_test:", X_test.shape)
+
+Copy<br>Przykładowe dane przedstawione są poniżej:<br>
+<img alt="picture_1.png" src="tematy\images\picture_1.png"><br>
+<img alt="picture_4.png" src="tematy\images\picture_4.png"><br>
+<img alt="picture_9.png" src="tematy\images\picture_9.png"><br>
+Rozmiar danych X (zbiór uczący): (60000, 784)<br>
+Rozmiar danych y (etykiety): (60000,)
+<br>W powyższym przykładzie aby sprawdzić jak wyglądają cyfry przechowywane w zestawie danych wybraliśmy wektor cech danej próbki i przekształciliśmy go w macierz o rozmiarze 28x28, którą wyświetliliśmy za pomocą funkcji imshow(). Do uzyskania mapy w skali szarości wykorzystaliśmy parametr cmap='binary'. <br>
+<br>Uczenie klasyfikatora binarnego<br>
+Na początku uprościmy sobie zadanie i spróbujemy identyfikować jedną cyfrę na przykład 5. Jest to przykład klasyfikatora binarnego, który ma zdolność do rozpoznawania jednej z dwóch klas: piątek i niepiątek. Zadanie to rozpoczniemy od stworzenia wektorów docelowych dla tego zadania klasyfikującego.
+<br>X_test = test_images.reshape(10000, 28 * 28)    
+y_test = test_labels  
+  
+y_train_binary = (y_train == 5).astype(np.int8)  # 1 dla cyfry 5, 0 dla innych  
+y_test_binary = (y_test == 5).astype(np.int8)  
+  
+
+sgd_clf = SGDClassifier(random_state=42)  
+sgd_clf.fit(X_train, y_train_binary)  
+  
+
+y_pred = sgd_clf.predict(X_test)  
+  
+accuracy = accuracy_score(y_test_binary, y_pred)  
+print(f'Dokładność klasyfikatora: {accuracy:.2f}')  
+  
+print("Przykładowe predykcje (1 oznacza cyfrę 5):")  
+print("Predykcje:", y_pred[:10])  
+print("Prawdziwe etykiety:", y_test_binary[:10])  
+  
+Copy<br>
+Dokładność klasyfikatora: 0.95<br>
+Przykładowe predykcje (1 oznacza cyfrę 5):<br>
+Predykcje: [0 0 0 0 0 0 0 0 0 0]<br>
+Prawdziwe etykiety: [0 0 0 0 0 0 0 0 1 0]
+<br>W przykładzie wykorzystano klasyfikator stochastycznego spadku wzdłuż gradientu w tym celu skorzystano z klasy SGDClassifier. Klasyfikator ten sprawdza się w przypadku przetwarzania bardzo dużych zbiorów danych. Wynika to faktu, że klasyfikator ten przetwarza poszczególne przykłady uczące się niezależnie od siebie, po jednym naraz.<br>
+<br>Miary wydajności:<br>
+Dobrym sposobem oceny modelu jest wykorzystanie sprawdzianu krzyżowego. Zastosujemy funkcję cross_val_score() do oceny naszego modelu SGDClassifier za pomocą metody sprawdzianu krzyżowego, wygenerujemy trzy podzbiory.
+<br> 🚨 Ważna Uwaga<br>Important
+Kroswalidacja k-krotna oznacza rozdzielenie zestawu uczącego się na k podzbiorów ( w naszym przypadku na 3), następnie wyuczany jest model k razy. W każdej iteracji, jeden z podzbiorów jest używany jako zestaw testowy, podczas gdy pozostałe k-1 podzbiory są używane do treningu modelu.
+<br>from sklearn.model_selection import cross_val_score  
+
+cross_val_scores = cross_val_score(sgd_clf, X_train, y_train_binary, cv=3, scoring="accuracy")  
+print(f'Dokładność (kroswalidacja SGD): {cross_val_scores}')
+Copy<br>
+ [0.95035 0.96035 0.9604 ]
+<br>Jednak ten sposób oceny nie sprawdza się tak dobrze w przypadku gdy niektóre klasy występują znacznie częściej od pozostałych tzw. klasy wypaczone.<br>Innym sposobem oceny wydajności klasyfikatora jest  macierz pomyłek.<br>
+            Przewidywana
+                1      0
+              +----+----+
+         1    | TP | FN |
+Rzeczywista   +----+----+
+         0    | FP | TN |
+              +----+----+
+
+Copy<br>Macierz pomyłek pozwala zrozumieć, w jaki sposób model popełnia błędy:<br>
+<br>Wysokie wartości TP wskazują, że model dobrze klasyfikuje pozytywne przypadki.
+<br>Wysokie wartości TN wskazują na dobry poziom klasyfikacji negatywnych przypadków.
+<br>Wysokie wartości FP wskazują, że model często myli negatywne przypadki z pozytywnymi.
+<br>Wysokie wartości FN wskazują, że model często przeocza pozytywne przypadki.
+<br>from sklearn.metrics import accuracy_score, confusion_matrix 
+from sklearn.model_selection import cross_val_predict
+import seaborn as sns
+
+# Kroswalidacja z przewidywaniami  
+y_pred_cv = cross_val_predict(sgd_clf, X_train, y_train_binary, cv=3)  
+accuracy = accuracy_score(y_train_binary, y_pred_cv)  
+print(f'Dokładność klasyfikatora (kroswalidacja): {accuracy:.2f}')  
+  
+confusion_mat = confusion_matrix(y_train_binary, y_pred_cv)  
+  
+# Wyświetlenie macierzy pomyłek  
+plt.figure(figsize=(8, 6))  
+sns.heatmap(confusion_mat, annot=True, fmt='d', cmap='Blues', xticklabels=['0', '1'], yticklabels=['0', '1'])  
+plt.ylabel('Rzeczywista')  
+plt.xlabel('Przewidywana')  
+plt.title('Macierz Pomyłek')  
+plt.show()
+Copy<br>
+Dokładność klasyfikatora (kroswalidacja): 0.96
+<br><img alt="Macierz.png" src="tematy\images\macierz.png"><br>
+🚨 Ważna Uwaga<br>Important
+Każdy rząd macierzy pomyłek reprezentuje klasę rzeczywista. Natomiast kolumna stanowi przewidywaną klasę. Interpretacja 53892 stanowi prawidłowo sklasyfikowane próbki niebędące piątkami tzw. PN, 687 przykładów zostało niewłaściwe uznane za 5, tzw. FP (błąd pierwszego rodzaju).<br>
+W drugim rzędzie zostały umieszczone obrazy zaklasyfikowane jako piątki.<br>
+Przy czym 1891 próbek zostało nieprawidłowo sklasyfikowanych jako niebędące piątkami tzw. FN natomiast 3530 zostało prawidłowo zaklasyfikowane jako 5. 
+<br>
+Nasz doskonały klasyfikator uzyskiwałby wyłącznie przykłady prawdziwe pozytywne i prawdziwe negatywne () na głównej przekątnej miałby niezerowe wartości. 
+<br>Jeszcze inne miary:<br>
+<br>Pełność 
+<br>Pełność (znana również jako czułość) jest to odsetek pozytywnych przykładów prawidłowo rozpoznane przez klasyfikator.<br>
+<br>
+<br>( TP \ (True Positives) - liczba rzeczywistych pozytywnych przypadków, które zostały poprawnie sklasyfikowane przez model.
+<br>( FN \ (False Negatives) - liczba rzeczywistych pozytywnych przypadków, które model błędnie sklasyfikował jako negatywne.
+<br>
+<br>F1<br>
+Jest to średnia harmoniczna precyzji z pełnością.  Jak to rozumieć?<br>
+Standardowa średnia traktuje wszystkie wartości jednakowo, natomiast średnia harmoniczna nadaje większą wagę małym wartością.<br>
+ Gdzie: - Precyzja (Precision) to miara, która określa, jak wiele z przewidywanych pozytywnych przypadków jest rzeczywiście pozytywnych.<br>
+
+<br>
+from sklearn.metrics import precision_score, recall_score, f1_score  
+
+precision = precision_score(y_train_binary, y_pred_cv) 
+recall = recall_score(y_train_binary, y_pred_cv) 
+f1 = f1_score(y_train_binary, y_pred_cv)
+
+print(f'Precyzja: {precision:.2f}') 
+print(f'Pełność: {recall:.2f}') 
+print(f'F1-score: {f1:.2f}')
+Copy<br>
+Precyzja: 0.84<br>
+Pełność: 0.65<br>
+F1-score: 0.73
+<br> 🚨 Ważna Uwaga Kompromis pomiędzy precyzją a pełnością<br>Important
+Przy czym F1 faworyzuje klasyfikatory mające zbliżone wartości precyzji i pełności. Nie zawsze tego chcemy, przykładowo mając na celu wyuczenie klasyfikatora w określaniu bezpiecznych filmów dla dzieci bardziej zależałoby nam na tym by klasyfikator odrzucał wiele dobrych filmów (mała wartość pełności), ale zapamiętywałby jedynie bezpieczne (duża precyzja). Niekorzystna byłaby relacja odwrotna gdzie model cechowałby się dużo większą pełnością, ale dopuszczałby kilka nieodpowiednich filmów.<br>
+Jednak przy trenowaniu klasyfikatora do wykrywania złodziei z zapisu kamer prawdopodobnie nic złego by się nie stało gdyby model miał przykładowo 30% precyzji przy 99% pełności. Wówczas może i byłoby kilka fałszywych alarmów ale niemal wszyscy przestępcy zostaliby złapani.
+<br><br>Do tej pory każdy przykład był przydzielany wyłącznie do jednej klasy. Jednak weźmy przykład rozpoznawania twarzy, co powinien zrobić gdy na zdjęciu jest wiele osób?<br>
+Powinien przydzielić po jednej etykiecie na każdą rozpoznaną twarz. Załóżmy ,że model został wyuczony do rozpoznania grupy przyjaciół na zdjęciu: Tomka, Piotrka i Agnieszki. Po zaprezentowaniu zdjęć Tomka i Piotrka powinien zostać wygenerowany wynik [True, True, False ].<br>Tego typu system klasyfikujący zdolny do wyznaczania wielu binarnych znaczników nosi nazwę klasyfikacji wieloetykietowej. ]]></description><link>tematy\klasyfikacja.html</link><guid isPermaLink="false">Tematy/Klasyfikacja.md</guid><pubDate>Sun, 13 Oct 2024 16:06:11 GMT</pubDate><enclosure url="tematy\images\picture_1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\picture_1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Normalizacja]]></title><description><![CDATA[ 
  <br><br>Normalizacja polega na przekształceniu danych tak, aby mieściły się w określonym zakresie (zwykle od 0 do 1). Jest to przydatne, gdy dane mają bardzo różne skale, a chcemy by na wejściu algorytmu wartości mieściły się w określonym przedziale.<br>Wzór na normalizację:<br><br>gdzie:<br>
 <br> to oryginalna wartość,
 <br>​ to minimalna wartość w danym zbiorze,
@@ -20,30 +281,7 @@ df_standardized = scaler.fit_transform(df)  # Standaryzacja całego DataFrame
 df_standardized = pd.DataFrame(df_standardized, columns=df.columns)
 Copy<br>
 Należy pamiętać, że po podzieleniu datasetu na zbiór treningowy, walidacyjny i testowy należy wykorzystywać ten sam imputer i skalery dla wszystkich zbiorów. Oznacza to, że należy wykorzystać fit lub fit_transform przy zbiorze treningowym, a dla pozostałych wykorzystywać samo transform.
-<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Inżynieria cech" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\inżynieria-cech.html" class="internal-link" target="_self" rel="noopener">Inżynieria cech</a>) lub kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\normalizacja-i-standaryzacja.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md</guid><pubDate>Sat, 12 Oct 2024 22:03:22 GMT</pubDate></item><item><title><![CDATA[Definicja i zasada działania]]></title><description><![CDATA[ 
- <br><br>Gradient Boosting iteracyjnie tworzy silny model predykcyjny, poprzez łączenie wyników wielu słabszych modeli (zazwyczaj drzew decyzyjnych), które poprawiają błędy poprzednich modeli. Każdy kolejny model jest trenowany na resztkowych błędach (residuals) poprzedniego modelu. Kluczowa jest optymalizacja funkcji straty za pomocą algorytmu gradientowego, który ma na celu minimalizację błędu między predykcją modelu a rzeczywistymi wartościami.<br><br>Wzmocnienie gradientowe można stosować w szerokim zakresie problemów związanych z uczeniem maszynowym:<br>
-<br>klasyfikacja: Gradient Boosting jest stosowany tam, gdzie liczy się precyzyjne klasyfikowanie (np. w analizach medycznych lub wykrywaniu oszustw),
-<br>regresja: wzmocnienie gradientowe radzi sobie świetnie z problemami przewidywania wartości nawet w bardzo złożonych i nieliniowych modelach (np. przewidywanie cen nieruchomości czy wartości portfeli inwestycyjnych),
-<br>systemy rekomendacyjne i rankingi (np. w systemach rekomendacji filmów lub innych produktów),
-<br>zawody w uczeniu maszynowym: ze względu na wysoką skuteczność i precyzyjne wyniki, Gradient Boosting jest jedną z najczęściej używanych metod w zawodach Kaggle oraz w zadaniach wymagających maksymalnej dokładności.
-<br><br>W porównaniu do regresji liniowej, Gradient Boosting umożliwia modelowanie bardzo złożonych danych, których zależności mogą być nieliniowe, dzięki czemu jest bardziej elastyczny. Pojedyncze drzewa decyzyjne mają skłonności do przeuczania i mogą być niedokładne, a wzmocnienie gradientowe trenuje drzewa w sekwencji, w której każde drzewo poprawia błędy poprzednika. Jest to też różnica z lasem losowym, w którym agregowane jest wiele losowo wygenerowanych drzew, ale te drzewa nie uwzględniają błędów poprzedników, więc Gradient Boosting umożliwia lepszą optymalizację.<br><br>
-<br>Zalety:
-
-<br>wysoka dokładność:  szczególnie gdy dane są złożone to Gradient Boosting często przewyższa inne metody w wielu zadaniach predykcji,
-<br>elastyczność: umożliwia użycie różnych typów danych (ciągłych i kategorycznych) oraz modelowanie złożonych zależności nieliniowych,
-<br>dzięki iteracyjnemu procesowi uczy się z błędów poprzednich modeli, co prowadzi do bardziej precyzyjnych predykcji.
-
-
-<br>Wady:
-
-<br>Gradient Boosting może być wolniejszy w porównaniu z innymi metodami (np. lasami losowymi), ponieważ proces jest iteracyjny i każdy model musi zostać wytrenowany jeden po drugim,
-<br>jeśli model jest źle skonfigurowany (np. zbyt wiele drzew lub zbyt wysoki learning rate), może łatwo dojść do overfittingu, co skutkuje słabą generalizacją,
-<br>przy uczeniu modelu ze wzmocnieniem gradientowym należy dostroić wiele parametrów (np. learning rate, liczba drzew), co może być czasochłonne i wymaga doświadczenia.
-
-
-<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Kluczowe pojęcia w Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html" class="internal-link" target="_self" rel="noopener">Kluczowe pojęcia w Gradient Boosting</a>]) lub kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\czym-jest-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Czym jest Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 11:59:31 GMT</pubDate></item><item><title><![CDATA[Co dalej?]]></title><description><![CDATA[ 
- <br><br>Kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\implementacja-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 12:02:18 GMT</pubDate></item><item><title><![CDATA[Co dalej?]]></title><description><![CDATA[ 
- <br><br>Przejdź do kolejnego zagadnienia (<a data-href="Implementacja Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\implementacja-gradient-boosting.html" class="internal-link" target="_self" rel="noopener">Implementacja Gradient Boosting</a>]) lub kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Kluczowe pojęcia w Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 11:59:48 GMT</pubDate></item><item><title><![CDATA[Iteracyjne poprawianie jakości modelu]]></title><description><![CDATA[ 
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Inżynieria cech" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\inżynieria-cech.html" class="internal-link" target="_self" rel="noopener">Inżynieria cech</a>) lub kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\normalizacja-i-standaryzacja.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md</guid><pubDate>Sat, 12 Oct 2024 22:03:22 GMT</pubDate></item><item><title><![CDATA[Iteracyjne poprawianie jakości modelu]]></title><description><![CDATA[ 
  <br><br>Gradient Boosting buduje model iteracyjnie, ucząc się na błędach poprzednich drzew i wzmacniając te obszary, gdzie inne modele były słabe, co daje bardziej precyzyjne i stabilne prognozy. Takie podejście ma przewagę nad regresją liniową, bo umożliwia modelowanie nawet bardzo złożonych zależności, oraz nad pojedynczymi drzewami decyzyjnymi, które są podatne na przeuczenie i często nie zapewniają optymalnych wyników.<br><img alt="gradient_boosting_meme.jpg" src="tematy\images\gradient_boosting_meme.jpg"><br><br>
 <br><a data-tooltip-position="top" aria-label="Czym jest Gradient Boosting" data-href="Czym jest Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\czym-jest-gradient-boosting.html" class="internal-link" target="_self" rel="noopener">Czym jest Gradient Boosting?</a>
 <br><a data-href="Kluczowe pojęcia w Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html" class="internal-link" target="_self" rel="noopener">Kluczowe pojęcia w Gradient Boosting</a>
