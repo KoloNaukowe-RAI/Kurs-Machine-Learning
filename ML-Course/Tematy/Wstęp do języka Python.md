@@ -1,6 +1,7 @@
 Pierwszym tematem kursu będzie krótki wstęp do programowania w Pythonie, bo będzie to język, który będziemy wykorzystywać w zadaniach i projekcie końcowym. Konkretnie powiemy tu o wersji Python 3.
 
 Python jest szeroko wykorzystywany w uczeniu maszynowym, analizie danych, przy obliczeniach matematycznych, aplikacjach webowych po stronie serwera oraz do szybkiego prototypowania. Można go wykorzystać na różnych systemach, nie wymaga kompilatora, a jego składnia jest stosunkowo prosta i przypomina język angielski [^w3s].
+
 ![[WhoWantsToBeDataScientist.png]]
 Źródło: [^dsm]
 

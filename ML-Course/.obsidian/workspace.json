@@ -13,50 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "681f0dd68c85fa6e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Klasyfikacja.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5a853eb9887b7a24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4da53ea2321d4e95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
+                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
+                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md"
+                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md"
               }
             }
           }
@@ -184,45 +147,45 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "5a853eb9887b7a24",
+  "active": "d7f00521227ef6b8",
   "lastOpenFiles": [
+    "Index.md",
+    "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
+    "Tematy/Wstęp do języka Python.md",
+    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
+    "Tematy/Regresja liniowa (i nie tylko).md",
+    "Tematy/Przygotowanie danych i inżynieria cech.md",
     "Tematy/Klasyfikacja.md",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Kluczowe pojęcia w Gradient Boosting.md",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Czym jest Gradient Boosting.md",
+    "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
+    "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md",
+    "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
+    "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
+    "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
     "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-    "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md",
-    "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
-    "Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md",
-    "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md",
-    "Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md",
-    "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md",
-    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
     "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
-    "Tematy/Przygotowanie danych i inżynieria cech.md",
-    "Tematy/Regresja liniowa (i nie tylko).md",
-    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
-    "Tematy/Wstęp do języka Python.md",
-    "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
+    "Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md",
+    "Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md",
+    "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
+    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
+    "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md",
+    "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md",
+    "Tematy/Images/svm_rbf_2d_decision_boundary.png",
+    "Tematy/Images/svm_rbf_3d_transformed_space.png",
+    "Tematy/Images/decision_tree_example.png",
+    "Tematy/Images/decision_tree_example_.png",
+    "Tematy/Images/decision_tree_example 2.png",
+    "Tematy/Images/decision_tree_example 1.png",
     "Tematy/Images/picture_4.png",
     "Tematy/Images/picture_9.png",
     "Tematy/Images/picture_1.png",
-    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
     "Tematy/Images/different_learning_rates.png",
-    "Tematy/Images/Macierz.png",
-    "Tematy/Images/datavis.png",
-    "Tematy/Images/cleaning_data_meme.jpg",
-    "Tematy/Images/linear_regression_meme.png",
-    "Tematy/Images/NoIndent.png",
-    "Tematy/Images/PythonDataTypes.png",
     "Tematy/Images/Macierz.jfif",
-    "Index.md",
-    "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)",
-    "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
-    "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech",
-    "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
-    "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
     "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
     "Tematy/Files Regresja liniowa (i nie tylko)",
     "Tematy/Files Przygotowanie danych i inżynieria cech",
