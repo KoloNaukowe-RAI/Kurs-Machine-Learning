@@ -1,6 +1,6 @@
 {
   "vaultName": "ML-Course",
-  "lastExport": 1728836711130,
+  "lastExport": 1728855406051,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
@@ -26,6 +26,7 @@
     "Tematy/Images/3D_Surface_with_Minima.png",
     "Tematy/Images/cleaning_data_meme.jpg",
     "Tematy/Images/datavis.png",
+    "Tematy/Images/decision_tree_example.png",
     "Tematy/Images/decission_tree_regression_plot.png",
     "Tematy/Images/different_learning_rates.png",
     "Tematy/Images/extrapolating_meme.png",
@@ -42,6 +43,8 @@
     "Tematy/Images/PythonFruitClass.png",
     "Tematy/Images/PythonWhere.png",
     "Tematy/Images/regression_types.png",
+    "Tematy/Images/svm_rbf_2d_decision_boundary.png",
+    "Tematy/Images/svm_rbf_3d_transformed_space.png",
     "Tematy/Images/WhoWantsToBeDataScientist.png",
     "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
     "Tematy/Klasyfikacja.md",
@@ -51,6 +54,16 @@
     "Tematy/Wstęp do języka Python.md",
     "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
     "Index.md",
+    "lib/media/regression_types.png",
+    "lib/media/decission_tree_regression_plot.png",
+    "lib/media/decision_tree_example.png",
+    "lib/media/svm_rbf_2d_decision_boundary.png",
+    "lib/media/svm_rbf_3d_transformed_space.png",
+    "lib/media/pythonfruitclass.png",
+    "lib/media/pythonwhere.png",
+    "lib/media/noindent.png",
+    "lib/media/libraries_in_python.png",
+    "lib/media/pythondatatypes.png",
     "lib/media/3d_surface_with_minima.png",
     "lib/media/different_learning_rates.png",
     "lib/scripts/graph-wasm.wasm",
@@ -91,7 +104,6 @@
     "lib/fonts/mathjax_typewriter-regular.woff",
     "lib/fonts/mathjax_vector-regular.woff",
     "lib/fonts/mathjax_vector-bold.woff",
-    "lib/html/file-tree.html",
     "lib/scripts/webpage.js",
     "lib/scripts/graph-view.js",
     "lib/scripts/graph-wasm.js",
@@ -104,13 +116,10 @@
     "lib/styles/obsidian.css",
     "lib/styles/global-variable-styles.css",
     "lib/styles/main-styles.css",
-    "lib/media/regression_types.png",
-    "lib/media/decission_tree_regression_plot.png",
-    "lib/media/pythonfruitclass.png",
-    "lib/media/pythonwhere.png",
-    "lib/media/noindent.png",
-    "lib/media/libraries_in_python.png",
-    "lib/media/pythondatatypes.png",
+    "tematy/images/picture_1.png",
+    "tematy/images/picture_4.png",
+    "tematy/images/picture_9.png",
+    "tematy/images/macierz.png",
     "tematy/images/cleaning_data_meme.jpg",
     "tematy/images/linear_regression_meme.png",
     "tematy/images/extrapolating_meme.png",
@@ -158,7 +167,6 @@
     "lib/fonts/mathjax_typewriter-regular.woff",
     "lib/fonts/mathjax_vector-regular.woff",
     "lib/fonts/mathjax_vector-bold.woff",
-    "lib/html/file-tree.html",
     "lib/scripts/webpage.js",
     "lib/scripts/graph-view.js",
     "lib/scripts/graph-wasm.js",
@@ -174,7 +182,7 @@
   ],
   "fileInfo": {
     "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3970,
       "exportedPath": "tematy/files-wstęp-do-języka-python/funkcje-i-klasy.html",
       "dependencies": [
@@ -182,19 +190,19 @@
       ]
     },
     "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 0,
       "exportedPath": "tematy/files-wstęp-do-języka-python/jak-korzystać-z-jupyter-notebooks.html",
       "dependencies": []
     },
     "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3418,
       "exportedPath": "tematy/files-wstęp-do-języka-python/pętle-i-instrukcje-warunkowe.html",
       "dependencies": []
     },
     "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3418,
       "exportedPath": "tematy/files-wstęp-do-języka-python/składnia-w-języku-python.html",
       "dependencies": [
@@ -203,7 +211,7 @@
       ]
     },
     "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3604,
       "exportedPath": "tematy/files-wstęp-do-języka-python/używanie-bibliotek.html",
       "dependencies": [
@@ -211,7 +219,7 @@
       ]
     },
     "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 5321,
       "exportedPath": "tematy/files-wstęp-do-języka-python/zmienne-i-podstawowe-typy-danych.html",
       "dependencies": [
@@ -219,56 +227,56 @@
       ]
     },
     "Tematy/Images/Jupyter-logo.svg": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 11092,
       "exportedPath": "tematy/images/jupyter-logo.svg",
       "dependencies": []
     },
     "Tematy/Images/Libraries_in_python.png": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 19136,
       "exportedPath": "tematy/images/libraries_in_python.png",
       "dependencies": []
     },
     "Tematy/Images/NoIndent.png": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 631602,
       "exportedPath": "tematy/images/noindent.png",
       "dependencies": []
     },
     "Tematy/Images/PythonDataTypes.png": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1270287,
       "exportedPath": "tematy/images/pythondatatypes.png",
       "dependencies": []
     },
     "Tematy/Images/PythonFruitClass.png": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 537119,
       "exportedPath": "tematy/images/pythonfruitclass.png",
       "dependencies": []
     },
     "Tematy/Images/PythonWhere.png": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1327611,
       "exportedPath": "tematy/images/pythonwhere.png",
       "dependencies": []
     },
     "Tematy/Images/WhoWantsToBeDataScientist.png": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1289215,
       "exportedPath": "tematy/images/whowantstobedatascientist.png",
       "dependencies": []
     },
     "Tematy/Analiza danych przy pomocy Pandas i numpy.md": {
-      "modifiedTime": 1723506322583,
+      "modifiedTime": 1728855406051,
       "sourceSize": 4216,
       "exportedPath": "tematy/analiza-danych-przy-pomocy-pandas-i-numpy.html",
       "dependencies": []
     },
     "Tematy/Wstęp do języka Python.md": {
-      "modifiedTime": 1728248114651,
-      "sourceSize": 2157,
+      "modifiedTime": 1728855406051,
+      "sourceSize": 2158,
       "exportedPath": "tematy/wstęp-do-języka-python.html",
       "dependencies": [
         "tematy/images/whowantstobedatascientist.png",
@@ -276,241 +284,241 @@
       ]
     },
     "Index.md": {
-      "modifiedTime": 1728822557139,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1495,
       "exportedPath": "index.html",
       "dependencies": []
     },
     "lib/media/pythonfruitclass.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 537119,
       "exportedPath": "lib/media/pythonfruitclass.png",
       "dependencies": []
     },
     "lib/media/pythonwhere.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1327611,
       "exportedPath": "lib/media/pythonwhere.png",
       "dependencies": []
     },
     "lib/media/noindent.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 631602,
       "exportedPath": "lib/media/noindent.png",
       "dependencies": []
     },
     "lib/media/libraries_in_python.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 19136,
       "exportedPath": "lib/media/libraries_in_python.png",
       "dependencies": []
     },
     "lib/media/pythondatatypes.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1270287,
       "exportedPath": "lib/media/pythondatatypes.png",
       "dependencies": []
     },
     "tematy/images/whowantstobedatascientist.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1289215,
       "exportedPath": "tematy/images/whowantstobedatascientist.png",
       "dependencies": []
     },
     "tematy/images/jupyter-logo.svg": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 11092,
       "exportedPath": "tematy/images/jupyter-logo.svg",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1728836711130,
-      "sourceSize": 21596,
+      "modifiedTime": 1728855287841,
+      "sourceSize": 22770,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1728836711130,
-      "sourceSize": 3381,
+      "modifiedTime": 1728855406051,
+      "sourceSize": 3412,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 130471,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3783,
       "exportedPath": "tematy/files-wstęp-do-języka-python/listy,-krotki,-zbiory-i-słowniki.html",
       "dependencies": []
     },
     "Tematy/Images/datavis.png": {
-      "modifiedTime": 1728169945402,
+      "modifiedTime": 1728855406051,
       "sourceSize": 179786,
       "exportedPath": "tematy/images/datavis.png",
       "dependencies": []
     },
     "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md": {
-      "modifiedTime": 1728169945402,
+      "modifiedTime": 1728855406051,
       "sourceSize": 6748,
       "exportedPath": "tematy/wizualizacja-danych-za-pomocą-bibliotek-matplotlib,-seaborn-i-plotly-w-pytonie.html",
       "dependencies": [
@@ -518,52 +526,55 @@
       ]
     },
     "tematy/images/datavis.png": {
-      "modifiedTime": 1728169945402,
+      "modifiedTime": 1728855406051,
       "sourceSize": 179786,
       "exportedPath": "tematy/images/datavis.png",
       "dependencies": []
     },
     "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 213,
       "exportedPath": "tematy/files-regresja-liniowa-(i-nie-tylko)/implementacja-regresji-przy-pomocy-scikit-learn.html",
       "dependencies": []
     },
     "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md": {
-      "modifiedTime": 1728248114651,
-      "sourceSize": 1639,
+      "modifiedTime": 1728855406051,
+      "sourceSize": 4429,
       "exportedPath": "tematy/files-regresja-liniowa-(i-nie-tylko)/rodzaje-regresji.html",
       "dependencies": [
         "lib/media/regression_types.png",
-        "lib/media/decission_tree_regression_plot.png"
+        "lib/media/decission_tree_regression_plot.png",
+        "lib/media/decision_tree_example.png",
+        "lib/media/svm_rbf_2d_decision_boundary.png",
+        "lib/media/svm_rbf_3d_transformed_space.png"
       ]
     },
     "Tematy/Images/decission_tree_regression_plot.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 358007,
       "exportedPath": "tematy/images/decission_tree_regression_plot.png",
       "dependencies": []
     },
     "Tematy/Images/extrapolating_meme.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 21705,
       "exportedPath": "tematy/images/extrapolating_meme.png",
       "dependencies": []
     },
     "Tematy/Images/linear_regression_meme.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 55969,
       "exportedPath": "tematy/images/linear_regression_meme.png",
       "dependencies": []
     },
     "Tematy/Images/regression_types.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 391606,
       "exportedPath": "tematy/images/regression_types.png",
       "dependencies": []
     },
     "Tematy/Regresja liniowa (i nie tylko).md": {
-      "modifiedTime": 1728742271113,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1679,
       "exportedPath": "tematy/regresja-liniowa-(i-nie-tylko).html",
       "dependencies": [
@@ -572,67 +583,67 @@
       ]
     },
     "lib/media/regression_types.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 391606,
       "exportedPath": "lib/media/regression_types.png",
       "dependencies": []
     },
     "lib/media/decission_tree_regression_plot.png": {
-      "modifiedTime": 1728248114651,
+      "modifiedTime": 1728855406051,
       "sourceSize": 358007,
       "exportedPath": "lib/media/decission_tree_regression_plot.png",
       "dependencies": []
     },
     "tematy/images/linear_regression_meme.png": {
-      "modifiedTime": 1728742271113,
+      "modifiedTime": 1728855406051,
       "sourceSize": 55969,
       "exportedPath": "tematy/images/linear_regression_meme.png",
       "dependencies": []
     },
     "tematy/images/extrapolating_meme.png": {
-      "modifiedTime": 1728742271113,
+      "modifiedTime": 1728855406051,
       "sourceSize": 21705,
       "exportedPath": "tematy/images/extrapolating_meme.png",
       "dependencies": []
     },
     "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md": {
-      "modifiedTime": 1728742271113,
+      "modifiedTime": 1728855406051,
       "sourceSize": 2940,
       "exportedPath": "tematy/files-przygotowanie-danych-i-inżynieria-cech/brakujące-dane.html",
       "dependencies": []
     },
     "Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md": {
-      "modifiedTime": 1728770265484,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3631,
       "exportedPath": "tematy/files-przygotowanie-danych-i-inżynieria-cech/co-zrobić-po-otrzymaniu-zbioru-danych.html",
       "dependencies": []
     },
     "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md": {
-      "modifiedTime": 1728770265484,
+      "modifiedTime": 1728855406051,
       "sourceSize": 6191,
       "exportedPath": "tematy/files-przygotowanie-danych-i-inżynieria-cech/inżynieria-cech.html",
       "dependencies": []
     },
     "Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md": {
-      "modifiedTime": 1728822557139,
+      "modifiedTime": 1728855406051,
       "sourceSize": 2173,
       "exportedPath": "tematy/files-przygotowanie-danych-i-inżynieria-cech/normalizacja-i-standaryzacja.html",
       "dependencies": []
     },
     "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md": {
-      "modifiedTime": 1728742271113,
-      "sourceSize": 0,
+      "modifiedTime": 1728855406051,
+      "sourceSize": 195,
       "exportedPath": "tematy/files-regresja-liniowa-(i-nie-tylko)/czym-jest-scikit-learn.html",
       "dependencies": []
     },
     "Tematy/Images/cleaning_data_meme.jpg": {
-      "modifiedTime": 1728742271113,
+      "modifiedTime": 1728855406051,
       "sourceSize": 90449,
       "exportedPath": "tematy/images/cleaning_data_meme.jpg",
       "dependencies": []
     },
     "Tematy/Przygotowanie danych i inżynieria cech.md": {
-      "modifiedTime": 1728742271113,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1454,
       "exportedPath": "tematy/przygotowanie-danych-i-inżynieria-cech.html",
       "dependencies": [
@@ -640,145 +651,145 @@
       ]
     },
     "tematy/images/cleaning_data_meme.jpg": {
-      "modifiedTime": 1728742271113,
+      "modifiedTime": 1728855406051,
       "sourceSize": 90449,
       "exportedPath": "tematy/images/cleaning_data_meme.jpg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Czym jest Gradient Boosting.md": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3448,
       "exportedPath": "tematy/files-wzmocnienie-gradientowe-(gradient-boosting)/czym-jest-gradient-boosting.html",
       "dependencies": [
@@ -786,13 +797,13 @@
       ]
     },
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 4061,
       "exportedPath": "tematy/files-wzmocnienie-gradientowe-(gradient-boosting)/implementacja-gradient-boosting.html",
       "dependencies": []
     },
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Kluczowe pojęcia w Gradient Boosting.md": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 3713,
       "exportedPath": "tematy/files-wzmocnienie-gradientowe-(gradient-boosting)/kluczowe-pojęcia-w-gradient-boosting.html",
       "dependencies": [
@@ -800,13 +811,13 @@
       ]
     },
     "Tematy/Images/gradient_boosting_meme.jpg": {
-      "modifiedTime": 1728822557139,
+      "modifiedTime": 1728855406051,
       "sourceSize": 85142,
       "exportedPath": "tematy/images/gradient_boosting_meme.jpg",
       "dependencies": []
     },
     "Tematy/Wzmocnienie gradientowe (Gradient boosting).md": {
-      "modifiedTime": 1728822557139,
+      "modifiedTime": 1728855406051,
       "sourceSize": 1011,
       "exportedPath": "tematy/wzmocnienie-gradientowe-(gradient-boosting).html",
       "dependencies": [
@@ -814,49 +825,49 @@
       ]
     },
     "tematy/images/gradient_boosting_meme.jpg": {
-      "modifiedTime": 1728822557139,
+      "modifiedTime": 1728855406051,
       "sourceSize": 85142,
       "exportedPath": "tematy/images/gradient_boosting_meme.jpg",
       "dependencies": []
     },
     "Tematy/Images/3D_Surface_with_Minima.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 378248,
       "exportedPath": "tematy/images/3d_surface_with_minima.png",
       "dependencies": []
     },
     "Tematy/Images/different_learning_rates.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 74902,
       "exportedPath": "tematy/images/different_learning_rates.png",
       "dependencies": []
     },
     "Tematy/Images/Macierz.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 18715,
       "exportedPath": "tematy/images/macierz.png",
       "dependencies": []
     },
     "Tematy/Images/picture_1.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 6011,
       "exportedPath": "tematy/images/picture_1.png",
       "dependencies": []
     },
     "Tematy/Images/picture_4.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 7138,
       "exportedPath": "tematy/images/picture_4.png",
       "dependencies": []
     },
     "Tematy/Images/picture_9.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 7270,
       "exportedPath": "tematy/images/picture_9.png",
       "dependencies": []
     },
     "Tematy/Klasyfikacja.md": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 9276,
       "exportedPath": "tematy/klasyfikacja.html",
       "dependencies": [
@@ -867,39 +878,75 @@
       ]
     },
     "lib/media/3d_surface_with_minima.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 378248,
       "exportedPath": "lib/media/3d_surface_with_minima.png",
       "dependencies": []
     },
     "lib/media/different_learning_rates.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 74902,
       "exportedPath": "lib/media/different_learning_rates.png",
       "dependencies": []
     },
     "tematy/images/picture_1.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 6011,
       "exportedPath": "tematy/images/picture_1.png",
       "dependencies": []
     },
     "tematy/images/picture_4.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 7138,
       "exportedPath": "tematy/images/picture_4.png",
       "dependencies": []
     },
     "tematy/images/picture_9.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 7270,
       "exportedPath": "tematy/images/picture_9.png",
       "dependencies": []
     },
     "tematy/images/macierz.png": {
-      "modifiedTime": 1728836711130,
+      "modifiedTime": 1728855406051,
       "sourceSize": 18715,
       "exportedPath": "tematy/images/macierz.png",
+      "dependencies": []
+    },
+    "Tematy/Images/decision_tree_example.png": {
+      "modifiedTime": 1728855406051,
+      "sourceSize": 55878,
+      "exportedPath": "tematy/images/decision_tree_example.png",
+      "dependencies": []
+    },
+    "Tematy/Images/svm_rbf_2d_decision_boundary.png": {
+      "modifiedTime": 1728855406051,
+      "sourceSize": 118388,
+      "exportedPath": "tematy/images/svm_rbf_2d_decision_boundary.png",
+      "dependencies": []
+    },
+    "Tematy/Images/svm_rbf_3d_transformed_space.png": {
+      "modifiedTime": 1728855406051,
+      "sourceSize": 148121,
+      "exportedPath": "tematy/images/svm_rbf_3d_transformed_space.png",
+      "dependencies": []
+    },
+    "lib/media/decision_tree_example.png": {
+      "modifiedTime": 1728855406051,
+      "sourceSize": 55878,
+      "exportedPath": "lib/media/decision_tree_example.png",
+      "dependencies": []
+    },
+    "lib/media/svm_rbf_2d_decision_boundary.png": {
+      "modifiedTime": 1728855406051,
+      "sourceSize": 118388,
+      "exportedPath": "lib/media/svm_rbf_2d_decision_boundary.png",
+      "dependencies": []
+    },
+    "lib/media/svm_rbf_3d_transformed_space.png": {
+      "modifiedTime": 1728855406051,
+      "sourceSize": 148121,
+      "exportedPath": "lib/media/svm_rbf_3d_transformed_space.png",
       "dependencies": []
     }
   }
