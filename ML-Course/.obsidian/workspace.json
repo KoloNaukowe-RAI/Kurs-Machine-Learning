@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
+                "file": "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
+                "file": "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
+                "file": "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md"
+                "file": "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md"
               }
             }
           }
@@ -165,14 +165,16 @@
     "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
     "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
     "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
-    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
+    "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md",
+    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
+    "Tematy/Images/scikit-learn-logo.png",
     "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md",
-    "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md",
-    "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md",
     "Tematy/Images/svm_rbf_2d_decision_boundary.png",
     "Tematy/Images/svm_rbf_3d_transformed_space.png",
     "Tematy/Images/decision_tree_example.png",
@@ -182,11 +184,9 @@
     "Tematy/Images/picture_4.png",
     "Tematy/Images/picture_9.png",
     "Tematy/Images/picture_1.png",
-    "Tematy/Images/different_learning_rates.png",
     "Tematy/Images/Macierz.jfif",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)",
     "Tematy/Files Przygotowanie danych i inżynieria cech",
-    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
     "Tematy/Files Regresja liniowa (i nie tylko)",
     "Tematy/Files Przygotowanie danych i inżynieria cech",
     "Tematy/Files Analiza danych przy pomocy Pandas i numpy",
