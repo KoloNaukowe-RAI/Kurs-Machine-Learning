@@ -60,9 +60,12 @@ print(fruits[0])  # Wynik: apple
 # Długość listy
 print(len(fruits))  # Wynik: 3
 
-# Sortowanie listy
+# Sortowanie listy (rosnąco)
 fruits.sort()
 print(fruits)  # Wynik: ['apple', 'grape', 'orange'] (sortowanie alfabetyczne)
+
+# Sortowanie malejąco
+fruits.sort(reverse=True)
 ```
 
 ## Tuple

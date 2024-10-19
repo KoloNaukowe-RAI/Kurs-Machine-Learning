@@ -14,10 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Listy, krotki, zbiory i słowniki"
             },
             "group": "e500830a1a2d023f"
           }
@@ -34,7 +36,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -60,11 +62,26 @@
                   "scale": 1,
                   "close": true
                 }
-              }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Listy, krotki, zbiory i słowniki"
             },
             "group": "e500830a1a2d023f"
+          },
+          {
+            "id": "b2f82d1508778406",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.4"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,7 +101,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -99,7 +118,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -107,7 +128,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -130,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +161,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Listy, krotki, zbiory i słowniki"
             }
           },
           {
@@ -147,10 +172,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Listy, krotki, zbiory i słowniki"
             }
           },
           {
@@ -161,7 +188,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -170,8 +199,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md"
-              }
+                "file": "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Listy, krotki, zbiory i słowniki"
             }
           }
         ]
@@ -192,7 +223,7 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "7132a219a336bdcd",
+  "active": "d7f00521227ef6b8",
   "lastOpenFiles": [
     "Index.md",
     "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
@@ -215,8 +246,8 @@
     "Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
-    "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md",
     "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
+    "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md",
     "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
     "Tematy/Images/scikit-learn-logo.png",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md",
