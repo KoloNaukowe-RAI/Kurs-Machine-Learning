@@ -201,3 +201,7 @@ fig.update_layout(
   
 fig.show()
 ```
+
+# Co dalej?
+
+Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.

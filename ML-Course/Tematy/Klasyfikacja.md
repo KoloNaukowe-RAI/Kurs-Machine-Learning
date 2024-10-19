@@ -34,7 +34,6 @@ y_test = test_labels
   
 print("Rozmiar danych uczących X_train:", X_train.shape)  
 print("Rozmiar danych testowych X_test:", X_test.shape)
-
 ```
 
 Przykładowe dane przedstawione są poniżej:
@@ -170,7 +169,6 @@ Standardowa średnia traktuje wszystkie wartości jednakowo, natomiast średnia 
  $$ F1 = 2 \cdot \frac{\text{Precyzja} \cdot \text{Pełność}}{\text{Precyzja} + \text{Pełność}} $$ Gdzie: - **Precyzja** (Precision) to miara, która określa, jak wiele z przewidywanych pozytywnych przypadków jest rzeczywiście pozytywnych.
  $$ \text{Precyzja} = \frac{TP}{TP + FP} $$
 ```python
-
 from sklearn.metrics import precision_score, recall_score, f1_score  
 
 precision = precision_score(y_train_binary, y_pred_cv) 
@@ -197,3 +195,7 @@ Do tej pory każdy przykład był przydzielany wyłącznie do jednej klasy. Jedn
 Powinien przydzielić po jednej etykiecie na każdą rozpoznaną twarz. Załóżmy ,że model został wyuczony do rozpoznania grupy przyjaciół na zdjęciu: Tomka, Piotrka i Agnieszki. Po zaprezentowaniu zdjęć Tomka i Piotrka powinien zostać wygenerowany wynik [True, True, False ].
 
 Tego typu system klasyfikujący zdolny do wyznaczania wielu binarnych znaczników nosi nazwę klasyfikacji wieloetykietowej. 
+
+# Co dalej?
+
+Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.

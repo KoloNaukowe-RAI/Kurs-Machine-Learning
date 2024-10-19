@@ -16,23 +16,23 @@ Pandas to biblioteka w języku Python, stworzona z myślą o łatwiej i efektywn
 
 **Wczytywanie danych z pliku  CSV:**
 ```python 
-   import pandas as pd 
-   df = pd.read_csv('plik.csv')
+import pandas as pd 
+df = pd.read_csv('plik.csv')
 ```
 
 **Zapis danych jako pliku CSV:**
 ```python 
-   df.to_csv('nowy_plik.csv', index=False)
+df.to_csv('nowy_plik.csv', index=False)
 ```
 
 **Wczytywanie danych z pliku Excel:**
 ```python  
-   df = pd.read_excel('plik.xlsx')
+df = pd.read_excel('plik.xlsx')
 ```
 
 **Wczytywanie danych z pliku JSON:**
 ```python 
-   df = pd.read_json('plik.json')
+df = pd.read_json('plik.json')
 ```
 
 **Podstawowe Operacje na DataFrame**:
@@ -47,14 +47,14 @@ Pandas to biblioteka w języku Python, stworzona z myślą o łatwiej i efektywn
 | `df.columns`    | Wyświetla listę nazw kolumn, ułatwiając szybkie sprawdzenie, jakie dane są dostępne w DataFrame. <br>                              |
 
 - **Wyświetlanie ostatnich 5 wierszy:**
-   ```python 
-   print(df.tail()) 
-   ```
+```python 
+print(df.tail()) 
+```
 
  - **Wyświetlanie informacji o DataFrame:**
-   ```python 
-   print(df.info()) 
-   ```
+```python 
+print(df.info()) 
+```
 
 - **Wyświetlanie podstawowych statystyk opisowych:**
 ```python
@@ -91,13 +91,11 @@ print(df.['nazwa_kolumny'].value_counts())
 df.drop(columns=['nazwa_kolumny'], inplace=True)
 ```
 
-
 >[!important]
 >
 >W zastosowaniach statystycznych dane niedostępne mogą być danymi, które nie istnieją, lub danymi które istnieją, ale nie zostały zaobserwowane (np. z powodu problemu wynikającego ze sposobu zbierania danych).
 >
 >Podczas oczyszczania danych przed przeprowadzeniem ich analizy często warto przeprowadzić analizę samych brakujących wartości. 
-
 
 | Argument   | Opis                                                                                                                                                                              |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -167,10 +165,9 @@ print(grupa_dzial)
 dzial_max_kawa = df.groupby("Dział")["Kawa (litry)"].sum().idxmax()  
   
 print(f"\nNajwięcej kawy pije dział: {dzial_max_kawa})
-```
 
 1. 
->         Kawa (litry)  Brak snu (godziny)
+		Kawa (litry)  Brak snu (godziny)
 count       8.000000            8.000000
 mean      279.162500           83.750000
 std        71.570789           28.643055
@@ -180,15 +177,17 @@ min       150.300000           40.000000
 75%       312.675000           95.000000
 max       400.400000          130.000000
 
+
 2.
 
->           Kawa (litry)        Brak snu (godziny)     
+				Kawa (litry)        Brak snu (godziny)     
                   mean    sum               mean  sum
 Dział                                                
 HR              310.50  621.0          92.500000  185
 IT              275.45  550.9          92.500000  185
 Marketing       310.20  310.2          80.000000   80
 Produkcja       250.40  751.2          73.333333  220
+```
 
 **Filtrowanie wierszy, gdzie wartość w kolumnie 'wiek' jest większa niż 25:**
 ```python
@@ -246,16 +245,18 @@ print(data)
 
 Rezultat:
 
- food  ounces  animal
-0        bacon     4.0     pig
-1  pulled pork     3.0     pig
-2        bacon    12.0     pig
-3     Pastrami     6.0     cow
-4  corned beef     7.5     cow
-5        Bacon     8.0     pig
-6     pastrami     3.0     cow
-7    honey ham     5.0     pig
-8     nova lox     6.0  salmon
+|     | food        | ounces | animal |
+| --- | ----------- | ------ | ------ |
+| 0   | bacon       | 4.0    | pig    |
+| 1   | pulled pork | 3.0    | pig    |
+| 2   | bacon       | 12.0   | pig    |
+| 3   | Pastrami    | 6.0    | cow    |
+| 4   | corned beef | 7.5    | cow    |
+| 5   | Bacon       | 8.0    | pig    |
+| 6   | pastrami    | 3.0    | cow    |
+| 7   | honey ham   | 5.0    | pig    |
+| 8   | nova lox    | 6.0    | salmon |
+
 
 >[!important]
 >**Szeregi czasowe to jedna z kluczowych funkcjonalności Pandas, zwłaszcza gdy pracujemy z danymi finansowymi, meteorologicznymi czy jakimikolwiek danymi zależnymi od czasu**
@@ -274,7 +275,6 @@ import pandas as pd
 # Konwersja daty z tekstu na obiekt Timestamp
 date = pd.to_datetime("2021-07-04")
 print(date)  # Wynik: 2021-07-04 00:00:00
-
 ```
 
 #### Parsowanie daty z tekstu za pomocą `dateutil`
@@ -287,7 +287,6 @@ from dateutil import parser
 # Parsowanie daty z tekstu
 date = parser.parse("4th of July, 2021")
 print(date)  # Wynik: 2021-07-04 00:00:00
-
 ```
 ### Generowanie zakresu dat
 
@@ -300,7 +299,6 @@ Czasami chcesz stworzyć listę dat, np. wszystkie dni w określonym okresie. U�
 # Tworzenie zakresu dat od 1 stycznia do 7 stycznia 2023
 date_range = pd.date_range('2023-01-01', '2023-01-07')
 print(date_range)
-
 ```
 ### Tworzenie danych z tygodniową częstotliwością
 
@@ -310,7 +308,6 @@ Można łatwo wygenerować daty co tydzień za pomocą funkcji **`pd.date_range(
 # Generowanie dat co tydzień, od 1 stycznia 2023, przez 4 tygodnie
 weekly_dates = pd.date_range('2023-01-01', periods=4, freq='W')
 print(weekly_dates)
-
 ```
 
 ### Przesuwanie danych w czasie 
@@ -318,7 +315,6 @@ print(weekly_dates)
 W Pandas służy do tego metoda shift, która pozwala przesunąć dane w czasie o określoną liczbę wpisów. W przypadku szeregów czasowych próbkowanych z równomierną częstotliwością metoda ta pozwala na zbadanie trendów w czasie.
 
 ```python
-  
 import pandas as pd  
   
 data = pd.DataFrame({  
@@ -415,7 +411,6 @@ print(df)
 
 Tworzenie obiektu `datetime64` jest proste – wystarczy podać datę jako łańcuch znaków i określić typ danych:
 
-
 ```python
 import numpy as np
 # Znacznik czasu na poziomie dnia  
@@ -457,7 +452,6 @@ print(date_range)
 > - <span style="color:red">Kiedy potrzebujesz wydajności w operacjach wektorowych na datach (np. dodawanie, odejmowanie dni).</span>
 > - <span style="color:red">Kiedy wymagana jest precyzja w nanosekundach lub chcesz skorzystać z szybkich operacji na datach.</span>
 
-
 ### Formatowanie i kody formatów
 
 NumPy i `datetime` oferują różne kody formatu, które można używać do manipulowania wyświetlaniem dat. 
@@ -468,17 +462,13 @@ from datetime import datetime
 # Wyświetlanie w formacie 'YYYY-MM-DD HH:MM:SS'
 formatted_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 print(formatted_date) # Wynik 2024-10-19 15:38:34
-
-
 ```
 
 ![[tabela_data.png]]
 
-
 Oprócz `datetime64`, NumPy oferuje typ **`timedelta64`**
 
 Służący do przechowywania czasów trwania lub odstępów czasu dostępny. Jest on wydajniejszym zamiennikiem natywnego typu datetime.timedelta z Pythona, bazującym na typie numpy.timedelta64. 
-
 
 ```python
 import numpy as np
@@ -489,7 +479,6 @@ date2 = np.datetime64('2023-01-10')
 
 difference = date2 - date1
 print(difference)  # Wynik: 9 days
-
 ```
 
 
@@ -512,7 +501,6 @@ print(difference)  # Wynik: 9 days
 >4. **Generowanie liczb losowych z różnych rozkładów (normalny, jednostajny, itp.) **
 >5. **Wczytywanie i zapisywanie danych**
 
-
 **Tworzenie tablicy z samymi zerami:**
 ```python
 a = np.zeros((3, 4)) # 3 wiersze, 4 kolumny
@@ -524,3 +512,7 @@ a = np.array([1, 2, 3, 4, 5])
 mean = np.mean(a)
 print(mean)
 ```
+
+# Co dalej?
+
+Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.
