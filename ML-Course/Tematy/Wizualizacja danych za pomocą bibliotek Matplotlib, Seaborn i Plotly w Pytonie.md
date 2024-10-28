@@ -40,7 +40,7 @@ plt.show()
 
 
 ```
-\
+![[przychody.png]]
 **Przykładowy wykres słupkowy przy pomocy biblioteki seaborn:**
 ```python
 import seaborn as sns 
@@ -84,7 +84,7 @@ plt.show()
 
 
 ```
-
+![[sprzedaz.png]]
 **Przykładowe wykresy przy pomocy biblioteki Plotly:**
 
 ```python 
@@ -105,7 +105,7 @@ fig.update_traces(textinfo='percent+label')
 fig.show()
 
 ```
-
+![[telefon.png]]
 ```python 
 # wykres słupkowy  
 import plotly.graph_objects as go  
@@ -154,7 +154,7 @@ template='plotly_white'
   
 fig.show()
 ```
-
+![[igrzyska.png]]
 ```python 
 
 import plotly.graph_objects as go  
@@ -201,7 +201,7 @@ fig.update_layout(
   
 fig.show()
 ```
-
+![[UEFA.png]]
 # Co dalej?
 
 Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.
