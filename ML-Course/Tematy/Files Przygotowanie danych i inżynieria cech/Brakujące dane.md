@@ -24,14 +24,16 @@ imputer_mean = SimpleImputer(strategy='mean')
 df_imputed_mean = pd.DataFrame(imputer_mean.fit_transform(df), columns=df.columns)
 
 #Wypełnianie medianą
-imputer_median = SimpleImputer(strategy='median') 
+imputer_median = SimpleImputer(strategy='median')
 df_imputed_median = pd.DataFrame(imputer_median.fit_transform(df), columns=df.columns)
 
 # Wypełnianie najczęstszą wartością
-imputer_most_frequent = SimpleImputer(strategy='most_frequent') df_imputed_most_frequent = pd.DataFrame(imputer_most_frequent.fit_transform(df), columns=df.columns)
+imputer_most_frequent = SimpleImputer(strategy='most_frequent')
+df_imputed_most_frequent = pd.DataFrame(imputer_most_frequent.fit_transform(df), columns=df.columns)
 
 # Wypełnianie stałą wartością podaną przez użytkownika
-imputer_constant = SimpleImputer(strategy='constant', fill_value=5) df_imputed_constant = pd.DataFrame(imputer_constant.fit_transform(df), columns=df.columns)
+imputer_constant = SimpleImputer(strategy='constant', fill_value=5)
+df_imputed_constant = pd.DataFrame(imputer_constant.fit_transform(df), columns=df.columns)
 
 # Metody korzystające z regresji
 from sklearn.experimental import enable_iterative_imputer 
