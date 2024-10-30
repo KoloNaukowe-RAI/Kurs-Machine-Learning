@@ -11,6 +11,52 @@ Szczegółowe dokumentacje:
 - [Seaborn Documentation](https://seaborn.pydata.org/)
 - [Plotly Documentation](https://plotly.com/python/)
 
+ ***Matplotlib***
+
+| 🖼️ **Funkcja Matplotlib**                        | **Opis**                                                                                              |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `plot(x, y, 'format')`                            | rysuje wartości `y` względem `x`, wspierając formatowanie stylu i koloru.                             |
+| 🔹 **Markery**                                    | `.` (punkt), `o` (kółko), `^` (trójkąt), `*` (gwiazdka), `x` (krzyżyk)                                |
+| 🔸 **Styl linii**                                 | `-` (ciągła), `--` (przerywana), `-.` (kreskowo-kropkowana), `:` (kropkowana)                         |
+| 🌈 **Kolory**                                     | `b` (niebieski), `g` (zielony), `r` (czerwony), `c` (cyjan), `m` (magenta), `y` (żółty), `k` (czarny) |
+| 📊 **Przykład**                                   | `ax.plot(x, x, 'o-r')`                                                                                |
+| `plt.figure()`                                    | główne okno dla wykresu                                                                               |
+| `plt.suplots()`                                   | tworzy figurę z określonym układem osi (np. 2x2).                                                     |
+| `ax.plot(x,y)`                                    | rysuje wykres na danych osiach                                                                        |
+| dodawanie etykiet `ax.set_xlabel()/set_ylabel()'  | 'ax.set_xlabel()/set_ylabel()' ustawia etykiety dla odpowiednio odpowiednio osi x,y                   |
+| `plt.show()`                                      | do wyświetlenia wykresów                                                                              |
+| `ax.legend()`                                     | do dodania legendy do wykresu                                                                         |
+| `ax.hist(data, bins=30, color='blue', alpha=0.7)` | Tworzy histogram z określoną liczbą słupków (`bins`, kolorem i przezroczystością.                     |
+| `ax.grid(True)`                                   | dodajnie siatki                                                                                       |
+
+***SEABORN***
+
+| 🌐 **Funkcja Seaborn** | 🎨 **Opis**                                                                            | 🖥️ **Przykład użycia**                                                 |
+| ---------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| 📊 **histplot**        | Tworzy histogram, z opcją nakładania KDE.                                              | `sns.histplot(data, bins=10, kde=True)`                                 |
+| 📦 **boxplot**         | Wykres pudełkowy do wizualizacji rozkładu i wartości odstających.                      | `sns.boxplot(x='kolumna', data=df)`                                     |
+| **pairplot**           | Macierz wykresów parowych do analizowania zależności między parami zmiennych.          | `sns.pairplot(df, hue='kolumna')`                                       |
+| 🔥 **heatmap**         | Wyświetla macierz korelacji lub tabelę wartości z kolorem dla każdej komórki.          | `sns.heatmap(df.corr(), annot=True, cmap='coolwarm')`                   |
+| **lmplot**             | Wykres regresji liniowej z opcją dodania linii trendu.                                 | `sns.lmplot(x='x_kol', y='y_kol', data=df, hue='kolumna')`              |
+| **barplot**            | Wykres słupkowy z możliwością dodania odchylenia standardowego lub agregacji danych.   | `sns.barplot(x='kategoria', y='wartość', data=df, ci='sd')`             |
+| 🔹 **scatterplot**     | Wykres rozproszenia, umożliwiający kolorowanie i różnicowanie rozmiaru markerów.       | `sns.scatterplot(x='x_kol', y='y_kol', hue='kolumna', size='inna_kol')` |
+| 🎨 **set_style**       | Ustawia styl wykresu, np. `"darkgrid"`, `"whitegrid"`, `"dark"`, `"white"`, `"ticks"`. | `sns.set_style('whitegrid')`                                            |
+
+![[paleta_seaborn.png]]
+![[skala.png]]
+![[wykresy_seaborn.png]]
+
+
+Generowanie zakresu danych za pomocą biblioteki matplotlib
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=np.linspace(0,2,100) # generowanie danych X,Y w zakresie od 0-2 100 punktów
+
+```
+
 
 **Przykładowy wykres przy pomocy biblioteki matplotlib:**
 

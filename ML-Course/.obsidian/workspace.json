@@ -6,7 +6,7 @@
       {
         "id": "5ced2e732f842bd4",
         "type": "tabs",
-        "dimension": 78.69147659063626,
+        "dimension": 73.50993377483444,
         "children": [
           {
             "id": "d7f00521227ef6b8",
@@ -22,49 +22,55 @@
               "title": "Funkcje i klasy"
             },
             "group": "e500830a1a2d023f"
+          },
+          {
+            "id": "109cee2c6836b789",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tematy/Klasyfikacja.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Klasyfikacja"
+            }
+          },
+          {
+            "id": "d6bd73f932a79194",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "07fb8d845503713a",
         "type": "tabs",
-        "dimension": 21.308523409363744,
+        "dimension": 26.490066225165563,
         "children": [
           {
             "id": "7132a219a336bdcd",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
+              "type": "markdown",
               "state": {
                 "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": true
-                }
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-git-fork",
-              "title": "Graph of Funkcje i klasy"
+              "icon": "lucide-file",
+              "title": "Funkcje i klasy"
             },
             "group": "e500830a1a2d023f"
           },
@@ -137,7 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210.5
+    "width": 212.5
   },
   "right": {
     "id": "53fa0376af7fe725",
@@ -223,24 +229,36 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "d7f00521227ef6b8",
+  "active": "d6bd73f932a79194",
   "lastOpenFiles": [
+    "Tematy/Images/wykresy_seaborn.png",
+    "Tematy/Images/paleta_seaborn.png",
+    "Tematy/Images/skala.png",
+    "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
+    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
+    "Tematy/Klasyfikacja.md",
+    "Tematy/Images/UEFA.png",
+    "Tematy/Images/punkty.png",
+    "Tematy/Images/igrzyska.png",
+    "Tematy/Images/telefon.png",
+    "Tematy/Images/sprzedaz.png",
+    "Tematy/Images/przychody.png",
+    "Tematy/Przygotowanie danych i inżynieria cech.md",
+    "Tematy/Regresja liniowa (i nie tylko).md",
+    "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
+    "Tematy/Wstęp do języka Python.md",
+    "Tematy/Metryki, analiza modeli i błędów.md",
+    "Tematy/Images/PythonFruitClass.png",
+    "Tematy/Images/picture_9.png",
+    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
     "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
     "Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md",
     "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md",
     "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
     "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
     "Index.md",
-    "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
-    "Tematy/Wstęp do języka Python.md",
-    "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
-    "Tematy/Regresja liniowa (i nie tylko).md",
-    "Tematy/Przygotowanie danych i inżynieria cech.md",
-    "Tematy/Klasyfikacja.md",
-    "Tematy/Analiza danych przy pomocy Pandas i numpy.md",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Kluczowe pojęcia w Gradient Boosting.md",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Czym jest Gradient Boosting.md",
-    "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
     "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
     "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md",
@@ -249,17 +267,6 @@
     "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md",
     "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
-    "Tematy/Images/scikit-learn-logo.png",
-    "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md",
-    "Tematy/Images/svm_rbf_2d_decision_boundary.png",
-    "Tematy/Images/svm_rbf_3d_transformed_space.png",
-    "Tematy/Images/decision_tree_example.png",
-    "Tematy/Images/decision_tree_example_.png",
-    "Tematy/Images/decision_tree_example 2.png",
-    "Tematy/Images/decision_tree_example 1.png",
-    "Tematy/Images/picture_4.png",
-    "Tematy/Images/picture_9.png",
-    "Tematy/Images/picture_1.png",
     "Tematy/Images/Macierz.jfif",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)",
     "Tematy/Files Przygotowanie danych i inżynieria cech",
