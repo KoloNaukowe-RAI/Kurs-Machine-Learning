@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ML-Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>ML-Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 04 Nov 2024 19:46:13 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 04 Nov 2024 19:46:08 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Uzupełnianie brakujących wartości]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ML-Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>ML-Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 04 Nov 2024 22:46:54 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 04 Nov 2024 22:46:49 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Uzupełnianie brakujących wartości]]></title><description><![CDATA[ 
  <br><br>Jeżeli brakuje danych - dana wartość może być pusta, ale może być wstawiona jakaś wartość domyślna (np. w kolumnie wzrost mogłyby być wpisane wartości 0, które od razu widać, że nie mają sensu) - można podjąć następujące kroki:<br>
 <br>poddać się (to nie w naszym stylu),
 <br>usunąć kolumnę - warto zrobić jeżeli w danej kolumnie brakuje wielu danych, których nie ma jak uzupełnić lub są to dane, które nie są użyteczne,
@@ -11,7 +11,7 @@ data = {'A': [1, 2, None, 4, 5],
 df = pd.DataFrame(data)
 
 df_without_cols = df.drop(columns=['column_name_1', 'column_name_2'])
-Copy<br>
+<br>
 <br>uzupełnić kolumnę przy pomocy określonej wartości (np. średniej wartości w danej kolumnie, najczęściej występującej wartości w danej kolumnie lub mediany wartości tej kolumny) lub wykorzystać regresję, aby na podstawie danych z innych kolumn uzupełnić te brakujące miejsca.
 <br>from sklearn.impute import SimpleImputer
 
@@ -43,13 +43,13 @@ df_iter_imputed = pd.DataFrame(iter_imputer.fit_transform(df), columns=df.column
 # Wypełnianie za pomocą k-Najbliższych sąsiadów
 knn_imputer = KNNImputer(n_neighbors=3)
 df_knn_imputed = pd.DataFrame(knn_imputer.fit_transform(df), columns=df.columns)
-Copy<br>
+<br>
 Należy pamiętać, że po podzieleniu datasetu na zbiór treningowy, walidacyjny i testowy należy wykorzystywać ten sam imputer i skalery dla wszystkich zbiorów. Oznacza to, że należy wykorzystać fit lub fit_transform przy zbiorze treningowym, a dla pozostałych wykorzystywać samo transform.
-<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Normalizacja i standaryzacja" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\normalizacja-i-standaryzacja.html" class="internal-link" target="_self" rel="noopener nofollow">Normalizacja i standaryzacja</a>) lub kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\brakujące-dane.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md</guid><pubDate>Mon, 04 Nov 2024 19:39:18 GMT</pubDate></item><item><title><![CDATA[Sprawdzenie danych]]></title><description><![CDATA[ 
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Normalizacja i standaryzacja" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\normalizacja-i-standaryzacja.html" class="internal-link" target="_self" rel="noopener nofollow">Normalizacja i standaryzacja</a>) lub kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\brakujące-dane.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md</guid><pubDate>Wed, 30 Oct 2024 22:31:48 GMT</pubDate></item><item><title><![CDATA[Sprawdzenie danych]]></title><description><![CDATA[ 
  <br><br>Pierwszym co należy zrobić przed przystąpieniem do uczenia implementacji algorytmów uczenia maszynowego jest przejrzenie datasetu. Korzystając z poznanych wcześniej bibliotek możemy użyć następujących komend:<br>
 <br>sprawdzenie liczby brakujących wartości w poszczególnych kolumnach:
 <br>print(pandas_dataframe.isnull().sum())
-Copy<br>
+<br>
 <br>obliczenie korelacji pomiędzy poszczególnymi kolumnami i wyświetlenie ich w formie macierzy korelacji:
 <br># Wyliczenie macierzy korelacji
 corr = pandas_dataframe.corr()
@@ -60,13 +60,13 @@ sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f")
 
 plt.title('Correlation Matrix')
 plt.show()
-Copy<br>
+<br>
 <br>sprawdzić jakie unikalne wartości przyjmują dane w określonej kolumnie:
 <br>pandas_dataframe['column_name'].unique()
-Copy<br>
+<br>
 <br>wyświetlić dane numeryczne w formie histogramu:
 <br>pandas_dataframe['column_name'].plot.hist(bins=5, color='red', edgecolor='black')
-Copy<br><br>Wartości odstające, zwane również outliers, to wartości, które znacznie różnią się od reszty danych. W rezultacie mogą one niekorzystnie wpływać na wyniki analizy danych i modele uczenia maszynowego poprzez:<br>
+<br><br>Wartości odstające, zwane również outliers, to wartości, które znacznie różnią się od reszty danych. W rezultacie mogą one niekorzystnie wpływać na wyniki analizy danych i modele uczenia maszynowego poprzez:<br>
 <br>znaczne wpływanie na średnią, wariancję i inne statystyki opisowe,
 <br>wprowadzanie szumu do modeli,
 <br>prowadzenie do błędnych wniosków z analizy danych.
@@ -75,7 +75,7 @@ Copy<br><br>Wartości odstające, zwane również outliers, to wartości, które
 <br>winsoryzacja - zamiana wartości odstających na wartości graniczne pewnego przedziału (np. na wartości 95 percentyla),
 <br>zamiana wartości odstających medianą (dzięki temu mniej wpływają na rozkład),
 <br>wykorzystać normalizację, standaryzację lub podział danych na przedziały (o tym na dalszych podstronach).
-<br><br>Najprostszą metodą identyfikacji wartości odstających jest użycie reguły rozstępu międzykwartylowego (IQR)<a data-footref="1" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a>.<br>
+<br><br>Najprostszą metodą identyfikacji wartości odstających jest użycie reguły rozstępu międzykwartylowego (IQR)<a data-footref="1" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a>.<br>
 <br>IQR (Interquartile Range): Różnica między trzecim kwartylem (75 percentyl) a pierwszym kwartylem (25 percentyl).
 <br>Outliery są wartościami, które są poniżej  lub powyżej .
 <br>Implementacja identyfikacji wartości odstających i winsoryzacji oraz filtrowania znajduje się poniżej:<br>import pandas as pd
@@ -103,10 +103,10 @@ df_winsorized = df.copy()
 df_winsorized['Wartość'] = np.where(df_winsorized['Wartość'] &gt; upper_bound, 
 		upper_bound, np.where(df_winsorized['Wartość'] &lt; lower_bound, 
 		lower_bound, df_winsorized['Wartość']))
-Copy<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Brakujące dane" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\brakujące-dane.html" class="internal-link" target="_self" rel="noopener nofollow">Brakujące dane</a>) lub kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Brakujące dane" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\brakujące-dane.html" class="internal-link" target="_self" rel="noopener nofollow">Brakujące dane</a>) lub kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
 <br>
-<br><a rel="noopener nofollow" class="external-link" href="https://en.wikipedia.org/wiki/Interquartile_range" target="_blank">https://en.wikipedia.org/wiki/Interquartile_range</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\co-zrobić-po-otrzymaniu-zbioru-danych.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md</guid><pubDate>Mon, 04 Nov 2024 19:44:17 GMT</pubDate></item><item><title><![CDATA[Kodowanie kolumn]]></title><description><![CDATA[ 
+<br><a rel="noopener nofollow" class="external-link" href="https://en.wikipedia.org/wiki/Interquartile_range" target="_blank">https://en.wikipedia.org/wiki/Interquartile_range</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\co-zrobić-po-otrzymaniu-zbioru-danych.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md</guid><pubDate>Sat, 12 Oct 2024 21:55:29 GMT</pubDate></item><item><title><![CDATA[Kodowanie kolumn]]></title><description><![CDATA[ 
  <br><br>W przypadku kolumn, w którym przechowywane są dane tekstowe, kluczowym krokiem jest zamiana tych wartości na wartości numeryczne przed użyciem w modelu uczenia maszynowego. W zależności od charakteru danych można zastosować różne metody:<br>
 <br>kodowanie etykiet (label encoding) - polega na przypisaniu każdej unikalnej wartości tekstowej w kolumnie liczby całkowitej. Wadą może być jeżeli nie ma naturalnego porządku w kategoriach, bo model może zakładać, że wyższe liczby mają większe znaczenie.
 <br>from sklearn.preprocessing import LabelEncoder
@@ -115,14 +115,14 @@ le = LabelEncoder()
 df['column_name'] = le.fit_transform(df['column_name']) 
 #dla zbioru testowego/walidacyjnego należy enkodera utworzonego na zbiorze treningowym (w tym przypadku df):
 test_df['column_name'] = le.transform(test_df['column_name'])
-Copy<br>
+<br>
 <br>one-hot encoding: tworzy osobne kolumny dla każdej unikalnej wartości tekstowej w kolumnie, a następnie przypisuje wartość 0 lub 1 w tych kolumnach, wskazując, czy dana obserwacja zawiera daną kategorię. Zaletą jest, że nie występuje wiele wartości, które mogłyby mylić model, ale wadą jest utworzenie wielu kolumn (co w przypadku rozbudowanych zbiorów danych może bardzo zwiększyć zapotrzebowanie na pamięć do przechowywania datasetu).
 <br>df = pd.get_dummies(df, columns=['column_name'])
-Copy<br>
+<br>
 <br>mapowanie wartości: ręczne przypisane liczby do wartości tekstowych, co bywa przydatne w przypadku danych z wyraźnym porządkiem logicznym.
 <br>mapping = {'val_1': 1, 'val_2': 2, 'val_3': 3} 
 df['column_name'] = df['column_name'].map(mapping)
-Copy<br>Przykład jak wygląda zakodowanie kolumny ocena, w której przechowywane są wartości: niska, średnia i wysoka:<br>
+<br>Przykład jak wygląda zakodowanie kolumny ocena, w której przechowywane są wartości: niska, średnia i wysoka:<br>
 <br>Podstawowa kolumna:
 <br><br>
 <br>Zakodowana kolumna przy pomocy label encoding (wysoka -&gt; 0, niska -&gt; 1, średnia -&gt; 2)
@@ -150,13 +150,13 @@ df_wiek['Wiek_equal_freq'] = pd.qcut(df_wiek['Wiek'], q=3, labels=[0, 1, 2])
 bins_business = [0, 18, 65, float('inf')]
 labels_business = [0, 1, 2]
 df_wiek['Wiek_own_rules'] = pd.cut(df_wiek['Wiek'], bins=bins_business, labels=labels_business)
-Copy<br><br>Czasami w procesie analizy danych nie wystarczy po prostu użyć surowych wartości — warto pomyśleć o tym, jak możemy z istniejących danych wyciągnąć dodatkowe informacje lub wyliczyć bardziej użyteczne cechy, które mogą mieć większe znaczenie dla modelu lub analizy. Tego rodzaju proces, zwany feature engineering, może znacznie poprawić wyniki modelu i jakość wniosków. Oto kilka przykładów, jak można wykorzystać istniejące dane do wyciągania dodatkowych informacji:<br>
+<br><br>Czasami w procesie analizy danych nie wystarczy po prostu użyć surowych wartości — warto pomyśleć o tym, jak możemy z istniejących danych wyciągnąć dodatkowe informacje lub wyliczyć bardziej użyteczne cechy, które mogą mieć większe znaczenie dla modelu lub analizy. Tego rodzaju proces, zwany feature engineering, może znacznie poprawić wyniki modelu i jakość wniosków. Oto kilka przykładów, jak można wykorzystać istniejące dane do wyciągania dodatkowych informacji:<br>
 <br>wyliczenie wartości średniej: np. posiadając liczbę transakcji sklepu w ciągu miesiąca i jaka była suma transakcji w miesiącu można obliczyć średnią, co może mieć znaczenie przy podawaniu danych do modelu,
 <br>obliczenie procentów/proporcji: np. wyliczenie jaki procent transakcji sklepu to zakupy pieczywa,
 <br>sumowanie wartości z kilku kolumn,
 <br>wyciąganie dodatkowych informacji, np. kolumna przechowująca wartości binarne, które powstają przez sprawdzenie warunku "Czy dany sklep ma minimum 15 transakcji w miesiącu i średnią wartość transakcji powyżej 50pln?",
 <br>wyciąganie cech z kolumn tekstowych, np. długość tekstu, ilość słów, ilość hasztagów, występowanie poszczególnych słów, etc.
-<br><br>Kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\inżynieria-cech.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md</guid><pubDate>Mon, 04 Nov 2024 19:44:17 GMT</pubDate></item><item><title><![CDATA[Normalizacja]]></title><description><![CDATA[ 
+<br><br>Kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\inżynieria-cech.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md</guid><pubDate>Sat, 12 Oct 2024 21:25:26 GMT</pubDate></item><item><title><![CDATA[Normalizacja]]></title><description><![CDATA[ 
  <br><br>Normalizacja polega na przekształceniu danych tak, aby mieściły się w określonym zakresie (zwykle od 0 do 1). Jest to przydatne, gdy dane mają bardzo różne skale, a chcemy by na wejściu algorytmu wartości mieściły się w określonym przedziale.<br>Wzór na normalizację:<br><br>gdzie:<br>
 <br> to oryginalna wartość,
 <br>​ to minimalna wartość w danym zbiorze,
@@ -167,7 +167,7 @@ scaler = MinMaxScaler()
 df_normalized = scaler.fit_transform(df)  # Normalizacja całego DataFrame
 df_normalized = pd.DataFrame(df_normalized, columns=df.columns)
 
-Copy<br><br>Standaryzacja polega na przekształceniu danych tak, aby miały średnią równą 0 i odchylenie standardowe równe 1. Jest to przydatne, gdy chcemy, aby różne cechy miały porównywalny wpływ na model (niektóre algorytmy jak regresja liniowa czy SVM są bardzo wrażliwe na skalę danych). <br>Formuła standaryzacji:<br><br>gdzie:<br>
+<br><br>Standaryzacja polega na przekształceniu danych tak, aby miały średnią równą 0 i odchylenie standardowe równe 1. Jest to przydatne, gdy chcemy, aby różne cechy miały porównywalny wpływ na model (niektóre algorytmy jak regresja liniowa czy SVM są bardzo wrażliwe na skalę danych). <br>Formuła standaryzacji:<br><br>gdzie:<br>
 <br> to oryginalna wartość,
 <br> to średnia wartość cechy,
 <br> to odchylenie standardowe cechy (pierwiastek wariancji).
@@ -176,11 +176,11 @@ Copy<br><br>Standaryzacja polega na przekształceniu danych tak, aby miały śre
 scaler = StandardScaler()
 df_standardized = scaler.fit_transform(df)  # Standaryzacja całego DataFrame
 df_standardized = pd.DataFrame(df_standardized, columns=df.columns)
-Copy<br>
+<br>
 Należy pamiętać, że po podzieleniu datasetu na zbiór treningowy, walidacyjny i testowy należy wykorzystywać ten sam imputer i skalery dla wszystkich zbiorów. Oznacza to, że należy wykorzystać fit lub fit_transform przy zbiorze treningowym, a dla pozostałych wykorzystywać samo transform.
-<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Inżynieria cech" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">Inżynieria cech</a>) lub kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\normalizacja-i-standaryzacja.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate></item><item><title><![CDATA[Jedna biblioteka praktycznie do wszystkiego]]></title><description><![CDATA[ 
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Inżynieria cech" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">Inżynieria cech</a>) lub kliknij <a data-tooltip-position="top" aria-label="Przygotowanie danych i inżynieria cech" data-href="Przygotowanie danych i inżynieria cech" href="tematy\przygotowanie-danych-i-inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-przygotowanie-danych-i-inżynieria-cech\normalizacja-i-standaryzacja.html</link><guid isPermaLink="false">Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md</guid><pubDate>Sat, 12 Oct 2024 22:03:22 GMT</pubDate></item><item><title><![CDATA[Jedna biblioteka praktycznie do wszystkiego]]></title><description><![CDATA[ 
  <br><br>Scikit-learn jest jedną z najczęściej wybieranych bibliotek do projektów uczenia maszynowego, zarówno przez początkujących, jak i zaawansowanych użytkowników, co zawdzięcza swojej elastyczności, wszechstronności i prostocie użycia. Zapewnia narzędzia do budowy i trenowania modeli, a także do analizy danych i zapewnia kompatybilność z innymi narzędziami do analizy danych dostępnych w Pythonie. <br>Link do oficjalnej strony <a data-tooltip-position="top" aria-label="https://scikit-learn.org/" rel="noopener nofollow" class="external-link" href="https://scikit-learn.org/" target="_blank">scikit-learn</a>.<br><img alt="scikit-learn-logo.png" src="lib\media\scikit-learn-logo.png"><br>
-Źródło: <a data-footref="sci" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br><br>Bibliotekę sklearn możemy wykorzystać do:<br>
+Źródło: <a data-footref="sci" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br><br>Bibliotekę sklearn możemy wykorzystać do:<br>
 <br>pobierania datasetów, przetwarzania danych i ich wstępnej obróbki,
 <br>implementacji algorytmów uczenia maszynowego:
 
@@ -194,25 +194,25 @@ Należy pamiętać, że po podzieleniu datasetu na zbiór treningowy, walidacyjn
 <br><br>W scikit-learn dostępne jest kilka funkcji, które mogą być wykorzystane przy różnych modelach i procesach uczenia maszynowego, co ułatwia korzystanie z tej biblioteki. Poniżej znajduje się kilka przykładów:<br>
 <br>podział danych na zbiór treningowy i testowy (jako X oznaczone są cechy, a jako y etykiety)
 <br>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-Copy<br>
+<br>
 <br>trening modelu na danych X_train i etykietach y_train:
 <br>model.fit(X_train, y_train)
-Copy<br>
+<br>
 <br>przewidywanie etykiet dla nowych danych X_test:
 <br>model.predict(X_test)
-Copy<br>
+<br>
 <br>obliczenie oceny modelu (np. dla klasyfikacji oblicza dokładność, a dla regresji błąd):
 <br>model.score(X_test, y_test)
-Copy<br>
+<br>
 <br>jednoczesne dopasowanie do danych i transformacja (np. przy skalowaniu lub uzupełnianiu brakujących wartości):
 <br>scaler.fit_transform(training_data)
-Copy<br>
+<br>
 <br>sama transformacja (np. dla danych testowych, gdzie chcemy wykorzystać to samo skalowanie co dla danych treningowych):
 <br>scaler.transform(test_data)
-Copy<br>
+<br>
 <br>przeprowadzenie walidacji krzyżowej:
 <br>cross_val_score(model, X_train, y_train, cv=5)
-Copy<br>
+<br>
 <br>optymalizacja hiperparametrów:
 <br># param_grid jest słownikiem i dla drzewa decyzyjnego może wyglądać następująco:
 param_grid = {'max_depth': [None, 10, 20, 30], 
@@ -221,7 +221,7 @@ param_grid = {'max_depth': [None, 10, 20, 30],
 			  'max_features': [None, 'sqrt', 'log2']}
 # a przeszukiwanie przy pomocy przeszukiwania po siatce hiperparemetrów
 GridSearchCV(model(), param_grid, cv=5)
-Copy<br>
+<br>
 <br>wczytywanie danych:
 <br>from sklearn import datasets
 # Wczytanie datasetu Iris
@@ -233,14 +233,14 @@ wine = datasets.load_wine()
 
 # Możliwe jest też pobieranie datasetów z OpenML, np.
 mnist = datasets.fetch_openml('mnist_784', version=1)
-Copy<br><br>Utworzenie samemu zbioru danych jest czasochłonne i wymaga następnie przetworzenia danych, co ponownie może być czasochłonne i dodatkowo skomplikowane. Istnieją strony, na których użytkownicy mogą wstawić datasety, aby inni mogli z nich publicznie korzystać. Najpopularniejsze z nich to:<br>
+<br><br>Utworzenie samemu zbioru danych jest czasochłonne i wymaga następnie przetworzenia danych, co ponownie może być czasochłonne i dodatkowo skomplikowane. Istnieją strony, na których użytkownicy mogą wstawić datasety, aby inni mogli z nich publicznie korzystać. Najpopularniejsze z nich to:<br>
 <br><a data-tooltip-position="top" aria-label="https://www.kaggle.com/datasets" rel="noopener nofollow" class="external-link" href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a>
 <br><a data-tooltip-position="top" aria-label="https://openml.org/search?type=data" rel="noopener nofollow" class="external-link" href="https://openml.org/search?type=data" target="_blank">OpenML</a><br>
 Ponadto na Kaggle odbywają się cyklicznie konkursy (z dużymi pulami nagród), w których można spróbować swoich sił.
 <br><br>Przejdź do kolejnego zagadnienia (<a data-href="Implementacja regresji przy pomocy Scikit-learn" href="tematy\files-regresja-liniowa-(i-nie-tylko)\implementacja-regresji-przy-pomocy-scikit-learn.html" class="internal-link" target="_self" rel="noopener nofollow">Implementacja regresji przy pomocy Scikit-learn</a>) lub kliknij <a data-tooltip-position="top" aria-label="Regresja liniowa (i nie tylko)" data-href="Regresja liniowa (i nie tylko)" href="tematy\regresja-liniowa-(i-nie-tylko).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
 <br>
-<br><a rel="noopener nofollow" class="external-link" href="https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos" target="_blank">https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\files-regresja-liniowa-(i-nie-tylko)\czym-jest-scikit-learn.html</link><guid isPermaLink="false">Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate><enclosure url="lib\media\scikit-learn-logo.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\scikit-learn-logo.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Jak zaimplementować regresję w Pythonie?]]></title><description><![CDATA[ 
+<br><a rel="noopener nofollow" class="external-link" href="https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos" target="_blank">https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\files-regresja-liniowa-(i-nie-tylko)\czym-jest-scikit-learn.html</link><guid isPermaLink="false">Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md</guid><pubDate>Mon, 14 Oct 2024 19:15:45 GMT</pubDate><enclosure url="lib\media\scikit-learn-logo.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\scikit-learn-logo.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Jak zaimplementować regresję w Pythonie?]]></title><description><![CDATA[ 
  <br><br><br># Import niezbędnych bibliotek
 import numpy as np
 from sklearn.datasets import make_regression
@@ -250,10 +250,10 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
 from sklearn.metrics import mean_squared_error
-Copy<br><br>X, y = make_regression(n_samples=1000, n_features=10, noise=0.1, random_state=42)
-Copy<br><br># Podział danych na zestaw treningowy i testowy
+<br><br>X, y = make_regression(n_samples=1000, n_features=10, noise=0.1, random_state=42)
+<br><br># Podział danych na zestaw treningowy i testowy
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-Copy<br><br># Regresja liniowa
+<br><br># Regresja liniowa
 model_lr = LinearRegression()
 model_lr.fit(X_train, y_train)
 
@@ -268,15 +268,15 @@ model_rf.fit(X_train, y_train)
 # SVR
 model_svr = SVR()
 model_svr.fit(X_train, y_train)
-Copy<br><br>y_pred_lr = model.predict(X_test)
+<br><br>y_pred_lr = model.predict(X_test)
 y_pred_dt = model.predict(X_test)
 y_pred_rf = model.predict(X_test)
 y_pred_svr = model.predict(X_test)
-Copy<br><br>mse_lr = mean_squared_error(y_test, y_pred_lr)
+<br><br>mse_lr = mean_squared_error(y_test, y_pred_lr)
 mse_dt = mean_squared_error(y_test, y_pred_dt)
 mse_rf = mean_squared_error(y_test, y_pred_rf)
 mse_svr = mean_squared_error(y_test, y_pred_svr)
-Copy<br><br>import numpy as np
+<br><br>import numpy as np
 from sklearn.datasets import make_regression
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVR
@@ -301,18 +301,18 @@ y_pred_pipeline = pipeline.predict(X_test)
 
 # Ocena modelu Pipeline
 mse_pipeline = mean_squared_error(y_test, y_pred_pipeline)
-Copy<br><br>Kliknij <a data-tooltip-position="top" aria-label="Regresja liniowa (i nie tylko)" data-href="Regresja liniowa (i nie tylko)" href="tematy\regresja-liniowa-(i-nie-tylko).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-regresja-liniowa-(i-nie-tylko)\implementacja-regresji-przy-pomocy-scikit-learn.html</link><guid isPermaLink="false">Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate></item><item><title><![CDATA[Rodzaje regresji]]></title><description><![CDATA[ 
+<br><br>Kliknij <a data-tooltip-position="top" aria-label="Regresja liniowa (i nie tylko)" data-href="Regresja liniowa (i nie tylko)" href="tematy\regresja-liniowa-(i-nie-tylko).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-regresja-liniowa-(i-nie-tylko)\implementacja-regresji-przy-pomocy-scikit-learn.html</link><guid isPermaLink="false">Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md</guid><pubDate>Mon, 14 Oct 2024 20:44:55 GMT</pubDate></item><item><title><![CDATA[Rodzaje regresji]]></title><description><![CDATA[ 
  <br><br>Istnieją różne rodzaje regresji, które różnią się rodzajem zależności między zmiennymi, które modelują. Najczęściej występujące to:<br>
 <br>Regresja liniowa: Podstawowy rodzaj regresji, w którym założeniem jest liniowa zależność zmiennych (czyli można ją przedstawić za pomocą prostej), np. droga i czas w ruchu jednostajnym prostoliniowym,
 <br>Regresja wielomianowa: Służy do modelowania bardziej złożonych zależności, których nie można opisać przy pomocy prostej, np. wzrost człowieka i wiek,
 <br>Regresja logistyczna: Służy do przewidywania wartości binarnych (tak/nie, 0/1), np. czy stwierdzenie czy uda się przejechać drogę o danej długości bez tankowania,
 <br>Regresja drzewiasta: Buduje model w postaci drzewa decyzyjnego, co pozwala na interpretację wyników, np. predykcja ceny domu, gdzie każdy węzeł jest pytaniem o jedną z cech (metraż, wiek, etc.).
 <br>Aby łatwiej było zrozumieć różnice, poniżej znajdują się przykładowe wykresy z wrysowanymi poszczególnymi typami regresji<br><img alt="regression_types.png" src="lib\media\regression_types.png"><br>A na grafice poniżej widoczna jest wizualizacja drzewa decyzyjnego z przykładu powyżej, gdzie widać jak parametru x wpływa na wartość przewidywaną przez drzewo. Taki "schodkowy" przebieg regresji wynika z głębokości drzewa równej zaledwie max_depth=3, więc max 8 wartości na wyjściu.<br><img alt="decission_tree_regression_plot.png" src="lib\media\decission_tree_regression_plot.png"><br><br><br>Drzewo decyzyjne, to taki algorytm, który dzieli dane na mniejsze grupy na podstawie warunków logicznych. Model ma strukturę drzewa, w którym każdy węzeł reprezentuje kolejne pytania, gałęzie prowadzą do odpowiedzi, a w liściach znajdują się predykcje.<br>Dobrym przykładem może być utworzenie drzewa do klasyfikacji zwierząt. Załóżmy, że chcemy mieć następujące klasy (na klasach jest łatwiej wytłumaczyć niż na regresji, ale różnica jest taka, że predykowana jest wartość, a nie klasa): kot, pies, sowa, orzeł, pająk, mrówka, wąż, dżdżownica. Drzewo decyzyjne mogłoby wyglądać następująco:<br><img alt="decision_tree_example.png" src="lib\media\decision_tree_example.png"><br>Zaletami drzew decyzyjnych jest możliwość wykorzystania zarówno cech numerycznych, jak i kategorycznych, oraz łatwość w interpretacji modelu. Wadą jednak jest podatność na przeuczenie (overfitting), które polega na zbyt mocnym dopasowaniu modelu do danych treningowych. Korzystając z rysunku powyżej, przeuczenie mogłoby się objawić tym, że pies, który przez jakiś czas badania nie zaszczekał, zostanie zakwalifikowany jako kot, bo w taki sposób zostało dobrane pytanie podczas treningu.<br><br>Random Forest polega na budowie wielu niezależnych drzew decyzyjnych, a następnie łączeniu ich wyników (poprzez uśrednianie dla regresji lub głosowanie większościowe dla klasyfikacji). Każde drzewo w lesie jest trenowane na losowym podzbiorze danych i atrybutów, co pomaga modelowi unikać przeuczenia. Inną zaletą jest to, że dobrze radzi sobie z dużymi zestawami danych, które mają dodatkowo dużo cech.<br><br>SVM to algorytm, który stara się znaleźć hiperpłaszczyznę w przestrzeni wielowymiarowej, która najlepiej oddzieli poszczególne klasy w danych. W przypadku problemów liniowych, SVM szuka płaszczyzny, która maksymalizuje odległość między najbliższymi punktami dwóch klas. Zaletą jest to, że SVM może korzystać z kerneli (jąder), które pozwalają na transformację danych do wyższych wymiarów, aby znalezienie płaszczyzny było możliwe dla problemów nieliniowych. Wadami jest jednak trudność w interpretacji oraz większa złożoność obliczeniowa.<br>Przykład jak algorytm SVM działa dla danych, w których występują 2 klasy, które oddzielić należy za pomocą okręgu, a nie liniowo pokazany jest poniżej. Poprzez wykorzystanie jądra RBF (Radial Basis Function) możliwe jest dodanie kolejnego wymiaru, w którym znaleziona zostaje hiperpłaszczyzna, która oddzieli dane na poszczególne klasy.<br><img alt="svm_rbf_2d_decision_boundary.png" src="lib\media\svm_rbf_2d_decision_boundary.png"><br>
-<img alt="svm_rbf_3d_transformed_space.png" src="lib\media\svm_rbf_3d_transformed_space.png"><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Czym jest Scikit-learn" href="tematy\files-regresja-liniowa-(i-nie-tylko)\czym-jest-scikit-learn.html" class="internal-link" target="_self" rel="noopener nofollow">Czym jest Scikit-learn</a>) lub kliknij <a data-tooltip-position="top" aria-label="Regresja liniowa (i nie tylko)" data-href="Regresja liniowa (i nie tylko)" href="tematy\regresja-liniowa-(i-nie-tylko).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-regresja-liniowa-(i-nie-tylko)\rodzaje-regresji.html</link><guid isPermaLink="false">Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate><enclosure url="lib\media\regression_types.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\regression_types.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Funkcje w języku Python]]></title><description><![CDATA[ 
+<img alt="svm_rbf_3d_transformed_space.png" src="lib\media\svm_rbf_3d_transformed_space.png"><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Czym jest Scikit-learn" href="tematy\files-regresja-liniowa-(i-nie-tylko)\czym-jest-scikit-learn.html" class="internal-link" target="_self" rel="noopener nofollow">Czym jest Scikit-learn</a>) lub kliknij <a data-tooltip-position="top" aria-label="Regresja liniowa (i nie tylko)" data-href="Regresja liniowa (i nie tylko)" href="tematy\regresja-liniowa-(i-nie-tylko).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-regresja-liniowa-(i-nie-tylko)\rodzaje-regresji.html</link><guid isPermaLink="false">Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md</guid><pubDate>Sun, 13 Oct 2024 21:00:58 GMT</pubDate><enclosure url="lib\media\regression_types.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\regression_types.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Funkcje w języku Python]]></title><description><![CDATA[ 
  <br><br>Funkcje w Pythonie umożliwiają podzielenie kodu na moduły, które można ponownie wykorzystywać. Tworzy się je za pomocą instrukcji def i ciała funkcji jak w poniższym przykładzie:<br>def nazwa_funkcji(argumenty):
 	# tutaj co w funkcji się dzieje
 	return wynik
-Copy<br>gdzie:<br>
+<br>gdzie:<br>
 <br>def - słowo kluczowe inicjujące definicję funkcji,
 <br>nazwa_funkcji - unikalna nazwa funkcji,
 <br>argumenty - opcjonalna lista argumentów, które funkcja przyjmuje (można opcjonalnie zdefiniować typ i wartość domyślną elementów),
@@ -323,7 +323,7 @@ zmienna = nazwa_funkcji(argumenty)
 
 # W przypadku funkcji, która nic nie zwraca (np. ma wyświetlić w konsoli odpowiedź, ale nie zwrócić wyniku)
 nazwa_funkcji(argumenty)
-Copy<br>Przykłady tworzenia funkcji:<br>def oblicz_sume_kwadratow(x, y):
+<br>Przykłady tworzenia funkcji:<br>def oblicz_sume_kwadratow(x, y):
 	result = x**2+y**2
 	return result
 
@@ -347,7 +347,7 @@ def oblicz_kwadrat_roznicy(x, y):
     Kwadrat różnicy liczb x i y.
   """
   return (x-y)**2
-Copy<br>Możliwe jest też zwracanie więcej niż 1 wartości, np:<br>import datetime
+<br>Możliwe jest też zwracanie więcej niż 1 wartości, np:<br>import datetime
 
 def pobierz_aktualna_date():
   """Zwraca aktualną datę w postaci roku, miesiąca i dnia."""
@@ -358,19 +358,19 @@ def pobierz_aktualna_date():
 rok, miesiac, dzien = pobierz_aktualna_date()
 
 print(f"Dzisiaj jest {dzien} {miesiac} {rok}.")
-Copy<br><br>Klasy są podstawowym elementem programowania obiektowego w Pythonie. Służą one do reprezentacji obiektów/pojęć w świecie rzeczywistym. Definicja klasy wygląda następująco:<br>class NazwaKlasy:
+<br><br>Klasy są podstawowym elementem programowania obiektowego w Pythonie. Służą one do reprezentacji obiektów/pojęć w świecie rzeczywistym. Definicja klasy wygląda następująco:<br>class NazwaKlasy:
     def __init__(self, argumenty_init):
 	    self.atrybuty_do_inicjalizacji = argumenty_init
 	def metoda(self, argument_metody):
 		self.atrybuty_do_modyfikacji = argumenty_metody
-Copy<br>gdzie:<br>
+<br>gdzie:<br>
 <br>class - słowo kluczowe inicjujące definicję klasy,
 <br>NazwaKlasy - unikalna nazwa klasy,
 <br>atrybuty - zmienne związane z obiektami tej klasy (np. kolor, rozmiar),
 <br>metody - funkcje związane z obiektami tej klasy (np. poruszanie się, rysowanie).<br>
 a utworzenie obiektu danej funkcji wygląda następująco:
 <br>zmienna = NazwaKlasy(argumenty)
-Copy<br>Przykład tworzenia klasy:<br>class Pies:
+<br>Przykład tworzenia klasy:<br>class Pies:
     def __init__(self, imie, rasa):  
     # wewnątrz init inicjalizujemy wszystkie atrybuty klasy
         self.imie = imie
@@ -387,19 +387,35 @@ moj_pies = Pies("Reksio", "Jamnik")
 moj_pies.szczekaj()
 # Dostęp do imienia psa
 print(moj_pies.imie)
-Copy<br>Python nie ma mechanizmu ścisłej prywatności artybutów tak jak np. C++, ale wykorzystanie __ na początku nazwy pozwala na oznaczenie artybutu jako prywatny, do którego należy odwoływać się przez metodę danej klasy:<br>class Osoba:
+<br>Python nie ma mechanizmu ścisłej prywatności artybutów tak jak np. C++, ale wykorzystanie __ na początku nazwy pozwala na oznaczenie artybutu jako prywatny, do którego należy odwoływać się przez metodę danej klasy:<br>class Osoba:
     def __init__(self, imie, pesel):
         self.imie = imie
         self.__pesel = pesel  # Prywatny atrybut
 
     def pobierz_pesel(self):
         return self.__pesel
-Copy<br><img alt="PythonFruitClass.png" src="lib\media\pythonfruitclass.png"><br>
-Źródło: <a data-footref="meme1" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener nofollow">Używanie bibliotek</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
+<br><img alt="PythonFruitClass.png" src="lib\media\pythonfruitclass.png"><br>
+Źródło: <a data-footref="meme1" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener nofollow">Używanie bibliotek</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
 <br>
-<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/python-memes/python-is-easy-they-say/" target="_blank">https://programmerhumor.io/python-memes/python-is-easy-they-say/</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Funkcje i klasy.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate><enclosure url="lib\media\pythonfruitclass.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythonfruitclass.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Jak korzystać z Jupyter Notebooks]]></title><description><![CDATA[ 
- ]]></description><link>tematy\files-wstęp-do-języka-python\jak-korzystać-z-jupyter-notebooks.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md</guid><pubDate>Tue, 30 Jul 2024 18:25:34 GMT</pubDate></item><item><title><![CDATA[Struktury danych w Python]]></title><description><![CDATA[ 
+<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/python-memes/python-is-easy-they-say/" target="_blank">https://programmerhumor.io/python-memes/python-is-easy-they-say/</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Funkcje i klasy.md</guid><pubDate>Sun, 06 Oct 2024 20:42:32 GMT</pubDate><enclosure url="lib\media\pythonfruitclass.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythonfruitclass.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Wgrywanie Notebooków]]></title><description><![CDATA[ 
+ <br>W tym miejscu przedstawione zostaną 3 możliwości uruchomienia Jupyter Notebooks oraz krótki opis tego jak one działają.<br><br>Przed przejściem do wgrywania zacznijmy od pobierania Notebooków przygotowanych do tego kursu. Przejdź do repozytorium kursu, wejdź w katalog Tasks i wybierz, który plik chcesz wybrać (kliknij go dwukrotnie). Po przejściu do podglądu pliku, w górnej prawej części ekranu powinna być widoczna ikonka pobierania (Download raw file) i przy jej pomocy można pobrać plik. Należy pamiętać o tym, że do części zadań trzeba pobrać dodatkowo pliki z danymi (z folderu Dane).<br>
+<img alt="Downloading_from_github.png" src="lib\media\downloading_from_github.png"><br>
+Inną możliwością jest użycie git clone &lt;adres_url_repozytorium&gt;, który pobierze całe repozytorium z GitHuba i w ten sposób można przejść do folderu, który nas interesuje.<br><br><br><br><img alt="GoogleColab2.png" src="lib\media\googlecolab2.png"><br><br><img alt="GoogleColab1.png" src="lib\media\googlecolab1.png"><br><br><img alt="GoogleColab3.png" src="lib\media\googlecolab3.png"><br><br><img alt="GoogleColab4.png" src="lib\media\googlecolab4.png"><br><br><br><br><img alt="Kaggle1.png" src="lib\media\kaggle1.png"><br><br><img alt="Kaggle2.png" src="lib\media\kaggle2.png"><br><br><img alt="Kaggle3.png" src="lib\media\kaggle3.png"><br><br><img alt="Kaggle4.png" src="lib\media\kaggle4.png"><br><br><br>
+<br>Visual Studio Code z oficjalnej strony: <a rel="noopener nofollow" class="external-link" href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a> 
+<br>Pythona ze strony: <a rel="noopener nofollow" class="external-link" href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a> (w chwili tworzenia kursu polecam korzystać z Pythona 3.11)
+<br><br><br><img alt="vscode1.png" src="lib\media\vscode1.png"><br><br>W przypadku, gdy nie mieliśmy wcześniej utworzonego środowiska:<br>
+Python Environments &gt; Create Python Environment + Venv + Python 3.xx<br>
+<img alt="vscode2.png" src="lib\media\vscode2.png"><br>
+<img alt="vscode3.png" src="lib\media\vscode3.png"><br>
+Jeżeli środowisko wcześniej utworzyliśmy to można zamiast Create Python Environment można je wybrać z listy<br>
+<img alt="vscode4.png" src="lib\media\vscode4.png"><br><br><br>!pip install &lt;nazwa_biblioteki&gt;
+<br>możesz też skorzystać z przygotowanego pliku requirements.txt<br>!pip install -r requirements.txt
+<br><br>Na rysunku poniżej zaznaczono elementy widoczne w notatniku:<br> Komórka z tekstem 
+ Komórka z kodem 
+ Pole do wpisywania kodu 
+ Przycisk do uruchomienia komórki z kodem 
+ Wyjście komórki z kodem <br><img alt="notebook1.png" src="lib\media\notebook1.png"><br>Notebooki umożliwiają uruchamianie jedynie fragmentów kodu, przez co dobrze nadają się do realizacji ćwiczeń, które rozwiązuje się krok po kroku i gdzie przygotowuje się coś, co wykorzysta się później, dzięki zapamiętywaniu wartości zmiennych (są one resetowane przy rezetowaniu środowiska). Powoduje to, że nie ma konieczności wykonywania długich obliczeń za każdym uruchomieniem skryptu.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-wstęp-do-języka-python\jak-korzystać-z-jupyter-notebooks.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md</guid><pubDate>Mon, 04 Nov 2024 22:45:59 GMT</pubDate><enclosure url="lib\media\downloading_from_github.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\downloading_from_github.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Struktury danych w Python]]></title><description><![CDATA[ 
  <br><br>W Pythonie możemy wyróżnić następujące struktury danych: listy, krotki, zbiory i słowniki.<br>
 <br>
 Listy są najbardziej uniwersalnymi strukturami danych w Pythonie. Są to uporządkowane, mutowalne kolekcje, które mogą zawierać dowolne elementy. Możesz dodawać, usuwać i modyfikować elementy listy.
@@ -428,7 +444,7 @@ mixed_set = {1, "hello", 3.14, True}
 # Dictionary
 num_as_key = {25: "John", 30: "Jane"}
 str_as_key = {"name": "Alice", "age": 28, "city": "London"}
-Copy<br><br><br># Tworzenie listy
+<br><br><br># Tworzenie listy
 fruits = ["apple", "banana", "cherry"]
 
 # Dodawanie elementu na koniec
@@ -459,7 +475,7 @@ print(fruits)  # Wynik: ['apple', 'grape', 'orange'] (sortowanie alfabetyczne)
 
 # Sortowanie malejąco
 fruits.sort(reverse=True)
-Copy<br><br>Krotki są niemutowalne, więc nie można dodawać ani usuwać elementów po ich utworzeniu!!! Aby zrobić zmiany można skopiować wartości z już istniejącej tupli do nowej.<br># Tworzenie tuple
+<br><br>Krotki są niemutowalne, więc nie można dodawać ani usuwać elementów po ich utworzeniu!!! Aby zrobić zmiany można skopiować wartości z już istniejącej tupli do nowej.<br># Tworzenie tuple
 numbers = (1, 2, 3)
 
 # Dostęp do elementu
@@ -467,7 +483,7 @@ print(numbers[1])  # Wynik: 2
 
 # Długość tuple
 print(len(numbers))  # Wynik: 3
-Copy<br><br># Tworzenie setu
+<br><br># Tworzenie setu
 my_set = {1, 2, 3, 2}  # Duplikaty są usuwane
 
 # Dodawanie elementu
@@ -486,7 +502,7 @@ set1 = {1, 2, 3}
 set2 = {2, 3, 4}
 print(set1.union(set2))  # Suma zbiorów: {1, 2, 3, 4}
 print(set1.intersection(set2))  # Przecięcie zbiorów: {2, 3}
-Copy<br><br># Tworzenie słownika
+<br><br># Tworzenie słownika
 person = {"name": "John", "age": 30, "city": "New York"}
 
 # Dodawanie pary klucz-wartość
@@ -506,7 +522,7 @@ print(len(person))  # Wynik: 2
 # Sprawdzenie, czy klucz istnieje
 if "city" in person:
     print("Klucz 'city' istnieje")
-Copy<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Pętle i instrukcje warunkowe" href="tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html" class="internal-link" target="_self" rel="noopener nofollow">Pętle i instrukcje warunkowe</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate></item><item><title><![CDATA[Pętle w języku Python]]></title><description><![CDATA[ 
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Pętle i instrukcje warunkowe" href="tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html" class="internal-link" target="_self" rel="noopener nofollow">Pętle i instrukcje warunkowe</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md</guid><pubDate>Sat, 19 Oct 2024 23:22:12 GMT</pubDate></item><item><title><![CDATA[Pętle w języku Python]]></title><description><![CDATA[ 
  <br><br>Pętle w Pythonie służą do wielokrotnego wykonywania bloku kodu, tak długo jak dany warunek jest spełniony. Są wykorzystywane przy powtarzalnych zadaniach. Python oferuje dwa główne typy pętli: for i while.<br>W obu pętlach możliwe jest wykorzystanie dodatkowych funkcji:<br>
 <br>break - przerwanie wykonania pętli,
 <br>continue - przejście do następnej iteracji pętli (dalsza część obecnej iteracji się nie wykona).
@@ -514,7 +530,7 @@ Copy<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Pętle i instrukcje
 while count &lt; 5:
     print(count)
     count += 1
-Copy<br><br>Pętla for służy do iterowania po sekwencjach:<br># Iterowanie po zakresie liczb
+<br><br>Pętla for służy do iterowania po sekwencjach:<br># Iterowanie po zakresie liczb
 for i in range(5):
     print(i)
 
@@ -522,7 +538,7 @@ for i in range(5):
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
-Copy<br>Możliwe jest również wykorzystanie funkcji enumerate(zmienna), aby podczas iterowania po sekwencji mieć również informację o indeksie elementu:<br>fruits = ["apple", "banana", "cherry"]
+<br>Możliwe jest również wykorzystanie funkcji enumerate(zmienna), aby podczas iterowania po sekwencji mieć również informację o indeksie elementu:<br>fruits = ["apple", "banana", "cherry"]
 
 for index, fruit in enumerate(fruits):
     print(f"Owoc na pozycji {index}: {fruit}")
@@ -531,7 +547,7 @@ for index, fruit in enumerate(fruits):
 # enumerate można też wykorzystać do utworzenia słownika
 my_dict = dict(enumerate(fruits)) 
 print(my_dict) # Wynik: {0: 'apple', 1: 'banana', 2: 'cherry'}
-Copy<br><br>Za pomocą pętli w Pythonie można w bardzo zwięzły i czytelny sposób tworzyć lub modyfikować listy:<br># Przykład 1
+<br><br>Za pomocą pętli w Pythonie można w bardzo zwięzły i czytelny sposób tworzyć lub modyfikować listy:<br># Przykład 1
 numbers = [1, 2, 3, 4, 5] 
 squares = [x**2 for x in numbers] 
 print(squares) # Wynik: [1, 4, 9, 16, 25]
@@ -544,7 +560,7 @@ filtered_words = [word for word in words if word[0] in vowels] print(filtered_wo
 # `for word in words`: Iteruje po każdym słowie w liście `words`.
 # `if word[0] in vowels`: Sprawdza, czy pierwsza litera słowa jest samogłoską.
 # Jeśli warunek jest spełniony, słowo jest dodawane do nowej listy `filtered_words`
-Copy<br><br>Instrukcje warunkowe pozwalają na wykonanie określonych fragmentów kodu w zależności od spełnienia określonych warunków/kryteriów. Wyróżnić można następujące instrukcje:<br>
+<br><br>Instrukcje warunkowe pozwalają na wykonanie określonych fragmentów kodu w zależności od spełnienia określonych warunków/kryteriów. Wyróżnić można następujące instrukcje:<br>
 <br>if - podstawowy (pierwszy) warunek do sprawdzenia,
 <br>elif - sprawdzenie kolejnego warunku, jeżeli poprzednie nie były spełnione,
 <br>else - wykonanie w przypadku, gdy żaden wcześniejszy warunek nie został spełniony.
@@ -578,16 +594,16 @@ if x &gt; 5 and y &lt; 10:
 	print("Oba warunki są spełnione.")
 elif x &gt; 5 and not y &lt; 10:
 	print("X jest wiekszy niz 5, a y nie jest wiekszy niz 10.")
-Copy<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Funkcje i klasy" href="tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html" class="internal-link" target="_self" rel="noopener nofollow">Funkcje i klasy</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate></item><item><title><![CDATA[Język interpretowany]]></title><description><![CDATA[ 
- <br><br>Python jest językiem interpretowanym, więc do korzystania z niego nie jest wymagany kompilator (wykorzystywany jest interpreter). Innymi przykładami tego typu języków są Bash, PHP lub JavaScript. Oznacza to, że skrypt jest przechowywany w formie kodu i interpretowany przy każdym uruchomieniu, a nie konwertowany na kod maszynowy jednorazowo <a data-footref="interp" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a>.<br><br><img alt="PythonWhere.png" src="lib\media\pythonwhere.png"><br>
-Źródło: <a data-footref="meme2" href="about:blank#fn-2-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[2]</a><br>Tak jak na obrazku powyżej, programując w Pythonie na końcu linii nie stawia się średnika. Dla tych, którym w C++ się o tym zapomina, może być to ułatwienie, ale dla osób, które pisały "kilka linijek w jednej linijce" i oddzielały je średnikami to będzie wymagało przestawienia.<br>Na obrazku powyżej wspomniane były też klamry, bo ich też nie ma (więcej o tym jak wyglądają pętle i instrukcje warunkowe będzie dalej). Ale jeśli nie ma klamr, to skąd interpreter ma wiedzieć, które linie kodu są wewnątrz if'a, a które już poza? I tutaj przechodzimy do kolejnego obrazka...<br><img alt="NoIndent.png" src="lib\media\noindent.png"><br>
-Źródło: <a data-footref="meme1" href="about:blank#fn-3-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[3]</a><br><br>Programując w C++ wcięcia zwiększają jedynie czytelność kodu dla programisty i można je pomijać. W przypadku Pythona wcięcia muszą być identyczne, żeby interpreter dobrze przetworzył kod. Wydaje mi się, że najlepiej jest to pokazać na przykładzie, więc taki znajduje się poniżej.<br>for i in range(3): 
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Funkcje i klasy" href="tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html" class="internal-link" target="_self" rel="noopener nofollow">Funkcje i klasy</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md</guid><pubDate>Sun, 06 Oct 2024 20:42:43 GMT</pubDate></item><item><title><![CDATA[Język interpretowany]]></title><description><![CDATA[ 
+ <br><br>Python jest językiem interpretowanym, więc do korzystania z niego nie jest wymagany kompilator (wykorzystywany jest interpreter). Innymi przykładami tego typu języków są Bash, PHP lub JavaScript. Oznacza to, że skrypt jest przechowywany w formie kodu i interpretowany przy każdym uruchomieniu, a nie konwertowany na kod maszynowy jednorazowo <a data-footref="interp" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a>.<br><br><img alt="PythonWhere.png" src="lib\media\pythonwhere.png"><br>
+Źródło: <a data-footref="meme2" href="about:blank#fn-2-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[2]</a><br>Tak jak na obrazku powyżej, programując w Pythonie na końcu linii nie stawia się średnika. Dla tych, którym w C++ się o tym zapomina, może być to ułatwienie, ale dla osób, które pisały "kilka linijek w jednej linijce" i oddzielały je średnikami to będzie wymagało przestawienia.<br>Na obrazku powyżej wspomniane były też klamry, bo ich też nie ma (więcej o tym jak wyglądają pętle i instrukcje warunkowe będzie dalej). Ale jeśli nie ma klamr, to skąd interpreter ma wiedzieć, które linie kodu są wewnątrz if'a, a które już poza? I tutaj przechodzimy do kolejnego obrazka...<br><img alt="NoIndent.png" src="lib\media\noindent.png"><br>
+Źródło: <a data-footref="meme1" href="about:blank#fn-3-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[3]</a><br><br>Programując w C++ wcięcia zwiększają jedynie czytelność kodu dla programisty i można je pomijać. W przypadku Pythona wcięcia muszą być identyczne, żeby interpreter dobrze przetworzył kod. Wydaje mi się, że najlepiej jest to pokazać na przykładzie, więc taki znajduje się poniżej.<br>for i in range(3): 
 	for j in range(3):
 		result = i*10+j
 		print(result)
 	print("Wykonam się po skończeniu się pętli z j")
 print("Wykonam się po skończeniu się pętli z i")
-Copy<br>Nie wchodzimy na razie w szczegóły pętli i jak działa in range, ale wynikiem byłoby:<br>0
+<br>Nie wchodzimy na razie w szczegóły pętli i jak działa in range, ale wynikiem byłoby:<br>0
 1
 2
 Wykonam się po skończeniu się pętli z j
@@ -600,25 +616,25 @@ Wykonam się po skończeniu się pętli z j
 22
 Wykonam się po skończeniu się pętli z j
 Wykonam się po skończeniu się pętli z i
-Copy<br>Czyli jak widać wpierw w pętli wewnętrznej (z podwójnym wcięciem) jest dodawanie, a następnie wypisywanie w konsoli wyniku. Po wykonaniu się pętli wewnętrznej, w konsoli pojawia się odpowiednia wiadomość (zwrócę uwagę, że for j in range(3): i print("Wykonam się po skończeniu się pętli z j")również mają identyczne wcięcia, bo są wewnątrz pętli ze zmienną i). Gdy pętla zewnętrzna wykona się odpowiednią ilość razy to w konsoli również pojawia się odpowiednia wiadomość.<br>W przykładzie użyłem tabulatora do robienia wcięć, ale równie dobrze można używać spacji - jedynie wcięcie musi mieć zawsze równą wielkość!<br><br>W Pythonie komentarze dodaje się po #, np:<br># Ta linia to komentarz
+<br>Czyli jak widać wpierw w pętli wewnętrznej (z podwójnym wcięciem) jest dodawanie, a następnie wypisywanie w konsoli wyniku. Po wykonaniu się pętli wewnętrznej, w konsoli pojawia się odpowiednia wiadomość (zwrócę uwagę, że for j in range(3): i print("Wykonam się po skończeniu się pętli z j")również mają identyczne wcięcia, bo są wewnątrz pętli ze zmienną i). Gdy pętla zewnętrzna wykona się odpowiednią ilość razy to w konsoli również pojawia się odpowiednia wiadomość.<br>W przykładzie użyłem tabulatora do robienia wcięć, ale równie dobrze można używać spacji - jedynie wcięcie musi mieć zawsze równą wielkość!<br><br>W Pythonie komentarze dodaje się po #, np:<br># Ta linia to komentarz
 print("Hello world!") # A tu komentarz w linii z kodem
-Copy<br>Możliwe są również komentarze wieloliniowe poprzez umieszczenie ich wewnątrz ``` ```. Ten drugi jest przydatny np. do przygotowania opisu funkcji, gdzie można w ten sposób opisać czym jest każda zmienna.<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Zmienne i podstawowe typy danych" href="tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html" class="internal-link" target="_self" rel="noopener nofollow">Zmienne i podstawowe typy danych</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br><br><br>
+<br>Możliwe są również komentarze wieloliniowe poprzez umieszczenie ich wewnątrz ``` ```. Ten drugi jest przydatny np. do przygotowania opisu funkcji, gdzie można w ten sposób opisać czym jest każda zmienna.<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Zmienne i podstawowe typy danych" href="tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html" class="internal-link" target="_self" rel="noopener nofollow">Zmienne i podstawowe typy danych</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br><br><br>
 <br>
-<br><a rel="noopener nofollow" class="external-link" href="https://en.wikipedia.org/wiki/Interpreter_(computing)" target="_blank">https://en.wikipedia.org/wiki/Interpreter_(computing)</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/python-memes/after-using-only-c-and-c-for-years-python-felt-kinda-strange/" target="_blank">https://programmerhumor.io/python-memes/after-using-only-c-and-c-for-years-python-felt-kinda-strange/</a><a href="about:blank#fnref-2-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/programming-memes/no-offence-python-from-one-python-lover-to-others/" target="_blank">https://programmerhumor.io/programming-memes/no-offence-python-from-one-python-lover-to-others/</a><a href="about:blank#fnref-3-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\składnia-w-języku-python.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Składnia w języku Python.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate><enclosure url="lib\media\pythonwhere.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythonwhere.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Po co używać biblioteki?]]></title><description><![CDATA[ 
- <br><br>Jeżeli będziemy pracowali nad jakimś projektem związanym z ... w sumie praktycznie z czymkolwiek to jest duże prawdopodobieństwo, że ktoś już coś podobnego robił i potrzebował do tego przygotować sobie narzędzia (funkcje, klasy) i stworzył z ich wykorzystaniem bibliotekę, więc możemy ją pobrać i korzystać z tego co ktoś przygotował i zaoszczędzić przy tym czas. Wg <a data-footref="mgl" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a> istnieje ponad 137.000 bibliotek, ale spokojnie, my będziemy korzystać z kilkunastu (być może kilkudziesięciu, ale to pojedyncze funkcje będą). To jak dużo jest bibliotek dobrze jest widoczne na zrzucie ekranu poniżej.<br><img alt="Libraries_in_python.png" src="lib\media\libraries_in_python.png"><br><br>Instalowanie bibliotek odbywa się z wykorzystaniem pip. Najlepiej odszukać w internecie nazwę interesującej nas biblioteki (bo nie zawsze nazwa przy importowaniu jest jednakowa jak przy instalacji), a następnie w konsoli użyć komendy:<br>pip install nazwa_biblioteki
-Copy<br>W przypadku instalowania wielu bibliotek można to zrobić następująco:<br>pip install nazwa_biblioteki1 nazwa_biblioteki2
-Copy<br>Czasami może być konieczność zainstalowania konkretnej wersji biblioteki (np. aby była kompatybilna z inną biblioteką). Należy wówczas użyć:<br>pip install nazwa_biblioteki==wersja
-Copy<br>lub kombinacji &gt;, &lt;, &gt;= lub &lt;=, np.<br>pip install numpy&lt;=1.25.2
-Copy<br>lub<br>pip install "numpy&gt;1.18.5,&lt;=1.25.2"
-Copy<br>Dobrym zwyczajem jest również tworzenie pliku requirements.txt, w którym wypisane są wszystkie wykorzystywane biblioteki (jest to zwykły plik tekstowy, który można zrobić nawet w notatniku). Pozwoli to każdemu komu wyślemy kod na zainstalowanie tych samych bibliotek i tym samym uruchomienie skryptu (bez zainstalowania niestety nie pójdzie). Po utworzeniu pliku requirements.txt można łatwo całość zainstalować poleceniem<br>pip install -r requirements.txt
-Copy<br><br>Po zainstalowaniu biblioteki, jej zaimportowanie jest proste. Wystarczy w skrypcie wpisać<br>import nazwa_biblioteki
-Copy<br>Możliwe jest również nadanie aliasu (np. jeżeli biblioteka ma długą nazwę) lub zaimportowanie jedynie pewnych składników<br>import nazwa_biblioteki as alias_bibl # Importowanie z aliasem
+<br><a rel="noopener nofollow" class="external-link" href="https://en.wikipedia.org/wiki/Interpreter_(computing)" target="_blank">https://en.wikipedia.org/wiki/Interpreter_(computing)</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/python-memes/after-using-only-c-and-c-for-years-python-felt-kinda-strange/" target="_blank">https://programmerhumor.io/python-memes/after-using-only-c-and-c-for-years-python-felt-kinda-strange/</a><a href="about:blank#fnref-2-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/programming-memes/no-offence-python-from-one-python-lover-to-others/" target="_blank">https://programmerhumor.io/programming-memes/no-offence-python-from-one-python-lover-to-others/</a><a href="about:blank#fnref-3-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\files-wstęp-do-języka-python\składnia-w-języku-python.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Składnia w języku Python.md</guid><pubDate>Sun, 06 Oct 2024 20:42:48 GMT</pubDate><enclosure url="lib\media\pythonwhere.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythonwhere.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Po co używać biblioteki?]]></title><description><![CDATA[ 
+ <br><br>Jeżeli będziemy pracowali nad jakimś projektem związanym z ... w sumie praktycznie z czymkolwiek to jest duże prawdopodobieństwo, że ktoś już coś podobnego robił i potrzebował do tego przygotować sobie narzędzia (funkcje, klasy) i stworzył z ich wykorzystaniem bibliotekę, więc możemy ją pobrać i korzystać z tego co ktoś przygotował i zaoszczędzić przy tym czas. Wg <a data-footref="mgl" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a> istnieje ponad 137.000 bibliotek, ale spokojnie, my będziemy korzystać z kilkunastu (być może kilkudziesięciu, ale to pojedyncze funkcje będą). To jak dużo jest bibliotek dobrze jest widoczne na zrzucie ekranu poniżej.<br><img alt="Libraries_in_python.png" src="lib\media\libraries_in_python.png"><br><br>Instalowanie bibliotek odbywa się z wykorzystaniem pip. Najlepiej odszukać w internecie nazwę interesującej nas biblioteki (bo nie zawsze nazwa przy importowaniu jest jednakowa jak przy instalacji), a następnie w konsoli użyć komendy:<br>pip install nazwa_biblioteki
+<br>W przypadku instalowania wielu bibliotek można to zrobić następująco:<br>pip install nazwa_biblioteki1 nazwa_biblioteki2
+<br>Czasami może być konieczność zainstalowania konkretnej wersji biblioteki (np. aby była kompatybilna z inną biblioteką). Należy wówczas użyć:<br>pip install nazwa_biblioteki==wersja
+<br>lub kombinacji &gt;, &lt;, &gt;= lub &lt;=, np.<br>pip install numpy&lt;=1.25.2
+<br>lub<br>pip install "numpy&gt;1.18.5,&lt;=1.25.2"
+<br>Dobrym zwyczajem jest również tworzenie pliku requirements.txt, w którym wypisane są wszystkie wykorzystywane biblioteki (jest to zwykły plik tekstowy, który można zrobić nawet w notatniku). Pozwoli to każdemu komu wyślemy kod na zainstalowanie tych samych bibliotek i tym samym uruchomienie skryptu (bez zainstalowania niestety nie pójdzie). Po utworzeniu pliku requirements.txt można łatwo całość zainstalować poleceniem<br>pip install -r requirements.txt
+<br><br>Po zainstalowaniu biblioteki, jej zaimportowanie jest proste. Wystarczy w skrypcie wpisać<br>import nazwa_biblioteki
+<br>Możliwe jest również nadanie aliasu (np. jeżeli biblioteka ma długą nazwę) lub zaimportowanie jedynie pewnych składników<br>import nazwa_biblioteki as alias_bibl # Importowanie z aliasem
 
 from nazwa_biblioteki import funkcja, klasa # Importowanie wybranych składników
-Copy<br>Tip
+<br>Tip
 Należy zwrócić uwagę na to w jaki sposób importujemy bibliotekę, bo ma to wpływ na dalszy kod (np. po nadaniu aliasu nie możemy odwołać się do biblioteki pod jej standardową nazwą)
 <br>Korzystanie z funkcji jest również stosunkowo proste. Załóżmy, że w bilioteka są funkcje funkcja1 i funkcja2. Poniżej znajduje się przykład z wszystkimi przedstawionymi powyżej możliwościami importu<br>import os # Importowanie biblioteki
 import numpy as np # Importowanie biblioteki z aliasem
@@ -631,26 +647,26 @@ array = data_frame.to_numpy()
 
 # Obliczenie sumy wszystkich elementów wektora
 array_sum = np.sum(array)
-Copy<br><br>Kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.<br><br><br>
+<br><br>Kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.<br><br><br>
 <br>
-<br><a rel="noopener nofollow" class="external-link" href="https://www.mygreatlearning.com/blog/open-source-python-libraries/" target="_blank">https://www.mygreatlearning.com/blog/open-source-python-libraries/</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\używanie-bibliotek.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Używanie bibliotek.md</guid><pubDate>Mon, 04 Nov 2024 19:44:18 GMT</pubDate><enclosure url="lib\media\libraries_in_python.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\libraries_in_python.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Podstawowe typy danych w języku Python]]></title><description><![CDATA[ 
+<br><a rel="noopener nofollow" class="external-link" href="https://www.mygreatlearning.com/blog/open-source-python-libraries/" target="_blank">https://www.mygreatlearning.com/blog/open-source-python-libraries/</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\files-wstęp-do-języka-python\używanie-bibliotek.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Używanie bibliotek.md</guid><pubDate>Sun, 06 Oct 2024 20:42:52 GMT</pubDate><enclosure url="lib\media\libraries_in_python.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\libraries_in_python.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Podstawowe typy danych w języku Python]]></title><description><![CDATA[ 
  <br><br>Typ danych określa rodzaj informacji, którą możemy przechowywać w zmiennej. Python jest językiem dynamicznie typowanym, co oznacza, że nie musimy jawnie deklarować typu zmiennej przed jej użyciem. Interpreter automatycznie rozpoznaje typ na podstawie przypisanej wartości.<br><br>Przykłady tworzenia zmiennych poszczególnych typów (do przypisania służy =):<br>i = 37       # int
 f = 92.13    # float
 s = "Hello!" # string
 b = True     # bool
-Copy<br>Do sprawdzania typu zmiennej służy funkcja type(zmienna):<br>a = 13.23
+<br>Do sprawdzania typu zmiennej służy funkcja type(zmienna):<br>a = 13.23
 print(type(a)) # &lt;class 'float'&gt;
-Copy<br>Ze względu na dynamiczne typowanie, w Pythonie możliwe jest nadpisywanie typu danych, np:<br>x = 5.93
+<br>Ze względu na dynamiczne typowanie, w Pythonie możliwe jest nadpisywanie typu danych, np:<br>x = 5.93
 x = "Hello"
-Copy<br>Możliwa jest również konwersja typów przy pomocy funkcji int(zmienna), float(zmienna) lub str(zmienna):<br>num = 927.27
+<br>Możliwa jest również konwersja typów przy pomocy funkcji int(zmienna), float(zmienna) lub str(zmienna):<br>num = 927.27
 num_as_str = str(num)
 print(num_as_str)      # "927.27"
-Copy<br><img alt="PythonDataTypes.png" src="lib\media\pythondatatypes.png"><br>
-Źródło: <a data-footref="meme1" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br><br><br>W języku Python dostępne są następujące operatory arytmetyczne do zmiennych liczbowych.<br><br>Możliwe jest również wykorzystanie skróconych przypisań, co jest przydatne przy zmianie wartości, a służą do tego +=, -=, *=, /=, %=, **=.<br><br>Dla ciągów znaków nie można bezpośrednio zastosować tych samych operatorów arytmetycznych. Konieczna jest wpierw konwersja stringa na liczbę przy użyciu int(zmienna) lub float(zmienna). Stringi są niemutowalne, więc nie można zmienić pojedynczych znaków, a trzeba utworzyć nowy string.<br>Funkcje/operatory dostępne do wykorzystania ze stringami:<br><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Listy, krotki, zbiory i słowniki" href="tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html" class="internal-link" target="_self" rel="noopener nofollow">Listy, krotki, zbiory i słowniki</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
+<br><img alt="PythonDataTypes.png" src="lib\media\pythondatatypes.png"><br>
+Źródło: <a data-footref="meme1" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br><br><br>W języku Python dostępne są następujące operatory arytmetyczne do zmiennych liczbowych.<br><br>Możliwe jest również wykorzystanie skróconych przypisań, co jest przydatne przy zmianie wartości, a służą do tego +=, -=, *=, /=, %=, **=.<br><br>Dla ciągów znaków nie można bezpośrednio zastosować tych samych operatorów arytmetycznych. Konieczna jest wpierw konwersja stringa na liczbę przy użyciu int(zmienna) lub float(zmienna). Stringi są niemutowalne, więc nie można zmienić pojedynczych znaków, a trzeba utworzyć nowy string.<br>Funkcje/operatory dostępne do wykorzystania ze stringami:<br><br><br>Przejdź do kolejnego zagadnienia (<a data-href="Listy, krotki, zbiory i słowniki" href="tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html" class="internal-link" target="_self" rel="noopener nofollow">Listy, krotki, zbiory i słowniki</a>) lub kliknij <a data-tooltip-position="top" aria-label="Wstęp do języka Python" data-href="Wstęp do języka Python" href="tematy\wstęp-do-języka-python.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
 <br>
-<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/python-memes/im-a-python-programmer-2/" target="_blank">https://programmerhumor.io/python-memes/im-a-python-programmer-2/</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md</guid><pubDate>Mon, 04 Nov 2024 19:44:19 GMT</pubDate><enclosure url="lib\media\pythondatatypes.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythondatatypes.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Definicja i zasada działania]]></title><description><![CDATA[ 
+<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/python-memes/im-a-python-programmer-2/" target="_blank">https://programmerhumor.io/python-memes/im-a-python-programmer-2/</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html</link><guid isPermaLink="false">Tematy/Files Wstęp do języka Python/Zmienne i podstawowe typy danych.md</guid><pubDate>Sun, 06 Oct 2024 20:43:09 GMT</pubDate><enclosure url="lib\media\pythondatatypes.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pythondatatypes.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Definicja i zasada działania]]></title><description><![CDATA[ 
  <br><br>Gradient Boosting iteracyjnie tworzy silny model predykcyjny, poprzez łączenie wyników wielu słabszych modeli (zazwyczaj drzew decyzyjnych), które poprawiają błędy poprzednich modeli. Każdy kolejny model jest trenowany na resztkowych błędach (residuals) poprzedniego modelu. Kluczowa jest optymalizacja funkcji straty za pomocą algorytmu gradientowego, który ma na celu minimalizację błędu między predykcją modelu a rzeczywistymi wartościami.<br><img alt="3D_Surface_with_Minima.png" src="lib\media\3d_surface_with_minima.png"><br>
 Rysunek: Przykład funkcji z globalnym minimum.<br>Na obrazku powyżej, minimalizacja funkcji będzie polegała na znalezieniu takich wartości x i y, dla których wartość funkcji na osi z będzie najmniejsza (w tym kierunku zmniejsza się gradient).<br><br>Wzmocnienie gradientowe można stosować w szerokim zakresie problemów związanych z uczeniem maszynowym:<br>
 <br>klasyfikacja: Gradient Boosting jest stosowany tam, gdzie liczy się precyzyjne klasyfikowanie (np. w analizach medycznych lub wykrywaniu oszustw),
@@ -672,7 +688,7 @@ Rysunek: Przykład funkcji z globalnym minimum.<br>Na obrazku powyżej, minimali
 <br>przy uczeniu modelu ze wzmocnieniem gradientowym należy dostroić wiele parametrów (np. learning rate, liczba drzew), co może być czasochłonne i wymaga doświadczenia.
 
 
-<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Kluczowe pojęcia w Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html" class="internal-link" target="_self" rel="noopener nofollow">Kluczowe pojęcia w Gradient Boosting</a>]) lub kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\czym-jest-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Czym jest Gradient Boosting.md</guid><pubDate>Mon, 04 Nov 2024 19:44:19 GMT</pubDate><enclosure url="lib\media\3d_surface_with_minima.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\3d_surface_with_minima.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Jakie biblioteki do wzmocnienia gradientowego?]]></title><description><![CDATA[ 
+<br><br>Przejdź do kolejnego zagadnienia (<a data-href="Kluczowe pojęcia w Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html" class="internal-link" target="_self" rel="noopener nofollow">Kluczowe pojęcia w Gradient Boosting</a>]) lub kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\czym-jest-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Czym jest Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 15:48:50 GMT</pubDate><enclosure url="lib\media\3d_surface_with_minima.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\3d_surface_with_minima.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Jakie biblioteki do wzmocnienia gradientowego?]]></title><description><![CDATA[ 
  <br><br>Gradient Boosting został zaimplementowany w 3 popularnych bibliotekach:<br>
 <br>Scikit-Learn,
 <br>xgboost,
@@ -713,7 +729,7 @@ model_lgb = lgb.LGBMRegressor(n_estimators=100, learning_rate=0.1, max_depth=3, 
 model_lgb.fit(X_train, y_train)
 
 y_pred_lgb = model_lgb.predict(X_test)
-Copy<br><br>Poniżej znajduje się kod, w którym na wygenerowanym zbiorze danych zastosowano modele Gradient Boostingu z bibliotek Scikit-Learn, xgboost i LightGBM:<br>from sklearn.ensemble import GradientBoostingClassifier
+<br><br>Poniżej znajduje się kod, w którym na wygenerowanym zbiorze danych zastosowano modele Gradient Boostingu z bibliotek Scikit-Learn, xgboost i LightGBM:<br>from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import make_classification
 import xgboost as xgb
@@ -746,12 +762,12 @@ model_lgb.fit(X_train, y_train)
 
 y_pred_lgb = model_lgb.predict(X_test)
 
-Copy<br><br>Kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\implementacja-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md</guid><pubDate>Mon, 04 Nov 2024 19:44:19 GMT</pubDate></item><item><title><![CDATA[Loss Function (Funkcja straty)]]></title><description><![CDATA[ 
+<br><br>Kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu. Możesz stamtąd przejść do wykonania zadań przygotowanych w Jupyter Notebook.]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\implementacja-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 16:23:47 GMT</pubDate></item><item><title><![CDATA[Loss Function (Funkcja straty)]]></title><description><![CDATA[ 
  <br><br>Kluczowym elementem w przypadku wykorzystania wzmocnienia gradientowego jest funkcja straty. Gradient Boosting iteracyjnie minimalizuje funkcję straty poprzez poprawianie błędów poprzednich drzew i optymalizację predykcji. Przykładowymi funkcjami straty są:<br>
 <br>dla regresji: Mean Squared Error (MSE) - błąd średnio-kwadratowy, który mierzy różnicę między rzeczywistymi wartościami a przewidywaniami,
 <br>dla klasyfikacji: Log Loss – błąd logarytmiczny, który mierzy prawdopodobieństwo przypisania do złej klasy.
 <br>Model na każdym etapie wylicza gradient funkcji straty (stąd nazwa „Gradient Boosting”), który wskazuje, jak zmienić parametry, aby zmniejszyć błąd. W skrócie, Gradient Boosting stara się znaleźć kierunek największej redukcji błędu i podąża nim, poprawiając model.<br><br>Learning rate to hiperparametr, który wpływa na to, jak duży krok model wykonuje przy aktualizacji przewidywań przy budowaniu nowego drzewa. Jest to liczba między 0 a 1 (zazwyczaj blisko 0.001), która skaluje wpływ każdego drzewa na ostateczne przewidywania. Niska wartość stałej uczenia powoduje, że model będzie uczył się wolniej, ale bardziej precyzyjnie i nie "przeoczy" minimum, co może wystąpić przy za dużej stałej uczenia. Zagrożeniem jest jednak możliwość utknięcia w lokalnym minimum, dlatego dobór stałej uczenia wymaga wyczucia i doświadczenia.<br><img alt="different_learning_rates.png" src="lib\media\different_learning_rates.png"><br>
-Rysunek: Porównanie jak wygląda szukanie minimum w zależności od stałej uczenia, źródło: <a data-footref="lr" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br>Zatem learning rate to balans między dokładnością modelu a czasem obliczeń – zbyt wysoki może prowadzić do szybkiego przeuczenia, a zbyt niski sprawia, że model wymaga więcej iteracji, aby osiągnąć dobre wyniki.<br><br>Liczba drzew (n_estimators) w Gradient Boosting to liczba iteracji, które model wykonuje, aby poprawić swoje przewidywania. Każde drzewo, na podstawie błędów resztowych swoich poprzedników, dodaje swoje poprawki do modelu. Liczba drzew wpływa następująco na model:<br>
+Rysunek: Porównanie jak wygląda szukanie minimum w zależności od stałej uczenia, źródło: <a data-footref="lr" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br>Zatem learning rate to balans między dokładnością modelu a czasem obliczeń – zbyt wysoki może prowadzić do szybkiego przeuczenia, a zbyt niski sprawia, że model wymaga więcej iteracji, aby osiągnąć dobre wyniki.<br><br>Liczba drzew (n_estimators) w Gradient Boosting to liczba iteracji, które model wykonuje, aby poprawić swoje przewidywania. Każde drzewo, na podstawie błędów resztowych swoich poprzedników, dodaje swoje poprawki do modelu. Liczba drzew wpływa następująco na model:<br>
 <br>zbyt mała liczba drzew: model może być niedouczony (underfitting), ponieważ nie ma wystarczająco dużo iteracji, aby dokładnie nauczyć się zależności w danych.
 <br>zbyt duża liczba drzew: może prowadzić do przeuczenia (overfitting) i mieć małą umiejętność do generalizacji.
 <br>Liczba drzew musi być dostrojona w połączeniu z learning rate - jeżeli stała uczenia jest niska to potrzebne jest więcej drzew, aby osiągnąć wysoką dokładność i uniknąć przeuczenia.<br><br>Overfitting to zjawisko, w którym model staje się zbyt dopasowany do danych treningowych, co prowadzi do gorszej wydajności na nowych, niewidzianych wcześniej danych. Gradient Boosting, choć bardzo efektywny, może być podatny na przeuczenie, zwłaszcza gdy model zawiera zbyt wiele drzew, zbyt duży learning rate lub zbyt głębokie drzewa. Aby temu zapobiec, można zastosować następujące techniki:<br>
@@ -759,8 +775,8 @@ Rysunek: Porównanie jak wygląda szukanie minimum w zależności od stałej ucz
 <br>subsampling (podpróbkowanie): technika polega na używaniu tylko części danych do trenowania każdego drzewa, co w rezultacie powoduje, że model jest bardziej odporny na szumy i przeuczenie.
 <br><br>Przejdź do kolejnego zagadnienia (<a data-href="Implementacja Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\implementacja-gradient-boosting.html" class="internal-link" target="_self" rel="noopener nofollow">Implementacja Gradient Boosting</a>]) lub kliknij <a data-tooltip-position="top" aria-label="Wzmocnienie gradientowe (Gradient boosting)" data-href="Wzmocnienie gradientowe (Gradient boosting)" href="tematy\wzmocnienie-gradientowe-(gradient-boosting).html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej tematu.<br><br><br>
 <br>
-<br><a rel="noopener nofollow" class="external-link" href="https://www.jeremyjordan.me/nn-learning-rate/" target="_blank">https://www.jeremyjordan.me/nn-learning-rate/</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Kluczowe pojęcia w Gradient Boosting.md</guid><pubDate>Mon, 04 Nov 2024 19:44:19 GMT</pubDate><enclosure url="lib\media\different_learning_rates.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\different_learning_rates.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Analiza danych przy pomocy Pandas i numpy]]></title><description><![CDATA[ 
+<br><a rel="noopener nofollow" class="external-link" href="https://www.jeremyjordan.me/nn-learning-rate/" target="_blank">https://www.jeremyjordan.me/nn-learning-rate/</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html</link><guid isPermaLink="false">Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Kluczowe pojęcia w Gradient Boosting.md</guid><pubDate>Sun, 13 Oct 2024 15:37:55 GMT</pubDate><enclosure url="lib\media\different_learning_rates.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\different_learning_rates.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Analiza danych przy pomocy Pandas i numpy]]></title><description><![CDATA[ 
  <br>Pandas to biblioteka w języku Python, stworzona z myślą o łatwiej i efektywnej analizie danych. Możliwości biblioteki Pandas:<br>
 
 <br>Wczytywanie i zapisywanie danych w różnych formatach:  CSV, Excel, JSON i SQL
@@ -773,38 +789,38 @@ Pandas pozwala na szybkie, elastyczne i intuicyjne operacje na danych, zarówno 
 DataFrame przypomina dwuwymiarową tablicę NumPy, ale ma etykiety kolumn i wierszy, a każda kolumna może zawierać różne typy danych. Wyodrębniając pojedynczą kolumnę lub wiersz z DataFrame, otrzymujemy jednowymiarowy obiekt Series, który przypomina jednowymiarową tablicę NumPy z etykietami.
 <br><img alt="series_pandas.png" src="tematy\images\series_pandas.png"><br>Wczytywanie i zapis danych:<br>Wczytywanie danych z pliku  CSV:<br>import pandas as pd 
 df = pd.read_csv('plik.csv')
-Copy<br>Zapis danych jako pliku CSV:<br>df.to_csv('nowy_plik.csv', index=False)
-Copy<br>Wczytywanie danych z pliku Excel:<br>df = pd.read_excel('plik.xlsx')
-Copy<br>Wczytywanie danych z pliku JSON:<br>df = pd.read_json('plik.json')
-Copy<br>Podstawowe Operacje na DataFrame:<br><br>
+<br>Zapis danych jako pliku CSV:<br>df.to_csv('nowy_plik.csv', index=False)
+<br>Wczytywanie danych z pliku Excel:<br>df = pd.read_excel('plik.xlsx')
+<br>Wczytywanie danych z pliku JSON:<br>df = pd.read_json('plik.json')
+<br>Podstawowe Operacje na DataFrame:<br><br>
 <br>Wyświetlanie ostatnich 5 wierszy:
 <br>print(df.tail()) 
-Copy<br>
+<br>
 <br>Wyświetlanie informacji o DataFrame:
 <br>print(df.info()) 
-Copy<br>
+<br>
 <br>Wyświetlanie podstawowych statystyk opisowych:
 <br>print(df.describe())
-Copy<br>
+<br>
 <br>Wyświetlanie liczby wierszy i kolumn Dataframe:
 <br>print(df.shape)
-Copy<br>
+<br>
 <br>Wyświetlanie typów danych w każdej kolumnie:
 <br>print(df.dtypes)
-Copy<br>
+<br>
 <br>Wyświetlanie kolumn:
 <br>print(df.columns)
-Copy<br>Przekształcanie, czyszczenie i transformacje danych: <br> Wyświetlanie i zliczanie unikalnych wartości w kolumnie :<br>print(df.['nazwa_kolumny'].unique())
+<br>Przekształcanie, czyszczenie i transformacje danych: <br> Wyświetlanie i zliczanie unikalnych wartości w kolumnie :<br>print(df.['nazwa_kolumny'].unique())
 
 print(df.['nazwa_kolumny'].value_counts())
-Copy<br> Usuwanie wybranej kolumny:<br>df.drop(columns=['nazwa_kolumny'], inplace=True)
-Copy<br>Important
+<br> Usuwanie wybranej kolumny:<br>df.drop(columns=['nazwa_kolumny'], inplace=True)
+<br>Important
 W zastosowaniach statystycznych dane niedostępne mogą być danymi, które nie istnieją, lub danymi które istnieją, ale nie zostały zaobserwowane (np. z powodu problemu wynikającego ze sposobu zbierania danych).
 Podczas oczyszczania danych przed przeprowadzeniem ich analizy często warto przeprowadzić analizę samych brakujących wartości. 
 <br><br>Wyświetlanie brakujących danych:<br>print(df.isnull().sum())
-Copy<br>Usuwanie brakujących wartości<br>df.dropna(inplace=True)
-Copy<br>Uzupełnianie brakujących wartości<br>df.fillna(0, inplace=True)
-Copy<br><br>Statystyka opisowa pozwala na podsumowanie zbiorów danych za pomocą miar ilościowych. Dla przykładu prostą statystyką opisową jest liczba punktów danych. Innymi popularnymi przykładami są średnie, mediany lub dominanty. Obiekty DataFrame i Series zapewniają wygodny dostęp do statystyk opisowych za pomocą metod takich jak sum, mean i count.<br><br>import pandas as pd  
+<br>Usuwanie brakujących wartości<br>df.dropna(inplace=True)
+<br>Uzupełnianie brakujących wartości<br>df.fillna(0, inplace=True)
+<br><br>Statystyka opisowa pozwala na podsumowanie zbiorów danych za pomocą miar ilościowych. Dla przykładu prostą statystyką opisową jest liczba punktów danych. Innymi popularnymi przykładami są średnie, mediany lub dominanty. Obiekty DataFrame i Series zapewniają wygodny dostęp do statystyk opisowych za pomocą metod takich jak sum, mean i count.<br><br>import pandas as pd  
   
 # Dane z firmy w działach w róznych miastach 
 data = {  
@@ -856,12 +872,12 @@ HR              310.50  621.0          92.500000  185
 IT              275.45  550.9          92.500000  185
 Marketing       310.20  310.2          80.000000   80
 Produkcja       250.40  751.2          73.333333  220
-Copy<br>Filtrowanie wierszy, gdzie wartość w kolumnie 'wiek' jest większa niż 25:<br>df_filtered = df[df['wiek'] &gt; 25]
-Copy<br>Filtrowanie wierszy, gdzie wartość w kolumnie 'wiek' jest większa niż 25 i w kolumnie 'miasto' jest równa 'Poznań':<br>df_filtered = df[(df['wiek'] &gt; 25) &amp; (df['miasto'] == 'Poznań')]
-Copy<br>Grupowanie danych i obliczanie statystyk dla każdej grupy:<br>grouped = df.groupby('nazwa_kolumny').mean()
-Copy<br>Sortowanie danych według wybranej kolumny:<br>df_sorted = df.sort_values(by='nazwa_kolumny', ascending=True)
-Copy<br>Zmian nazw kolumn:<br>df.rename(columns={'stara_nazwa': 'nowa_nazwa'}, inplace=True)
-Copy<br><br>Mapowanie polega na zastąpieniu jednej wartości inną, np. w oparciu o słownik.<br><br>W przykładzie mamy dane dotyczące produktów mięsnych, a my chcemy dodać kolumnę z informacją o zwierzęciu, z którego pochodzi dany produkt.<br>import pandas as pd  
+<br>Filtrowanie wierszy, gdzie wartość w kolumnie 'wiek' jest większa niż 25:<br>df_filtered = df[df['wiek'] &gt; 25]
+<br>Filtrowanie wierszy, gdzie wartość w kolumnie 'wiek' jest większa niż 25 i w kolumnie 'miasto' jest równa 'Poznań':<br>df_filtered = df[(df['wiek'] &gt; 25) &amp; (df['miasto'] == 'Poznań')]
+<br>Grupowanie danych i obliczanie statystyk dla każdej grupy:<br>grouped = df.groupby('nazwa_kolumny').mean()
+<br>Sortowanie danych według wybranej kolumny:<br>df_sorted = df.sort_values(by='nazwa_kolumny', ascending=True)
+<br>Zmian nazw kolumn:<br>df.rename(columns={'stara_nazwa': 'nowa_nazwa'}, inplace=True)
+<br><br>Mapowanie polega na zastąpieniu jednej wartości inną, np. w oparciu o słownik.<br><br>W przykładzie mamy dane dotyczące produktów mięsnych, a my chcemy dodać kolumnę z informacją o zwierzęciu, z którego pochodzi dany produkt.<br>import pandas as pd  
   
 data = pd.DataFrame({  
     'food': ['bacon', 'pulled pork', 'bacon', 'Pastrami', 'corned beef', 'Bacon', 'pastrami', 'honey ham', 'nova lox'],  
@@ -880,25 +896,25 @@ meat_to_animal = {
 # Zmapowanie typu mięsa na zwierzę  
 data['animal'] = data['food'].str.lower().map(meat_to_animal)  
 print(data)
-Copy<br>Rezultat:<br><br>Important
+<br>Rezultat:<br><br>Important
 Szeregi czasowe to jedna z kluczowych funkcjonalności Pandas, zwłaszcza gdy pracujemy z danymi finansowymi, meteorologicznymi czy jakimikolwiek danymi zależnymi od czasu
 <br>Zacznijmy od prostego przykładu pracy z datami, które przekształcimy z łańcuchów znaków na znacznik czasu.<br><br>Moduł datetime w Pythonie pozwala na tworzenie, manipulowanie i formatowanie dat oraz czasu. Używając go, możemy wykonywać podstawowe operacje na obiektach daty i czasu.<br><br>Aby utworzyć obiekt daty w Pythonie, korzystamy z klasy datetime:<br>import pandas as pd
 
 # Konwersja daty z tekstu na obiekt Timestamp
 date = pd.to_datetime("2021-07-04")
 print(date)  # Wynik: 2021-07-04 00:00:00
-Copy<br><br>Jeśli mamy daty w formacie tekstowym, możemy użyć modułu dateutil, który automatycznie rozpoznaje różne formaty dat.<br>from dateutil import parser
+<br><br>Jeśli mamy daty w formacie tekstowym, możemy użyć modułu dateutil, który automatycznie rozpoznaje różne formaty dat.<br>from dateutil import parser
 
 # Parsowanie daty z tekstu
 date = parser.parse("4th of July, 2021")
 print(date)  # Wynik: 2021-07-04 00:00:00
-Copy<br><br>Czasami chcesz stworzyć listę dat, np. wszystkie dni w określonym okresie. Używamy do tego funkcji pd.date_range().<br> Funkcja pd.date_range przyjmuje datę początkową, datę końcową i opcjonalny kod częstotliwości oraz zwraca regularną sekwencję dat.<br># Tworzenie zakresu dat od 1 stycznia do 7 stycznia 2023
+<br><br>Czasami chcesz stworzyć listę dat, np. wszystkie dni w określonym okresie. Używamy do tego funkcji pd.date_range().<br> Funkcja pd.date_range przyjmuje datę początkową, datę końcową i opcjonalny kod częstotliwości oraz zwraca regularną sekwencję dat.<br># Tworzenie zakresu dat od 1 stycznia do 7 stycznia 2023
 date_range = pd.date_range('2023-01-01', '2023-01-07')
 print(date_range)
-Copy<br><br>Można łatwo wygenerować daty co tydzień za pomocą funkcji pd.date_range() z argumentem freq.<br># Generowanie dat co tydzień, od 1 stycznia 2023, przez 4 tygodnie
+<br><br>Można łatwo wygenerować daty co tydzień za pomocą funkcji pd.date_range() z argumentem freq.<br># Generowanie dat co tydzień, od 1 stycznia 2023, przez 4 tygodnie
 weekly_dates = pd.date_range('2023-01-01', periods=4, freq='W')
 print(weekly_dates)
-Copy<br><br>W Pandas służy do tego metoda shift, która pozwala przesunąć dane w czasie o określoną liczbę wpisów. W przypadku szeregów czasowych próbkowanych z równomierną częstotliwością metoda ta pozwala na zbadanie trendów w czasie.<br>import pandas as pd  
+<br><br>W Pandas służy do tego metoda shift, która pozwala przesunąć dane w czasie o określoną liczbę wpisów. W przypadku szeregów czasowych próbkowanych z równomierną częstotliwością metoda ta pozwala na zbadanie trendów w czasie.<br>import pandas as pd  
   
 data = pd.DataFrame({  
     'sales': [300, 320, 310, 330, 340],  
@@ -917,7 +933,7 @@ print(data)
 #2023-01-03    310               320.0           False
 #2023-01-04    330               310.0            True
 #2023-01-05    340               330.0            True
-Copy<br><br>Obliczanie statystyk kroczących jest kolejnym rodzajem operacji specyficznych dla szeregów czasowych, które znajdziemy w Pandas. Statystyki te można obliczyć za pomocą atrybutu rolling obiektów typu Series i DataFrame. Opcja ta pozwala na tworzenie miar statystycznych, takich jak średnia krocząca, suma krocząca czy odchylenie standardowe kroczące.<br>Important
+<br><br>Obliczanie statystyk kroczących jest kolejnym rodzajem operacji specyficznych dla szeregów czasowych, które znajdziemy w Pandas. Statystyki te można obliczyć za pomocą atrybutu rolling obiektów typu Series i DataFrame. Opcja ta pozwala na tworzenie miar statystycznych, takich jak średnia krocząca, suma krocząca czy odchylenie standardowe kroczące.<br>Important
 Obliczanie statystyk na określonym "ruchomym" oknie danych polega na tym, że przekształcamy dane na podstawie bieżących wartości oraz wcześniejszych obserwacji z określonego przedziału (np. liczby dni, tygodni). 
 <br>import pandas as pd
 import numpy as np
@@ -943,7 +959,7 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-Copy<br><img alt="ruchome_okna.png" src="tematy\images\ruchome_okna.png"><br><br>Praca ze strefami czasowymi to wyzwanie w analizie danych czasowych, zwłaszcza jeśli dane pochodzą z różnych lokalizacji. W tym celu można używać biblioteki pytz, która umożliwia zarządzanie strefami czasowymi.<br>
+<br><img alt="ruchome_okna.png" src="tematy\images\ruchome_okna.png"><br><br>Praca ze strefami czasowymi to wyzwanie w analizie danych czasowych, zwłaszcza jeśli dane pochodzą z różnych lokalizacji. W tym celu można używać biblioteki pytz, która umożliwia zarządzanie strefami czasowymi.<br>
 <br>Kluczowe operacje:
 
 <br>Przekształcanie dat pomiędzy strefami czasowymi.
@@ -976,7 +992,7 @@ print(df)
 #0 2023-01-01 10:00:00+00:00  New York
 #1 2023-01-01 14:00:00+00:00    London
 #2 2023-01-02 09:30:00+00:00     Tokyo
-Copy<br><br>Tworzenie obiektu datetime64 jest proste – wystarczy podać datę jako łańcuch znaków i określić typ danych:<br>import numpy as np
+<br><br>Tworzenie obiektu datetime64 jest proste – wystarczy podać datę jako łańcuch znaków i określić typ danych:<br>import numpy as np
 # Znacznik czasu na poziomie dnia  
 date_day = np.datetime64('2021-07-04', 'D')  
 print(date_day)  # Wynik: 2021-07-04  
@@ -989,7 +1005,7 @@ print(date_minute)  # Wynik: 2021-07-04T12:00
 date_ns = np.datetime64('2021-07-04 12:59:59.50', 'ns')  
 print(date_ns)  # Wynik: 2021-07-04T12:59:59.500000000
 
-Copy<br><br>NumPy pozwala na wykonywanie operacji wektorowych na dużych zbiorach dat. Możemy np. dodać dni do istniejącej daty:<br>import numpy as np
+<br><br>NumPy pozwala na wykonywanie operacji wektorowych na dużych zbiorach dat. Możemy np. dodać dni do istniejącej daty:<br>import numpy as np
 
 # Tworzenie daty w formacie datetime64
 date_np = np.datetime64('2024-19-10')
@@ -1001,7 +1017,7 @@ print(date_range)
 ['2021-07-04' '2021-07-05' '2021-07-06' '2021-07-07' '2021-07-08'
  '2021-07-09' '2021-07-10' '2021-07-11' '2021-07-12' '2021-07-13'
  '2021-07-14' '2021-07-15']
-Copy<br>
+<br>
 🛑 Uwaga: Kiedy używać datetime64 z NumPy?
 
 <br>Kiedy pracujesz z dużymi zbiorami danych czasowych.
@@ -1013,7 +1029,7 @@ Copy<br>
 # Wyświetlanie w formacie 'YYYY-MM-DD HH:MM:SS'
 formatted_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 print(formatted_date) # Wynik 2024-10-19 15:38:34
-Copy<br><img alt="tabela_data.png" src="tematy\images\tabela_data.png"><br>Oprócz datetime64, NumPy oferuje typ timedelta64<br>Służący do przechowywania czasów trwania lub odstępów czasu dostępny. Jest on wydajniejszym zamiennikiem natywnego typu datetime.timedelta z Pythona, bazującym na typie numpy.timedelta64. <br>import numpy as np
+<br><img alt="tabela_data.png" src="tematy\images\tabela_data.png"><br>Oprócz datetime64, NumPy oferuje typ timedelta64<br>Służący do przechowywania czasów trwania lub odstępów czasu dostępny. Jest on wydajniejszym zamiennikiem natywnego typu datetime.timedelta z Pythona, bazującym na typie numpy.timedelta64. <br>import numpy as np
 
 # Obliczanie różnicy między datami
 date1 = np.datetime64('2023-01-01')
@@ -1021,7 +1037,7 @@ date2 = np.datetime64('2023-01-10')
 
 difference = date2 - date1
 print(difference)  # Wynik: 9 days
-Copy<br>Important
+<br>Important
 Na co pozwala biblioteka Numpy?
 
 <br>Tworzenie i manipulowanie tablicami wielowymiarowymi:
@@ -1054,11 +1070,11 @@ Na co pozwala biblioteka Numpy?
 <br>Wczytywanie i zapisywanie danych
 
 <br>Tworzenie tablicy z samymi zerami:<br>a = np.zeros((3, 4)) # 3 wiersze, 4 kolumny
-Copy<br><br>
+<br><br>
 Obliczanie średniej:<br>a = np.array([1, 2, 3, 4, 5])
 mean = np.mean(a)
 print(mean)
-Copy<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.]]></description><link>tematy\analiza-danych-przy-pomocy-pandas-i-numpy.html</link><guid isPermaLink="false">Tematy/Analiza danych przy pomocy Pandas i numpy.md</guid><pubDate>Mon, 04 Nov 2024 19:44:20 GMT</pubDate><enclosure url="tematy\images\series_pandas.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\series_pandas.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Klasyfikacja]]></title><description><![CDATA[ 
+<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.]]></description><link>tematy\analiza-danych-przy-pomocy-pandas-i-numpy.html</link><guid isPermaLink="false">Tematy/Analiza danych przy pomocy Pandas i numpy.md</guid><pubDate>Sat, 19 Oct 2024 15:59:21 GMT</pubDate><enclosure url="tematy\images\series_pandas.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\series_pandas.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Klasyfikacja]]></title><description><![CDATA[ 
  <br>W zbiorze danych występuje 70 tys. obrazów, a każdy z nich opisany jest 784 cechami. Wynika to faktu, że każdy obraz ma 28x28 pikseli, a każda cecha opisuje natężenie szarości danego piksela<br>
 (przyjmuje wartość od 0 do 255)<br>import tensorflow as tf  
 import matplotlib.pyplot as plt  
@@ -1092,7 +1108,7 @@ y_test = test_labels
   
 print("Rozmiar danych uczących X_train:", X_train.shape)  
 print("Rozmiar danych testowych X_test:", X_test.shape)
-Copy<br>Przykładowe dane przedstawione są poniżej:<br>
+<br>Przykładowe dane przedstawione są poniżej:<br>
 <img alt="picture_1.png" src="tematy\images\picture_1.png"><br>
 <img alt="picture_4.png" src="tematy\images\picture_4.png"><br>
 <img alt="picture_9.png" src="tematy\images\picture_9.png"><br>
@@ -1121,7 +1137,7 @@ print("Przykładowe predykcje (1 oznacza cyfrę 5):")
 print("Predykcje:", y_pred[:10])  
 print("Prawdziwe etykiety:", y_test_binary[:10])  
   
-Copy<br>
+<br>
 Dokładność klasyfikatora: 0.95<br>
 Przykładowe predykcje (1 oznacza cyfrę 5):<br>
 Predykcje: [0 0 0 0 0 0 0 0 0 0]<br>
@@ -1135,7 +1151,7 @@ Kroswalidacja k-krotna oznacza rozdzielenie zestawu uczącego się na k podzbior
 
 cross_val_scores = cross_val_score(sgd_clf, X_train, y_train_binary, cv=3, scoring="accuracy")  
 print(f'Dokładność (kroswalidacja SGD): {cross_val_scores}')
-Copy<br>
+<br>
  [0.95035 0.96035 0.9604 ]
 <br>Jednak ten sposób oceny nie sprawdza się tak dobrze w przypadku gdy niektóre klasy występują znacznie częściej od pozostałych tzw. klasy wypaczone.<br>Innym sposobem oceny wydajności klasyfikatora jest  macierz pomyłek.<br>
             Przewidywana
@@ -1146,7 +1162,7 @@ Rzeczywista   +----+----+
          0    | FP | TN |
               +----+----+
 
-Copy<br>Macierz pomyłek pozwala zrozumieć, w jaki sposób model popełnia błędy:<br>
+<br>Macierz pomyłek pozwala zrozumieć, w jaki sposób model popełnia błędy:<br>
 <br>Wysokie wartości TP wskazują, że model dobrze klasyfikuje pozytywne przypadki.
 <br>Wysokie wartości TN wskazują na dobry poziom klasyfikacji negatywnych przypadków.
 <br>Wysokie wartości FP wskazują, że model często myli negatywne przypadki z pozytywnymi.
@@ -1169,7 +1185,7 @@ plt.ylabel('Rzeczywista')
 plt.xlabel('Przewidywana')  
 plt.title('Macierz Pomyłek')  
 plt.show()
-Copy<br>
+<br>
 Dokładność klasyfikatora (kroswalidacja): 0.96
 <br><img alt="Macierz.png" src="tematy\images\macierz.png"><br>
 🚨 Ważna Uwaga<br>Important
@@ -1199,7 +1215,7 @@ f1 = f1_score(y_train_binary, y_pred_cv)
 print(f'Precyzja: {precision:.2f}') 
 print(f'Pełność: {recall:.2f}') 
 print(f'F1-score: {f1:.2f}')
-Copy<br>
+<br>
 Precyzja: 0.84<br>
 Pełność: 0.65<br>
 F1-score: 0.73
@@ -1207,7 +1223,7 @@ F1-score: 0.73
 Przy czym F1 faworyzuje klasyfikatory mające zbliżone wartości precyzji i pełności. Nie zawsze tego chcemy, przykładowo mając na celu wyuczenie klasyfikatora w określaniu bezpiecznych filmów dla dzieci bardziej zależałoby nam na tym by klasyfikator odrzucał wiele dobrych filmów (mała wartość pełności), ale zapamiętywałby jedynie bezpieczne (duża precyzja). Niekorzystna byłaby relacja odwrotna gdzie model cechowałby się dużo większą pełnością, ale dopuszczałby kilka nieodpowiednich filmów.<br>
 Jednak przy trenowaniu klasyfikatora do wykrywania złodziei z zapisu kamer prawdopodobnie nic złego by się nie stało gdyby model miał przykładowo 30% precyzji przy 99% pełności. Wówczas może i byłoby kilka fałszywych alarmów ale niemal wszyscy przestępcy zostaliby złapani.
 <br><br>Do tej pory każdy przykład był przydzielany wyłącznie do jednej klasy. Jednak weźmy przykład rozpoznawania twarzy, co powinien zrobić gdy na zdjęciu jest wiele osób?<br>
-Powinien przydzielić po jednej etykiecie na każdą rozpoznaną twarz. Załóżmy ,że model został wyuczony do rozpoznania grupy przyjaciół na zdjęciu: Tomka, Piotrka i Agnieszki. Po zaprezentowaniu zdjęć Tomka i Piotrka powinien zostać wygenerowany wynik [True, True, False ].<br>Tego typu system klasyfikujący zdolny do wyznaczania wielu binarnych znaczników nosi nazwę klasyfikacji wieloetykietowej. <br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.]]></description><link>tematy\klasyfikacja.html</link><guid isPermaLink="false">Tematy/Klasyfikacja.md</guid><pubDate>Mon, 04 Nov 2024 19:44:20 GMT</pubDate><enclosure url="tematy\images\picture_1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\picture_1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Metryki, analiza modeli i błędów]]></title><description><![CDATA[ 
+Powinien przydzielić po jednej etykiecie na każdą rozpoznaną twarz. Załóżmy ,że model został wyuczony do rozpoznania grupy przyjaciół na zdjęciu: Tomka, Piotrka i Agnieszki. Po zaprezentowaniu zdjęć Tomka i Piotrka powinien zostać wygenerowany wynik [True, True, False ].<br>Tego typu system klasyfikujący zdolny do wyznaczania wielu binarnych znaczników nosi nazwę klasyfikacji wieloetykietowej. <br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.]]></description><link>tematy\klasyfikacja.html</link><guid isPermaLink="false">Tematy/Klasyfikacja.md</guid><pubDate>Sat, 19 Oct 2024 15:59:08 GMT</pubDate><enclosure url="tematy\images\picture_1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\picture_1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Metryki, analiza modeli i błędów]]></title><description><![CDATA[ 
  <br><br>
 Proces ten polega na podzieleniu zbioru danych na k równych części (folds).
 <br>
@@ -1268,7 +1284,7 @@ print(f"Dokładność na zbiorze testowym: {test_accuracy:.2f}")
 #Najlepsze parametry: {'max_depth': 10, 'n_estimators': 300}
 #Dokładność na zbiorze testowym: 0.98
 
-Copy<br><br>RandomizedSearchCV to alternatywa dla Grid Search, która nie przeszukuje wszystkich możliwych kombinacji, a jedynie losowo wybrane próbki z przestrzeni hiperparametrów.<br><br>
+<br><br>RandomizedSearchCV to alternatywa dla Grid Search, która nie przeszukuje wszystkich możliwych kombinacji, a jedynie losowo wybrane próbki z przestrzeni hiperparametrów.<br><br>
 <br>Zdefiniowanie zakresu: Użytkownik definiuje zakresy wartości dla hiperparametrów.
 <br>Losowy wybór: Algorytm losowo wybiera kombinacje wartości do przetestowania (zamiast sprawdzać wszystkie).
 <br>Ocena: Kombinacje oceniane są na zbiorze walidacyjnym, a wyniki mierzone według wybranej metryki.
@@ -1309,7 +1325,7 @@ y_pred = random_search.predict(X_test)
 test_accuracy = accuracy_score(y_test, y_pred)
 print(f"Dokładność na zbiorze testowym: {test_accuracy:.2f}")
 
-Copy<br><br><br><br>
+<br><br><br><br>
 <br>n_estimators: [100, 200, 300]
 <br>max_depth: [5, 10, 15]<br>
 Przeszukuje wszystkie możliwe kombinacje.
@@ -1332,7 +1348,7 @@ Actual Neg          5                     35
 - Model poprawnie przewidział 50 pozytywnych przypadków (TP) i 35 negatywnych (TN).
 - 5 negatywnych przypadków zostało błędnie przewidzianych jako pozytywne (FP).
 - 10 pozytywnych przypadków zostało błędnie sklasyfikowanych jako negatywne (FN).
-Copy<br>from sklearn.metrics import confusion_matrix, classification_report y_true = [0, 0, 1, 1, 0, 1, 0, 1, 1, 1] # rzeczywiste etykiety 
+<br>from sklearn.metrics import confusion_matrix, classification_report y_true = [0, 0, 1, 1, 0, 1, 0, 1, 1, 1] # rzeczywiste etykiety 
 y_pred = [0, 1, 1, 1, 0, 0, 0, 1, 1, 1] # przewidziane etykiety 
 
 # Macierz pomyłek 
@@ -1356,24 +1372,24 @@ print(classification_report(y_true, y_pred))
 #   macro avg       0.79      0.79      0.79        10
 #weighted avg       0.80      0.80      0.80        10
 
-Copy]]></description><link>tematy\metryki,-analiza-modeli-i-błędów.html</link><guid isPermaLink="false">Tematy/Metryki, analiza modeli i błędów.md</guid><pubDate>Mon, 04 Nov 2024 19:44:20 GMT</pubDate></item><item><title><![CDATA[Przygotowanie danych i inżynieria cech]]></title><description><![CDATA[ 
+]]></description><link>tematy\metryki,-analiza-modeli-i-błędów.html</link><guid isPermaLink="false">Tematy/Metryki, analiza modeli i błędów.md</guid><pubDate>Sat, 26 Oct 2024 15:54:37 GMT</pubDate></item><item><title><![CDATA[Przygotowanie danych i inżynieria cech]]></title><description><![CDATA[ 
  <br>Preprocessing danych to kluczowy krok w uczeniu maszynowym, który ma na celu poprawienie jakości i użyteczności danych. Dane rzeczywiste często są niekompletne, zawierają brakujące wartości, szumy, błędy lub nieprawidłowości, co negatywnie wpływa na działanie modeli (dane z tutoriali są zwykle idealnie przygotowane, a rzeczywiste zbiory danych są znacznie bardziej skomplikowane i wymagają starannej obróbki przed użyciem w modelach). Dlatego konieczne jest sprawdzenie i uzupełnienie braków, usunięcie błędów oraz ewentualne stworzenie nowych cech (feature engineering), które lepiej reprezentują ukryte zależności w danych. <br>Sam proces przygotowywania danych jest czasochłonny i wymaga kreatywności, więc w tej części naszego kursu postaramy się zobaczyć jakie są pomysły i główne działania, ale na każdym datasecie trzeba zastosować indywidualne podejście. <br><img alt="cleaning_data_meme.jpg" src="tematy\images\cleaning_data_meme.jpg"><br><br>
 <br><a data-tooltip-position="top" aria-label="Co zrobić po otrzymaniu zbioru danych" data-href="Co zrobić po otrzymaniu zbioru danych" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\co-zrobić-po-otrzymaniu-zbioru-danych.html" class="internal-link" target="_self" rel="noopener nofollow">Co zrobić po otrzymaniu zbioru danych?</a>
 <br><a data-href="Brakujące dane" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\brakujące-dane.html" class="internal-link" target="_self" rel="noopener nofollow">Brakujące dane</a>
 <br><a data-href="Normalizacja i standaryzacja" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\normalizacja-i-standaryzacja.html" class="internal-link" target="_self" rel="noopener nofollow">Normalizacja i standaryzacja</a>
 <br><a data-href="Inżynieria cech" href="tematy\files-przygotowanie-danych-i-inżynieria-cech\inżynieria-cech.html" class="internal-link" target="_self" rel="noopener nofollow">Inżynieria cech</a>
-<br><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener nofollow" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.<br>* Podczas przygotowania opisów dla tego tematu, przy części zagadnień wykorzystane zostały narzędzia generatywnej sztucznej inteligencji.]]></description><link>tematy\przygotowanie-danych-i-inżynieria-cech.html</link><guid isPermaLink="false">Tematy/Przygotowanie danych i inżynieria cech.md</guid><pubDate>Mon, 04 Nov 2024 19:44:20 GMT</pubDate><enclosure url="tematy\images\cleaning_data_meme.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\cleaning_data_meme.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Czym jest regresja?]]></title><description><![CDATA[ 
+<br><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener nofollow" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.<br>* Podczas przygotowania opisów dla tego tematu, przy części zagadnień wykorzystane zostały narzędzia generatywnej sztucznej inteligencji.]]></description><link>tematy\przygotowanie-danych-i-inżynieria-cech.html</link><guid isPermaLink="false">Tematy/Przygotowanie danych i inżynieria cech.md</guid><pubDate>Sat, 12 Oct 2024 13:10:26 GMT</pubDate><enclosure url="tematy\images\cleaning_data_meme.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\cleaning_data_meme.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Czym jest regresja?]]></title><description><![CDATA[ 
  <br><br>Regresja służy do modelowania zależności między zmiennymi. Pozwala ona przewidzieć wartość jednej zmiennej (zależnej) na podstawie wartości innych zmiennych (niezależnych). Modele regresji mają za zadanie zminimalizować funkcję straty, którą najczęściej jest suma kwadratów różnic, ponieważ dopasowanie modelu polega wówczas na zastosowaniu metody najmniejszych kwadratów.<br>Prostym przykładem do wytłumaczenia jest przewidywanie ceny lub zarobków, które polegają na znalezieniu matematycznego wzoru służącego do wyliczenia wartości przy znanych zmiennych niezależnych. Dla ceny mieszkania mogą to być: metraż, ilość sypialni, wielkość ogrodu, lokalizacja, rok budowy budynku; natomiast dla zarobków może być to doświadczenie zawodowe, poziom wykształcenia, wiek oraz dodatkowe umiejętności.<br><img alt="linear_regression_meme.png" src="tematy\images\linear_regression_meme.png"><br>
-Źródło: <a data-footref="xk" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br>Z regresją można się też spotkać (często nieświadomie) podczas laboratoriów, np. z fizyki, gdy na podstawie pomiarów z eksperymentów należy wyliczyć wartość jakiegoś współczynnika (np. mając pomiar wychylenia w stopniach i napięcie z czujnika) lub gdy chcemy dodać wartości brakujących pomiarów. <br><img alt="extrapolating_meme.png" src="tematy\images\extrapolating_meme.png"><br>
-Źródło: <a data-footref="xk2" href="about:blank#fn-2-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[2]</a><br><br>
+Źródło: <a data-footref="xk" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a><br>Z regresją można się też spotkać (często nieświadomie) podczas laboratoriów, np. z fizyki, gdy na podstawie pomiarów z eksperymentów należy wyliczyć wartość jakiegoś współczynnika (np. mając pomiar wychylenia w stopniach i napięcie z czujnika) lub gdy chcemy dodać wartości brakujących pomiarów. <br><img alt="extrapolating_meme.png" src="tematy\images\extrapolating_meme.png"><br>
+Źródło: <a data-footref="xk2" href="about:blank#fn-2-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[2]</a><br><br>
 <br><a data-href="Rodzaje regresji" href="tematy\files-regresja-liniowa-(i-nie-tylko)\rodzaje-regresji.html" class="internal-link" target="_self" rel="noopener nofollow">Rodzaje regresji</a>
 <br><a data-tooltip-position="top" aria-label="Czym jest Scikit-learn" data-href="Czym jest Scikit-learn" href="tematy\files-regresja-liniowa-(i-nie-tylko)\czym-jest-scikit-learn.html" class="internal-link" target="_self" rel="noopener nofollow">Czym jest Scikit-learn?</a>
 <br><a data-href="Implementacja regresji przy pomocy Scikit-learn" href="tematy\files-regresja-liniowa-(i-nie-tylko)\implementacja-regresji-przy-pomocy-scikit-learn.html" class="internal-link" target="_self" rel="noopener nofollow">Implementacja regresji przy pomocy Scikit-learn</a>
 <br><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener nofollow" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.<br>* Podczas przygotowania opisów dla tego tematu, przy części zagadnień wykorzystane zostały narzędzia generatywnej sztucznej inteligencji.<br><br><br><br>
 <br>
-<br><a data-tooltip-position="top" aria-label="https://xkcd.com/1725" rel="noopener nofollow" class="external-link" href="https://xkcd.com/1725" target="_blank">https://xkcd.com/1725/</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-<br><a data-tooltip-position="top" aria-label="https://xkcd.com/605" rel="noopener nofollow" class="external-link" href="https://xkcd.com/605" target="_blank">https://xkcd.com/605/</a><a href="about:blank#fnref-2-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\regresja-liniowa-(i-nie-tylko).html</link><guid isPermaLink="false">Tematy/Regresja liniowa (i nie tylko).md</guid><pubDate>Mon, 04 Nov 2024 19:44:20 GMT</pubDate><enclosure url="tematy\images\linear_regression_meme.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\linear_regression_meme.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie]]></title><description><![CDATA[ 
+<br><a data-tooltip-position="top" aria-label="https://xkcd.com/1725" rel="noopener nofollow" class="external-link" href="https://xkcd.com/1725" target="_blank">https://xkcd.com/1725/</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://xkcd.com/605" rel="noopener nofollow" class="external-link" href="https://xkcd.com/605" target="_blank">https://xkcd.com/605/</a><a href="about:blank#fnref-2-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\regresja-liniowa-(i-nie-tylko).html</link><guid isPermaLink="false">Tematy/Regresja liniowa (i nie tylko).md</guid><pubDate>Mon, 14 Oct 2024 19:19:18 GMT</pubDate><enclosure url="tematy\images\linear_regression_meme.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\linear_regression_meme.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie]]></title><description><![CDATA[ 
  <br><img alt="datavis.png" src="tematy\images\datavis.png"><br>Omówienie najpopularniejszych bibliotek do wizualizacji danych:<br><br>Szczegółowe dokumentacje:<br>
 <br>
 <a data-tooltip-position="top" aria-label="https://matplotlib.org/stable/contents.html" rel="noopener nofollow" class="external-link" href="https://matplotlib.org/stable/contents.html" target="_blank">Matplotlib Documentation</a>
@@ -1392,7 +1408,7 @@ import matplotlib.pyplot as plt
 
 x=np.linspace(0,2,100) # generowanie danych X,Y w zakresie od 0-2 100 punktów
 
-Copy<br>Przykładowy wykres przy pomocy biblioteki matplotlib:<br>import matplotlib.pyplot as plt
+<br>Przykładowy wykres przy pomocy biblioteki matplotlib:<br>import matplotlib.pyplot as plt
 import pandas as pd
 
 
@@ -1414,7 +1430,7 @@ plt.tight_layout()
 plt.show()
 
 
-Copy<br><img alt="przychody.png" src="tematy\images\przychody.png"><br>
+<br><img alt="przychody.png" src="tematy\images\przychody.png"><br>
 Przykładowy wykres słupkowy przy pomocy biblioteki seaborn:<br>import seaborn as sns 
 import pandas as pd
 
@@ -1432,7 +1448,7 @@ plt.ylabel('Cena mieszkania (w tys. PLN)')
 plt.show()
 
 
-Copy<br>Przykładowy wykres kołowy przy pomocy biblioteki seaborn:<br>import seaborn as sns  
+<br>Przykładowy wykres kołowy przy pomocy biblioteki seaborn:<br>import seaborn as sns  
 import pandas as pd  
 import matplotlib.pyplot as plt  
   
@@ -1451,7 +1467,7 @@ plt.show()
 
 
 
-Copy<br><img alt="sprzedaz.png" src="tematy\images\sprzedaz.png"><br>
+<br><img alt="sprzedaz.png" src="tematy\images\sprzedaz.png"><br>
 Przykładowe wykresy przy pomocy biblioteki Plotly:<br># wykres kołowy 
 
 import plotly.express as px  
@@ -1468,7 +1484,7 @@ fig = px.pie(df, values='Udział', names='Producent', title='Udział rynkowy pro
 fig.update_traces(textinfo='percent+label')  
 fig.show()
 
-Copy<br><img alt="telefon.png" src="tematy\images\telefon.png"><br># wykres słupkowy  
+<br><img alt="telefon.png" src="tematy\images\telefon.png"><br># wykres słupkowy  
 import plotly.graph_objects as go  
 import pandas as pd  
   
@@ -1514,7 +1530,7 @@ template='plotly_white'
 )  
   
 fig.show()
-Copy<br><img alt="igrzyska.png" src="tematy\images\igrzyska.png"><br>
+<br><img alt="igrzyska.png" src="tematy\images\igrzyska.png"><br>
 import plotly.graph_objects as go  
 import pandas as pd  
   
@@ -1558,28 +1574,27 @@ fig.update_layout(
 )  
   
 fig.show()
-Copy<br><img alt="UEFA.png" src="tematy\images\uefa.png"><br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.]]></description><link>tematy\wizualizacja-danych-za-pomocą-bibliotek-matplotlib,-seaborn-i-plotly-w-pytonie.html</link><guid isPermaLink="false">Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md</guid><pubDate>Mon, 04 Nov 2024 19:44:21 GMT</pubDate><enclosure url="tematy\images\datavis.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\datavis.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Wstęp do języka Python]]></title><description><![CDATA[ 
- <br>Pierwszym tematem kursu będzie krótki wstęp do programowania w Pythonie, bo będzie to język, który będziemy wykorzystywać w zadaniach i projekcie końcowym. Konkretnie powiemy tu o wersji Python 3.<br>Python jest szeroko wykorzystywany w uczeniu maszynowym, analizie danych, przy obliczeniach matematycznych, aplikacjach webowych po stronie serwera oraz do szybkiego prototypowania. Można go wykorzystać na różnych systemach, nie wymaga kompilatora, a jego składnia jest stosunkowo prosta i przypomina język angielski <a data-footref="w3s" href="about:blank#fn-1-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a>.<br><img alt="WhoWantsToBeDataScientist.png" src="tematy\images\whowantstobedatascientist.png"><br>
-Źródło: <a data-footref="dsm" href="about:blank#fn-2-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[2]</a><br>W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebooks, które możecie wstawić w celu uruchomienia np. na <a data-tooltip-position="top" aria-label="https://colab.research.google.com/" rel="noopener nofollow" class="external-link" href="https://colab.research.google.com/" target="_blank">Google Colab</a> lub <a data-tooltip-position="top" aria-label="https://www.kaggle.com/" rel="noopener nofollow" class="external-link" href="https://www.kaggle.com/" target="_blank">Kaggle</a> lub uruchomić lokalnie np. przy wykorzystaniu <a data-tooltip-position="top" aria-label="https://code.visualstudio.com/" rel="noopener nofollow" class="external-link" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. Jak chodzi o programowanie w Pythonie (bez Notebooków) to mogę polecić korzystanie z <a data-tooltip-position="top" aria-label="https://www.jetbrains.com/pycharm/" rel="noopener nofollow" class="external-link" href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm'a</a>.<br>
+<br><img alt="UEFA.png" src="tematy\images\uefa.png"><br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.]]></description><link>tematy\wizualizacja-danych-za-pomocą-bibliotek-matplotlib,-seaborn-i-plotly-w-pytonie.html</link><guid isPermaLink="false">Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md</guid><pubDate>Wed, 30 Oct 2024 22:30:13 GMT</pubDate><enclosure url="tematy\images\datavis.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\datavis.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Wstęp do języka Python]]></title><description><![CDATA[ 
+ <br>Pierwszym tematem kursu będzie krótki wstęp do programowania w Pythonie, bo będzie to język, który będziemy wykorzystywać w zadaniach i projekcie końcowym. Konkretnie powiemy tu o wersji Python 3.<br>Python jest szeroko wykorzystywany w uczeniu maszynowym, analizie danych, przy obliczeniach matematycznych, aplikacjach webowych po stronie serwera oraz do szybkiego prototypowania. Można go wykorzystać na różnych systemach, nie wymaga kompilatora, a jego składnia jest stosunkowo prosta i przypomina język angielski <a data-footref="w3s" href="about:blank#fn-1-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a>.<br><img alt="WhoWantsToBeDataScientist.png" src="tematy\images\whowantstobedatascientist.png"><br>
+Źródło: <a data-footref="dsm" href="about:blank#fn-2-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[2]</a><br>W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebooks, które możecie wstawić w celu uruchomienia np. na <a data-tooltip-position="top" aria-label="https://colab.research.google.com/" rel="noopener nofollow" class="external-link" href="https://colab.research.google.com/" target="_blank">Google Colab</a> lub <a data-tooltip-position="top" aria-label="https://www.kaggle.com/" rel="noopener nofollow" class="external-link" href="https://www.kaggle.com/" target="_blank">Kaggle</a> lub uruchomić lokalnie np. przy wykorzystaniu <a data-tooltip-position="top" aria-label="https://code.visualstudio.com/" rel="noopener nofollow" class="external-link" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. Jak chodzi o programowanie w Pythonie (bez Notebooków) to mogę polecić korzystanie z <a data-tooltip-position="top" aria-label="https://www.jetbrains.com/pycharm/" rel="noopener nofollow" class="external-link" href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm'a</a>.<br>
 <img alt="Jupyter-logo.svg" src="tematy\images\jupyter-logo.svg" style="width: 350px; max-width: 100%;"><br>
-Źródło: <a data-footref="jpt" href="about:blank#fn-3-dd82220528ac2c73" class="footnote-link" target="_self" rel="noopener nofollow">[3]</a><br><br>
-<br><a data-href="Jak korzystać z Jupyter Notebooks" href="tematy\files-wstęp-do-języka-python\jak-korzystać-z-jupyter-notebooks.html" class="internal-link" target="_self" rel="noopener nofollow">Jak korzystać z Jupyter Notebooks</a>
+Źródło: <a data-footref="jpt" href="about:blank#fn-3-84b0d4068b94ef5e" class="footnote-link" target="_self" rel="noopener nofollow">[3]</a><br><br>
 <br><a data-href="Składnia w języku Python" href="tematy\files-wstęp-do-języka-python\składnia-w-języku-python.html" class="internal-link" target="_self" rel="noopener nofollow">Składnia w języku Python</a>
 <br><a data-href="Zmienne i podstawowe typy danych" href="tematy\files-wstęp-do-języka-python\zmienne-i-podstawowe-typy-danych.html" class="internal-link" target="_self" rel="noopener nofollow">Zmienne i podstawowe typy danych</a>
 <br><a data-href="Listy, krotki, zbiory i słowniki" href="tematy\files-wstęp-do-języka-python\listy,-krotki,-zbiory-i-słowniki.html" class="internal-link" target="_self" rel="noopener nofollow">Listy, krotki, zbiory i słowniki</a>
 <br><a data-href="Pętle i instrukcje warunkowe" href="tematy\files-wstęp-do-języka-python\pętle-i-instrukcje-warunkowe.html" class="internal-link" target="_self" rel="noopener nofollow">Pętle i instrukcje warunkowe</a>
 <br><a data-href="Funkcje i klasy" href="tematy\files-wstęp-do-języka-python\funkcje-i-klasy.html" class="internal-link" target="_self" rel="noopener nofollow">Funkcje i klasy</a>
 <br><a data-href="Używanie bibliotek" href="tematy\files-wstęp-do-języka-python\używanie-bibliotek.html" class="internal-link" target="_self" rel="noopener nofollow">Używanie bibliotek</a>
-<br>Oczywiście nie są to wszystkie zagadnienia związane z Pythonem. Dostępnych jest wiele kursów, poradników i stron z informacjami i ćwiczeniami na ten temat. Przykładami mogą być <a data-tooltip-position="top" aria-label="https://www.w3schools.com/python/default.asp" rel="noopener nofollow" class="external-link" href="https://www.w3schools.com/python/default.asp" target="_blank">w3schools</a> i <a data-tooltip-position="top" aria-label="https://www.kaggle.com/learn/python" rel="noopener nofollow" class="external-link" href="https://www.kaggle.com/learn/python" target="_blank">kaggle</a>.<br><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener nofollow" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.<br>* Podczas przygotowania opisów dla tego tematu, przy części zagadnień wykorzystane zostały narzędzia generatywnej sztucznej inteligencji.<br><br><br><br><br>
+<br>Oczywiście nie są to wszystkie zagadnienia związane z Pythonem. Dostępnych jest wiele kursów, poradników i stron z informacjami i ćwiczeniami na ten temat. Przykładami mogą być <a data-tooltip-position="top" aria-label="https://www.w3schools.com/python/default.asp" rel="noopener nofollow" class="external-link" href="https://www.w3schools.com/python/default.asp" target="_blank">w3schools</a> i <a data-tooltip-position="top" aria-label="https://www.kaggle.com/learn/python" rel="noopener nofollow" class="external-link" href="https://www.kaggle.com/learn/python" target="_blank">kaggle</a>.<br><br><a data-tooltip-position="top" aria-label="Jak korzystać z Jupyter Notebooks" data-href="Jak korzystać z Jupyter Notebooks" href="tematy\files-wstęp-do-języka-python\jak-korzystać-z-jupyter-notebooks.html" class="internal-link" target="_self" rel="noopener nofollow">Krótki poradnik jak korzystać z Jupyter Notebooks</a><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener nofollow" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.<br>* Podczas przygotowania opisów dla tego tematu, przy części zagadnień wykorzystane zostały narzędzia generatywnej sztucznej inteligencji.<br><br><br><br><br>
 <br>
-<br><a rel="noopener nofollow" class="external-link" href="https://www.w3schools.com/python/python_intro.asp" target="_blank">https://www.w3schools.com/python/python_intro.asp</a><a href="about:blank#fnref-1-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/python-memes/python-10/" target="_blank">https://programmerhumor.io/python-memes/python-10/</a><a href="about:blank#fnref-2-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-<br><a rel="noopener nofollow" class="external-link" href="https://www.jetbrains.com/pycharm/" target="_blank">https://www.jetbrains.com/pycharm/</a><a href="about:blank#fnref-3-dd82220528ac2c73" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
-]]></description><link>tematy\wstęp-do-języka-python.html</link><guid isPermaLink="false">Tematy/Wstęp do języka Python.md</guid><pubDate>Mon, 04 Nov 2024 19:44:21 GMT</pubDate><enclosure url="tematy\images\whowantstobedatascientist.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\whowantstobedatascientist.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Iteracyjne poprawianie jakości modelu]]></title><description><![CDATA[ 
+<br><a rel="noopener nofollow" class="external-link" href="https://www.w3schools.com/python/python_intro.asp" target="_blank">https://www.w3schools.com/python/python_intro.asp</a><a href="about:blank#fnref-1-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://programmerhumor.io/python-memes/python-10/" target="_blank">https://programmerhumor.io/python-memes/python-10/</a><a href="about:blank#fnref-2-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://www.jetbrains.com/pycharm/" target="_blank">https://www.jetbrains.com/pycharm/</a><a href="about:blank#fnref-3-84b0d4068b94ef5e" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow">↩︎</a>
+]]></description><link>tematy\wstęp-do-języka-python.html</link><guid isPermaLink="false">Tematy/Wstęp do języka Python.md</guid><pubDate>Mon, 04 Nov 2024 21:53:53 GMT</pubDate><enclosure url="tematy\images\whowantstobedatascientist.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\whowantstobedatascientist.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Iteracyjne poprawianie jakości modelu]]></title><description><![CDATA[ 
  <br><br>Gradient Boosting buduje model iteracyjnie, ucząc się na błędach poprzednich drzew i wzmacniając te obszary, gdzie inne modele były słabe, co daje bardziej precyzyjne i stabilne prognozy. Takie podejście ma przewagę nad regresją liniową, bo umożliwia modelowanie nawet bardzo złożonych zależności, oraz nad pojedynczymi drzewami decyzyjnymi, które są podatne na przeuczenie i często nie zapewniają optymalnych wyników.<br><img alt="gradient_boosting_meme.jpg" src="tematy\images\gradient_boosting_meme.jpg"><br><br>
 <br><a data-tooltip-position="top" aria-label="Czym jest Gradient Boosting" data-href="Czym jest Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\czym-jest-gradient-boosting.html" class="internal-link" target="_self" rel="noopener nofollow">Czym jest Gradient Boosting?</a>
 <br><a data-href="Kluczowe pojęcia w Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\kluczowe-pojęcia-w-gradient-boosting.html" class="internal-link" target="_self" rel="noopener nofollow">Kluczowe pojęcia w Gradient Boosting</a>
 <br><a data-href="Implementacja Gradient Boosting" href="tematy\files-wzmocnienie-gradientowe-(gradient-boosting)\implementacja-gradient-boosting.html" class="internal-link" target="_self" rel="noopener nofollow">Implementacja Gradient Boosting</a>
-<br><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener nofollow" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.<br>* Podczas przygotowania opisów dla tego tematu, przy części zagadnień wykorzystane zostały narzędzia generatywnej sztucznej inteligencji.]]></description><link>tematy\wzmocnienie-gradientowe-(gradient-boosting).html</link><guid isPermaLink="false">Tematy/Wzmocnienie gradientowe (Gradient boosting).md</guid><pubDate>Mon, 04 Nov 2024 19:39:21 GMT</pubDate><enclosure url="tematy\images\gradient_boosting_meme.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\gradient_boosting_meme.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Cześć!]]></title><description><![CDATA[ 
+<br><br>Ćwiczenia dla tego tematu zostały zebrane <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener nofollow" class="external-link" href="https://github.com/" target="_blank">tutaj</a>.<br><br>Kliknij <a data-tooltip-position="top" aria-label="Index" data-href="Index" href="index.html" class="internal-link" target="_self" rel="noopener nofollow">tutaj</a>, aby wrócić do strony głównej kursu.<br>* Podczas przygotowania opisów dla tego tematu, przy części zagadnień wykorzystane zostały narzędzia generatywnej sztucznej inteligencji.]]></description><link>tematy\wzmocnienie-gradientowe-(gradient-boosting).html</link><guid isPermaLink="false">Tematy/Wzmocnienie gradientowe (Gradient boosting).md</guid><pubDate>Sun, 13 Oct 2024 11:20:44 GMT</pubDate><enclosure url="tematy\images\gradient_boosting_meme.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="tematy\images\gradient_boosting_meme.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Cześć!]]></title><description><![CDATA[ 
  <br><br>Witaj na kursie wprowadzającym do uczenia maszynowego. Wybierz interesujący Cię temat z listy poniżej:<br><br><br><a data-tooltip-position="top" aria-label="https://github.com/dariak153" rel="noopener nofollow" class="external-link" href="https://github.com/dariak153" target="_blank">@dariak153</a><br>
-<a data-tooltip-position="top" aria-label="https://github.com/mmcza" rel="noopener nofollow" class="external-link" href="https://github.com/mmcza" target="_blank">@mmcza</a>]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Mon, 04 Nov 2024 19:44:22 GMT</pubDate></item></channel></rss>
+<a data-tooltip-position="top" aria-label="https://github.com/mmcza" rel="noopener nofollow" class="external-link" href="https://github.com/mmcza" target="_blank">@mmcza</a>]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Sat, 26 Oct 2024 15:55:11 GMT</pubDate></item></channel></rss>

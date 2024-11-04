@@ -10,7 +10,6 @@ W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebook
 Źródło: [^jpt]
 
 # Spis treści:
-- [[Jak korzystać z Jupyter Notebooks]]
 - [[Składnia w języku Python]]
 - [[Zmienne i podstawowe typy danych]]
 - [[Listy, krotki, zbiory i słowniki]]
@@ -21,6 +20,8 @@ W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebook
 Oczywiście nie są to wszystkie zagadnienia związane z Pythonem. Dostępnych jest wiele kursów, poradników i stron z informacjami i ćwiczeniami na ten temat. Przykładami mogą być [w3schools](https://www.w3schools.com/python/default.asp) i [kaggle](https://www.kaggle.com/learn/python).
 
 # Link do Jupyter Notebook (DODAĆ)
+
+[[Jak korzystać z Jupyter Notebooks|Krótki poradnik jak korzystać z Jupyter Notebooks]]
 
 Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/).
 

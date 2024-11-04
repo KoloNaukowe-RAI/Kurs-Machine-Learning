@@ -9,50 +9,20 @@
         "dimension": 75.9014423076923,
         "children": [
           {
-            "id": "d7f00521227ef6b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Funkcje i klasy"
-            },
-            "group": "e500830a1a2d023f"
-          },
-          {
             "id": "109cee2c6836b789",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Klasyfikacja.md",
+                "file": "Tematy/Wstęp do języka Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Klasyfikacja"
-            }
-          },
-          {
-            "id": "d6bd73f932a79194",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Index"
+              "title": "Wstęp do języka Python"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "f7a445f948cd956e",
@@ -65,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
+                "file": "Tematy/Wstęp do języka Python.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -93,9 +63,8 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Funkcje i klasy"
-            },
-            "group": "e500830a1a2d023f"
+              "title": "Graph of Wstęp do języka Python"
+            }
           }
         ]
       }
@@ -239,8 +208,9 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "b3a9b52b6cff978f",
+  "active": "109cee2c6836b789",
   "lastOpenFiles": [
+    "Index.md",
     "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
     "Tematy/Wstęp do języka Python.md",
     "Tematy/Wizualizacja danych za pomocą bibliotek Matplotlib, Seaborn i Plotly w Pytonie.md",
@@ -254,29 +224,28 @@
     "Tematy/Files Wstęp do języka Python/Używanie bibliotek.md",
     "Tematy/Files Wstęp do języka Python/Składnia w języku Python.md",
     "Tematy/Files Wstęp do języka Python/Pętle i instrukcje warunkowe.md",
-    "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
+    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
     "Tematy/Files Wstęp do języka Python/Funkcje i klasy.md",
     "Tematy/Files Regresja liniowa (i nie tylko)/Rodzaje regresji.md",
     "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md",
-    "Index.md",
-    "Tematy/Metryki, analiza modeli i błędów.md",
-    "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md",
-    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
-    "Tematy/Files Przygotowanie danych i inżynieria cech/Inżynieria cech.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
-    "Tematy/Images/wykresy_seaborn.png",
-    "Tematy/Images/paleta_seaborn.png",
-    "Tematy/Images/skala.png",
-    "Tematy/Images/UEFA.png",
-    "Tematy/Images/punkty.png",
-    "Tematy/Images/igrzyska.png",
-    "Tematy/Images/telefon.png",
-    "Tematy/Images/sprzedaz.png",
-    "Tematy/Images/przychody.png",
-    "Tematy/Images/PythonFruitClass.png",
-    "Tematy/Files Wstęp do języka Python/Jak korzystać z Jupyter Notebooks.md",
+    "Tematy/Metryki, analiza modeli i błędów.md",
+    "Tematy/Images/notebook1.png",
+    "Tematy/Images/vscode4.png",
+    "Tematy/Images/vscode2.png",
+    "Tematy/Images/vscode3.png",
+    "Tematy/Images/vscode1.png",
+    "Tematy/Images/Kaggle4.png",
+    "Tematy/Images/Kaggle3.png",
+    "Tematy/Images/Kaggle2.png",
+    "Tematy/Images/Kaggle1.png",
+    "Krótki poradnik jak korzystać z Jupyter Notebooks.md",
+    "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)/Implementacja Gradient Boosting.md",
+    "Tematy/Images/GoogleColab4.png",
+    "Tematy/Files Wstęp do języka Python/Listy, krotki, zbiory i słowniki.md",
+    "Tematy/Files Regresja liniowa (i nie tylko)/Implementacja regresji przy pomocy Scikit-learn.md",
     "Tematy/Images/Macierz.jfif",
     "Tematy/Files Wzmocnienie gradientowe (Gradient boosting)",
     "Tematy/Files Przygotowanie danych i inżynieria cech",
