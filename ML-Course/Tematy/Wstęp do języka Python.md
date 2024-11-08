@@ -19,11 +19,11 @@ W celu uproszczenia pracy, zadania będą przygotowane w formie Jupyter Notebook
 
 Oczywiście nie są to wszystkie zagadnienia związane z Pythonem. Dostępnych jest wiele kursów, poradników i stron z informacjami i ćwiczeniami na ten temat. Przykładami mogą być [w3schools](https://www.w3schools.com/python/default.asp) i [kaggle](https://www.kaggle.com/learn/python).
 
-# Link do Jupyter Notebook (DODAĆ)
+# Link do Jupyter Notebook
 
 [[Jak korzystać z Jupyter Notebooks|Krótki poradnik jak korzystać z Jupyter Notebooks]]
 
-Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/).
+Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks01_Wst%C4%99p_do_j%C4%99zyka_Python.ipynb).
 
 # Co dalej?
 

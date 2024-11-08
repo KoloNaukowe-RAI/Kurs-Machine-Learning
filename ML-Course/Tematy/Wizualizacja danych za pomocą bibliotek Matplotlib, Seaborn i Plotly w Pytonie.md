@@ -248,6 +248,10 @@ fig.update_layout(
 fig.show()
 ```
 ![[UEFA.png]]
+
+# Link do Jupyter Notebook
+
+Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks03_Analiza_Danych_z_Seaborn_Pandas_i_Plotly.ipynb).
 # Co dalej?
 
 Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.
