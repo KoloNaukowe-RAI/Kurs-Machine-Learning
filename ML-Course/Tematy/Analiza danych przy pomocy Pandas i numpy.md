@@ -505,13 +505,17 @@ print(difference)  # Wynik: 9 days
 ```python
 a = np.zeros((3, 4)) # 3 wiersze, 4 kolumny
 ```
-\
+
 **Obliczanie średniej:**
 ```python
 a = np.array([1, 2, 3, 4, 5])
 mean = np.mean(a)
 print(mean)
 ```
+
+# Link do Jupyter Notebook
+
+Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks02_Zapoznanie_z_biblioteką_pandas.ipynb).
 
 # Co dalej?
 

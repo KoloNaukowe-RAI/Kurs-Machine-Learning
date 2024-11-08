@@ -182,4 +182,10 @@ print(classification_report(y_true, y_pred))
 
 ```
 
+# Link do Jupyter Notebook
+
+Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks_08_Metryki_Oceny_Modelu.ipynb).
+# Co dalej?
+
+Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.
 

@@ -8,9 +8,9 @@ Gradient Boosting buduje model iteracyjnie, ucząc się na błędach poprzednich
 - [[Czym jest Gradient Boosting|Czym jest Gradient Boosting?]]
 - [[Kluczowe pojęcia w Gradient Boosting]]
 - [[Implementacja Gradient Boosting]]
-# Link do Jupyter Notebook (DODAĆ)
+# Link do Jupyter Notebook
 
-Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/).
+Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks07_Wzmocnienie_gradientowe_(Gradient_Boosting).ipynb).
 
 # Co dalej?
 

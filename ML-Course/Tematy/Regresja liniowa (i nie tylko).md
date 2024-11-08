@@ -19,9 +19,9 @@ Z regresją można się też spotkać (często nieświadomie) podczas laboratori
 - [[Czym jest Scikit-learn|Czym jest Scikit-learn?]]
 - [[Implementacja regresji przy pomocy Scikit-learn]]
 
-# Link do Jupyter Notebook (DODAĆ)
+# Link do Jupyter Notebook
 
-Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/).
+Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks04_Regresja_liniowa_(i_nie_tylko).ipynb).
 
 # Co dalej?
 

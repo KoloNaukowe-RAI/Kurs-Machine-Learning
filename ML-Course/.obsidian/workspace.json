@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wstęp do języka Python"
+              "title": "Wzmocnienie gradientowe (Gradient boosting)"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Tematy/Wstęp do języka Python.md",
+                "file": "Tematy/Wzmocnienie gradientowe (Gradient boosting).md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -63,7 +63,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Wstęp do języka Python"
+              "title": "Graph of Wzmocnienie gradientowe (Gradient boosting)"
             }
           }
         ]
@@ -230,8 +230,8 @@
     "Tematy/Files Regresja liniowa (i nie tylko)/Czym jest Scikit-learn.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Normalizacja i standaryzacja.md",
     "Tematy/Files Przygotowanie danych i inżynieria cech/Co zrobić po otrzymaniu zbioru danych.md",
-    "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
     "Tematy/Metryki, analiza modeli i błędów.md",
+    "Tematy/Files Przygotowanie danych i inżynieria cech/Brakujące dane.md",
     "Tematy/Images/notebook1.png",
     "Tematy/Images/vscode4.png",
     "Tematy/Images/vscode2.png",
