@@ -11,7 +11,7 @@ Sam proces przygotowywania danych jest czasochłonny i wymaga kreatywności, wi�
 
 # Link do Jupyter Notebook
 
-Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks05_Przygotowanie_danych_i_in%C5%BCynieria_cech.ipynb).
+Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks06_Przygotowanie_danych_i_in%C5%BCynieria_cech.ipynb).
 # Co dalej?
 
 Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.

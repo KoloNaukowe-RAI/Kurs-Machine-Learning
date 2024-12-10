@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tematy/Metryki, analiza modeli i błędów.md",
+                "file": "Tematy/Klasyfikacja.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metryki, analiza modeli i błędów"
+              "title": "Klasyfikacja"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Tematy/Metryki, analiza modeli i błędów.md",
+                "file": "Tematy/Klasyfikacja.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -63,7 +63,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Metryki, analiza modeli i błędów"
+              "title": "Graph of Klasyfikacja"
             }
           }
         ]
