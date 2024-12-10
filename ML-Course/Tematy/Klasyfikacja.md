@@ -198,7 +198,7 @@ Tego typu system klasyfikujący zdolny do wyznaczania wielu binarnych znacznikó
 
 # Link do Jupyter Notebook
 
-Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/).
+Ćwiczenia dla tego tematu zostały zebrane [tutaj](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/blob/main/Tasks/Tasks05_Klasyfikacja.ipynb).
 # Co dalej?
 
 Kliknij [[Index|tutaj]], aby wrócić do strony głównej kursu.
