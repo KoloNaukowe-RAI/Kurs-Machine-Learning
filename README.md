@@ -9,5 +9,6 @@ Link do strony internetowej: https://kolonaukowe-rai.github.io/Kurs-Machine-Lear
 # Zbiory danych
 Umieszczone w zakładce [dane](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/tree/main/Tasks/dane) pliki pochodzą z (datasets in the [dane](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning/tree/main/Tasks/dane) directory come from):
 - Student_Performance.csv - https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression/data,
+- healthcare-dataset-stroke-data.csv - https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset,
 - f1_race_results.csv - zebrane przy pomocy api Ergast oraz dodatkowo przetworzone w celu inżynierii cech (gathered with Ergast's api, and additionally processed for feature engineering),
 - top10K-TMDB-movies.csv - https://www.kaggle.com/datasets/ahsanaseer/top-rated-tmdb-movies-10k.
