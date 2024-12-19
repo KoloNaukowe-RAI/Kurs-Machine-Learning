@@ -158,6 +158,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# Visual studio files
+.vscode
 # Datasets (download from the links in README.md)
 **/dane/*.csv
 !Tasks/dane/f1_race_results.csv
